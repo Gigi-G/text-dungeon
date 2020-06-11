@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+text_dungeon,com.seminara.text_dungeon,Spada,0,37,0,0,0,8,0,5,0,5
+text_dungeon,com.seminara.text_dungeon,PietraBianca,0,20,0,4,0,6,0,6,0,4
+text_dungeon,com.seminara.text_dungeon,Mannaia,0,37,0,0,0,8,0,5,0,5
+text_dungeon,com.seminara.text_dungeon,PietraNera,0,20,0,4,0,6,0,6,0,4
+text_dungeon,com.seminara.text_dungeon,App,7,0,0,0,3,0,2,0,2,0
+text_dungeon,com.seminara.text_dungeon,PietraGrigia,0,7,0,0,0,3,0,3,0,3
+text_dungeon,com.seminara.text_dungeon,Ascia,0,37,0,0,0,8,0,5,0,5

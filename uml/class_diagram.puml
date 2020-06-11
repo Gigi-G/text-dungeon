@@ -1,0 +1,98 @@
+' Documentazione: https://plantuml.com/class-diagram
+  
+@startuml
+' START STYLE
+skinparam {
+    monochrome true
+    classBackgroundColor white
+    noteBackgroundColor white
+    classAttributeIconSize 0
+}
+hide circle
+' END STYLE
+
+title MiniGame: Text-Dungeon\n
+
+hide members
+
+class CreatorArma
+
+CreatorArma -u-> Ascia
+CreatorArma -u-> Mannaia
+CreatorArma -u-> Spada
+CreatorArma -u-> PietraGrigia
+CreatorArma -u-> PietraBianca
+CreatorArma -u-> PietraNera
+
+class Partita
+
+Partita -> CreatorArma
+
+class Giocatore
+
+Giocatore -> Arma
+Partita -> Giocatore
+
+interface Arma <<interface>> {
+    + getTipo(): String
+    + getDanno(): float
+}
+show Arma members
+
+interface Pietra <<interface>> {
+    + getTipo(): String
+    + moltiplicatoreDanno(): float
+}
+show Pietra members
+
+class PietraGrigia implements Pietra {
+    + getTipo(): String
+    + moltiplicatoreDanno(): float
+}
+show PietraGrigia members
+
+class PietraBianca implements Pietra {
+    + getTipo(): String
+    + moltiplicatoreDanno(): float
+    - probabilitaAumentoDanno(): boolean
+}
+show PietraBianca members
+
+class PietraNera implements Pietra {
+    + getTipo(): String
+    + moltiplicatoreDanno(): float
+    - probabilitaAumentoDanno(): boolean
+}
+show PietraNera members
+
+class Ascia implements Arma {
+    - pietra: Pietra
+    - danno: float
+    + getTipo(): String
+    + getDanno(): float
+    - generaDanno(): float
+}
+show Ascia members
+
+class Mannaia implements Arma {
+    - pietra: Pietra
+    - danno: float
+    + getTipo(): String
+    + getDanno(): float
+    - generaDanno(): float
+}
+show Mannaia members
+
+
+class Spada implements Arma {
+    - pietra: Pietra
+    - danno: float
+    + getTipo(): String
+    + getDanno(): float
+    - generaDanno(): float
+}
+show Spada members
+
+Arma -> Pietra
+
+@enduml
