@@ -41,7 +41,7 @@ public class TestSpada {
     public static boolean testGetDannoSpadaPietraGrigia() {
         Spada spada = new Spada(new PietraGrigia());
         float danno = spada.getDanno();
-        if  (danno >= 5f && danno <= 60f) {
+        if  (danno >= 5f && danno <= 62f) {
             System.out.println("TestSpada.testGetDannoSpadaPietraGrigia(): OK");
             return true;
         }
@@ -54,7 +54,7 @@ public class TestSpada {
     public static boolean testGetDannoSpadaPietraBianca() {
         Spada spada = new Spada(new PietraBianca());
         float danno = spada.getDanno();
-        if  (danno >= 5f && danno <= 66f) {
+        if  (danno >= 5f && danno <= 68f) {
             System.out.println("TestSpada.testGetDannoSpadaPietraBianca(): OK");
             return true;
         }
@@ -67,12 +67,25 @@ public class TestSpada {
     public static boolean testGetDannoSpadaPietraNera() {
         Spada spada = new Spada(new PietraNera());
         float danno = spada.getDanno();
-        if  (danno >= 5f && danno <= 75f) {
+        if  (danno >= 5f && danno <= 77f) {
             System.out.println("TestSpada.testGetDannoSpadaPietraNera(): OK");
             return true;
         }
         else {
             System.out.println("TestSpada.testGetDannoSpadaPietraNera(): FAILED");
+            return false;
+        }
+    }
+
+    public static boolean testGeneraDannoSpada() {
+        Spada spada = new Spada(new PietraGrigia());
+        float danno = spada.generaDanno();
+        if  (danno >= 5f && danno <= 62f) {
+            System.out.println("TestSpada.testGeneraDannoSpada(): OK");
+            return true;
+        }
+        else {
+            System.out.println("TestSpada.testGeneraDannoSpada(): FAILED");
             return false;
         }
     }

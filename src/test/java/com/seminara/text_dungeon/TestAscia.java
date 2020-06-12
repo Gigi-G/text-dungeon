@@ -41,7 +41,7 @@ public class TestAscia {
     public static boolean testGetDannoAsciaPietraGrigia() {
         Ascia ascia = new Ascia(new PietraGrigia());
         float danno = ascia.getDanno();
-        if  (danno >= 20f && danno <= 50f) {
+        if  (danno >= 20f && danno <= 52f) {
             System.out.println("TestAscia.testGetDannoAsciaPietraGrigia(): OK");
             return true;
         }
@@ -54,7 +54,7 @@ public class TestAscia {
     public static boolean testGetDannoAsciaPietraBianca() {
         Ascia ascia = new Ascia(new PietraBianca());
         float danno = ascia.getDanno();
-        if  (danno >= 20f && danno <= 55f) {
+        if  (danno >= 20f && danno <= 57f) {
             System.out.println("TestAscia.testGetDannoAsciaPietraBianca(): OK");
             return true;
         }
@@ -67,12 +67,25 @@ public class TestAscia {
     public static boolean testGetDannoAsciaPietraNera() {
         Ascia ascia = new Ascia(new PietraNera());
         float danno = ascia.getDanno();
-        if  (danno >= 20f && danno <= 62.5f) {
+        if  (danno >= 20f && danno <= 64.5f) {
             System.out.println("TestAscia.testGetDannoAsciaPietraNera(): OK");
             return true;
         }
         else {
             System.out.println("TestAscia.testGetDannoAsciaPietraNera(): FAILED");
+            return false;
+        }
+    }
+
+    public static boolean testGeneraDannoAscia() {
+        Ascia ascia = new Ascia(new PietraGrigia());
+        float danno = ascia.generaDanno();
+        if  (danno >= 20f && danno <= 52f) {
+            System.out.println("TestAscia.testGeneraDannoAscia(): OK");
+            return true;
+        }
+        else {
+            System.out.println("TestAscia.testGeneraDannoAscia(): FAILED");
             return false;
         }
     }

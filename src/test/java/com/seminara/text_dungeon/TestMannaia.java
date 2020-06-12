@@ -41,7 +41,7 @@ public class TestMannaia {
     public static boolean testGetDannoMannaiaPietraGrigia() {
         Mannaia mannaia = new Mannaia(new PietraGrigia());
         float danno = mannaia.getDanno();
-        if  (danno >= 10f && danno <= 40f) {
+        if  (danno >= 10f && danno <= 42f) {
             System.out.println("TestMannaia.testGetDannoMannaiaPietraGrigia(): OK");
             return true;
         }
@@ -54,7 +54,7 @@ public class TestMannaia {
     public static boolean testGetDannoMannaiaPietraBianca() {
         Mannaia mannaia = new Mannaia(new PietraBianca());
         float danno = mannaia.getDanno();
-        if  (danno >= 10f && danno <= 44f) {
+        if  (danno >= 10f && danno <= 46f) {
             System.out.println("TestMannaia.testGetDannoMannaiaPietraBianca(): OK");
             return true;
         }
@@ -67,12 +67,25 @@ public class TestMannaia {
     public static boolean testGetDannoMannaiaPietraNera() {
         Mannaia mannaia = new Mannaia(new PietraNera());
         float danno = mannaia.getDanno();
-        if  (danno >= 10f && danno <= 50f) {
+        if  (danno >= 10f && danno <= 52f) {
             System.out.println("TestMannaia.testGetDannoMannaiaPietraNera(): OK");
             return true;
         }
         else {
             System.out.println("TestMannaia.testGetDannoMannaiaPietraNera(): FAILED");
+            return false;
+        }
+    }
+
+    public static boolean testGeneraDannoMannaia() {
+        Mannaia mannaia = new Mannaia(new PietraGrigia());
+        float danno = mannaia.generaDanno();
+        if  (danno >= 10f && danno <= 42f) {
+            System.out.println("TestMannaia.testGeneraDannoMannaia(): OK");
+            return true;
+        }
+        else {
+            System.out.println("TestMannaia.testGeneraDannoMannaia(): FAILED");
             return false;
         }
     }

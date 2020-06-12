@@ -41,6 +41,7 @@ public class AppTest
         assertTrue( TestAscia.testGetDannoAsciaPietraBianca() );
         assertTrue( TestAscia.testGetDannoAsciaPietraGrigia() );
         assertTrue( TestAscia.testGetDannoAsciaPietraNera() );
+        assertTrue( TestAscia.testGeneraDannoAscia() );
         printFooter();
     }
 
@@ -53,6 +54,7 @@ public class AppTest
         assertTrue( TestMannaia.testGetDannoMannaiaPietraBianca() );
         assertTrue( TestMannaia.testGetDannoMannaiaPietraGrigia() );
         assertTrue( TestMannaia.testGetDannoMannaiaPietraNera() );
+        assertTrue( TestMannaia.testGeneraDannoMannaia() );
         printFooter();
     }
 
@@ -65,6 +67,7 @@ public class AppTest
         assertTrue( TestSpada.testGetDannoSpadaPietraBianca() );
         assertTrue( TestSpada.testGetDannoSpadaPietraGrigia() );
         assertTrue( TestSpada.testGetDannoSpadaPietraNera() );
+        assertTrue( TestSpada.testGeneraDannoSpada() );
         printFooter();
     }
 
