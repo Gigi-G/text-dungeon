@@ -23,7 +23,8 @@ public class Spada implements Arma {
         return danno * pietra.moltiplicatoreDanno();
     }
 
-    private float generaDanno() {
+    @Override
+    public float generaDanno() {
         return (float) Math.random() * (60-5+1) + 5;
     }
 }

@@ -23,7 +23,8 @@ public class Mannaia implements Arma {
         return danno * pietra.moltiplicatoreDanno();
     }
 
-    private float generaDanno() {
+    @Override
+    public float generaDanno() {
         return (float) Math.random() * (40-10+1) + 10;
     }
     

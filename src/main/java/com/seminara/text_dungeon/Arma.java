@@ -1,6 +1,7 @@
 package com.seminara.text_dungeon;
 
 public interface Arma {
-    public abstract String getTipo();
-    public abstract float getDanno();
+    public String getTipo();
+    public float getDanno();
+    public float generaDanno();
 }

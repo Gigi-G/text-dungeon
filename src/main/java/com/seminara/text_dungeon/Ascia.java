@@ -23,7 +23,8 @@ public class Ascia implements Arma {
         return danno * pietra.moltiplicatoreDanno();
     }
 
-    private float generaDanno() {
+    @Override
+    public float generaDanno() {
         return (float) Math.random() * (50-20+1) + 20;
     }
     
