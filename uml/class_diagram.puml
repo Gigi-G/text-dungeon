@@ -28,7 +28,18 @@ class Partita
 
 Partita -> CreatorArma
 
-class Giocatore
+class Giocatore {
+    - vita: float
+    - arma: Arma
+    - instance{static}: Giocatore 
+    - Giocatore()
+    + getInstance(){static}: Giocatore
+    + isSconfitto(): boolean
+    + applicaDanno(float): void
+    + setArma(Arma): void
+    + getArma(): Arma
+}
+show Giocatore members
 
 Giocatore -> Arma
 Partita -> Giocatore
@@ -36,6 +47,7 @@ Partita -> Giocatore
 interface Arma <<interface>> {
     + getTipo(): String
     + getDanno(): float
+    + generaDanno(): float
 }
 show Arma members
 
@@ -70,7 +82,7 @@ class Ascia implements Arma {
     - danno: float
     + getTipo(): String
     + getDanno(): float
-    - generaDanno(): float
+    + generaDanno(): float
 }
 show Ascia members
 
@@ -79,7 +91,7 @@ class Mannaia implements Arma {
     - danno: float
     + getTipo(): String
     + getDanno(): float
-    - generaDanno(): float
+    + generaDanno(): float
 }
 show Mannaia members
 
@@ -89,7 +101,7 @@ class Spada implements Arma {
     - danno: float
     + getTipo(): String
     + getDanno(): float
-    - generaDanno(): float
+    + generaDanno(): float
 }
 show Spada members
 
