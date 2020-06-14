@@ -76,18 +76,5 @@ public class TestSpada {
             return false;
         }
     }
-
-    public static boolean testGeneraDannoSpada() {
-        Spada spada = new Spada(new PietraGrigia());
-        float danno = spada.generaDanno();
-        if  (danno >= 5f && danno <= 62f) {
-            System.out.println("TestSpada.testGeneraDannoSpada(): OK");
-            return true;
-        }
-        else {
-            System.out.println("TestSpada.testGeneraDannoSpada(): FAILED");
-            return false;
-        }
-    }
     
 }

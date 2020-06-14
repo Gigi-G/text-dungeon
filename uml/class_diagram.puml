@@ -15,18 +15,19 @@ title MiniGame: Text-Dungeon\n
 
 hide members
 
-class CreatorArma
-
-CreatorArma -u-> Ascia
-CreatorArma -u-> Mannaia
-CreatorArma -u-> Spada
-CreatorArma -u-> PietraGrigia
-CreatorArma -u-> PietraBianca
-CreatorArma -u-> PietraNera
+class GeneraPietra {
+    - genera: List<Function<Float, Pietra>>
+    - pietra: Pietra
+    - rand: Float
+    - instance{static}: GeneraPietra
+    + getInstance(){static}: GeneraPietra
+    + getPietra(): Pietra
+    - calcolaProbabilita(): float
+    + getRand(): float
+}
+show GeneraPietra members
 
 class Partita
-
-Partita -> CreatorArma
 
 class Giocatore {
     - vita: float
@@ -40,16 +41,6 @@ class Giocatore {
     + getArma(): Arma
 }
 show Giocatore members
-
-Giocatore -> Arma
-Partita -> Giocatore
-
-interface Arma <<interface>> {
-    + getTipo(): String
-    + getDanno(): float
-    + generaDanno(): float
-}
-show Arma members
 
 interface Pietra <<interface>> {
     + getTipo(): String
@@ -77,12 +68,28 @@ class PietraNera implements Pietra {
 }
 show PietraNera members
 
+interface Arma <<interface>> {
+    + getTipo(): String
+    + getDanno(): float
+}
+show Arma members
+
+class GeneraArma {
+    - generaPietra: GeneraPietra
+    - genera: Map<Integer, Function<Pietra, Arma>>
+    - instance{static}: GeneraArma
+    - GeneraArma()
+    + getInstance(){static}: GeneraArma
+    + getArma(int): Arma
+}
+show GeneraArma members
+
 class Ascia implements Arma {
     - pietra: Pietra
     - danno: float
     + getTipo(): String
     + getDanno(): float
-    + generaDanno(): float
+    - generaDanno(): float
 }
 show Ascia members
 
@@ -91,7 +98,7 @@ class Mannaia implements Arma {
     - danno: float
     + getTipo(): String
     + getDanno(): float
-    + generaDanno(): float
+    - generaDanno(): float
 }
 show Mannaia members
 
@@ -101,10 +108,28 @@ class Spada implements Arma {
     - danno: float
     + getTipo(): String
     + getDanno(): float
-    + generaDanno(): float
+    - generaDanno(): float
 }
 show Spada members
 
-Arma -> Pietra
+GeneraPietra -l-> Pietra
+GeneraPietra -d-> PietraGrigia
+GeneraPietra -d-> PietraBianca
+GeneraPietra -d-> PietraNera
+GeneraArma -l-> Arma
+GeneraArma -d-> Ascia
+GeneraArma -d-> Mannaia
+GeneraArma -d-> Spada
+GeneraArma -d-> GeneraPietra
+GeneraArma -d-> Pietra
+
+Ascia -d-> Pietra
+Mannaia -d-> Pietra
+Spada -d-> Pietra
+
+Giocatore -r> Arma
+Partita -r> Giocatore
+
+Partita -r> GeneraArma
 
 @enduml

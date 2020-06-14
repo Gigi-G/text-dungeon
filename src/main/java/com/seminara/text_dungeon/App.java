@@ -5,6 +5,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "This is the main!" );
+        Arma a = GeneraArma.getInstance().getArma(0);
+        System.out.println(a.getTipo());
     }
 }

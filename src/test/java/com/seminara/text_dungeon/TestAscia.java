@@ -77,16 +77,4 @@ public class TestAscia {
         }
     }
 
-    public static boolean testGeneraDannoAscia() {
-        Ascia ascia = new Ascia(new PietraGrigia());
-        float danno = ascia.generaDanno();
-        if  (danno >= 20f && danno <= 52f) {
-            System.out.println("TestAscia.testGeneraDannoAscia(): OK");
-            return true;
-        }
-        else {
-            System.out.println("TestAscia.testGeneraDannoAscia(): FAILED");
-            return false;
-        }
-    }
 }

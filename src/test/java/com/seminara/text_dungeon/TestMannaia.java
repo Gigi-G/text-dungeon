@@ -76,17 +76,5 @@ public class TestMannaia {
             return false;
         }
     }
-
-    public static boolean testGeneraDannoMannaia() {
-        Mannaia mannaia = new Mannaia(new PietraGrigia());
-        float danno = mannaia.generaDanno();
-        if  (danno >= 10f && danno <= 42f) {
-            System.out.println("TestMannaia.testGeneraDannoMannaia(): OK");
-            return true;
-        }
-        else {
-            System.out.println("TestMannaia.testGeneraDannoMannaia(): FAILED");
-            return false;
-        }
-    }
+    
 }
