@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.seminara.text_dungeon.AppTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec

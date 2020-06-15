@@ -84,6 +84,15 @@ public class AppTest
         printFooter();
     }
 
+    @Test
+    public void testGiocatore() {
+        printHeader(TestGiocatore.class.getName());
+        assertTrue( TestGiocatore.testSingleton() );
+        assertTrue( TestGiocatore.testIsSconfitto() );
+        assertTrue( TestGiocatore.testArma() );
+        printFooter();
+    }
+
     private void printHeader(String nome) {
         System.out.println();
         System.out.println("-------------------------------------------------------");

@@ -39,6 +39,7 @@ class Giocatore {
     + applicaDanno(float): void
     + setArma(Arma): void
     + getArma(): Arma
+    + getVita(): float
 }
 show Giocatore members
 
@@ -111,6 +112,24 @@ class Spada implements Arma {
     - generaDanno(): float
 }
 show Spada members
+
+interface StatoPersonaggio<<interface>> {
+    + mostra(): String
+}
+show StatoPersonaggio members
+
+class Attacco implements StatoPersonaggio
+class Difesa implements StatoPersonaggio
+class Assalto implements StatoPersonaggio
+
+interface StatoBattaglia<<interface>> {
+    + Lotta(Battaglia): StatoBattaglia 
+}
+
+class InizioBattaglia implements StatoBattaglia
+class Sfida implements StatoBattaglia
+class Vittoria implements StatoBattaglia
+class Sconfitta implements StatoBattaglia
 
 GeneraPietra -l-> Pietra
 GeneraPietra -d-> PietraGrigia
