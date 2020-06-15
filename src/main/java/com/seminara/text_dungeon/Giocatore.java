@@ -15,7 +15,7 @@ public class Giocatore {
     }
 
     public boolean isSconfitto() {
-        return 0 >= vita;
+        return 0f >= vita;
     }
 
     public void applicaDanno(float danno) {
