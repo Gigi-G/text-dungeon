@@ -29,20 +29,6 @@ show GeneraPietra members
 
 class Partita
 
-class Giocatore {
-    - vita: float
-    - arma: Arma
-    - instance{static}: Giocatore 
-    - Giocatore()
-    + getInstance(){static}: Giocatore
-    + isSconfitto(): boolean
-    + applicaDanno(float): void
-    + setArma(Arma): void
-    + getArma(): Arma
-    + getVita(): float
-}
-show Giocatore members
-
 interface Pietra <<interface>> {
     + getTipo(): String
     + moltiplicatoreDanno(): float
@@ -113,23 +99,67 @@ class Spada implements Arma {
 }
 show Spada members
 
-interface StatoPersonaggio<<interface>> {
-    + mostra(): String
+class Giocatore {
+    - vita: float
+    - arma: Arma
+    - instance{static}: Giocatore 
+    - Giocatore()
+    + getInstance(){static}: Giocatore
+    + isSconfitto(): boolean
+    + applicaDanno(float): void
+    + setArma(Arma): void
+    + getArma(): Arma
+    + getVita(): float
 }
-show StatoPersonaggio members
+show Giocatore members
 
-class Attacco implements StatoPersonaggio
-class Difesa implements StatoPersonaggio
-class Assalto implements StatoPersonaggio
-
-interface StatoBattaglia<<interface>> {
-    + Lotta(Battaglia): StatoBattaglia 
+interface Nemico<<interface>> {
+    + getNome(): String
+    + applicaDanno(float): void
+    + isSconfitto(): boolean
 }
+show Nemico members
 
-class InizioBattaglia implements StatoBattaglia
-class Sfida implements StatoBattaglia
-class Vittoria implements StatoBattaglia
-class Sconfitta implements StatoBattaglia
+class Dungeon<<abstract>> {
+    - livello: int
+    + getLivello(): int
+    + esplora(): void
+    + getNemico(int){abstract}: Nemico
+}
+show Dungeon members
+
+class Bosco extends Dungeon {
+    + getNemico(int): Nemico
+}
+show Bosco members
+
+class Deserto extends Dungeon {
+    + getNemico(int): Nemico
+}
+show Deserto members
+
+class Strega implements Nemico
+class Ciclope implements Nemico
+class Chimera implements Nemico
+class Goblin implements Nemico
+
+'interface StatoPersonaggio<<interface>> {
+ '   + mostra(): String
+'}
+'show StatoPersonaggio members
+
+'class Attacco implements StatoPersonaggio
+'class Difesa implements StatoPersonaggio
+'class Assalto implements StatoPersonaggio
+
+'interface StatoBattaglia<<interface>> {
+'    + Lotta(Battaglia): StatoBattaglia 
+'}
+
+'class InizioBattaglia implements StatoBattaglia
+'class Sfida implements StatoBattaglia
+'class Vittoria implements StatoBattaglia
+'class Sconfitta implements StatoBattaglia
 
 GeneraPietra -l-> Pietra
 GeneraPietra -d-> PietraGrigia
@@ -146,9 +176,20 @@ Ascia -d-> Pietra
 Mannaia -d-> Pietra
 Spada -d-> Pietra
 
-Giocatore -r> Arma
-Partita -r> Giocatore
+Giocatore -r-> Arma
+Partita -r-> Giocatore
 
-Partita -r> GeneraArma
+Partita -r-> GeneraArma
+
+Bosco -u-> Chimera
+Bosco -u-> Goblin
+Bosco -u-> Strega
+Deserto -u-> Chimera
+Deserto -u-> Goblin
+Deserto -u-> Ciclope
+Dungeon -l-> Nemico
+
+Partita -l-> Dungeon
+Partita -l-> Nemico
 
 @enduml
