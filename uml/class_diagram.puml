@@ -122,19 +122,22 @@ show Nemico members
 
 class Dungeon<<abstract>> {
     - livello: int
+    - generaTipo: Map<Integer, TipoNemico>
     + getLivello(): int
-    + esplora(): void
-    + getNemico(int){abstract}: Nemico
+    + esplora(): Nemico
+    # getNemico(TipoNemico){abstract}: Nemico
 }
 show Dungeon members
 
 class Bosco extends Dungeon {
-    + getNemico(int): Nemico
+    - generaNemico: Map<TipoNemico, Supplier<Nemico>>
+    # getNemico(TipoNemico): Nemico
 }
 show Bosco members
 
 class Deserto extends Dungeon {
-    + getNemico(int): Nemico
+    - generaNemico: Map<TipoNemico, Supplier<Nemico>>
+    # getNemico(TipoNemico): Nemico
 }
 show Deserto members
 
