@@ -1,5 +1,11 @@
 package com.seminara.text_dungeon;
 
+import com.seminara.text_dungeon.armeria.*;
+import com.seminara.text_dungeon.pietra.*;
+import com.seminara.text_dungeon.giocatore.*;
+import com.seminara.text_dungeon.nemico.*;
+import com.seminara.text_dungeon.dungeon.*;
+
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -90,6 +96,76 @@ public class AppTest
         assertTrue( TestGiocatore.testSingleton() );
         assertTrue( TestGiocatore.testIsSconfitto() );
         assertTrue( TestGiocatore.testArma() );
+        printFooter();
+    }
+
+    @Test
+    public void testChimera() {
+        printHeader(TestChimera.class.getName());
+        assertTrue( TestChimera.testAffliggiDannoChimera() );
+        assertTrue( TestChimera.testApplicaDannoChimera() );
+        assertTrue( TestChimera.testChimera() );
+        assertTrue( TestChimera.testGetVitaChimera() );
+        assertTrue( TestChimera.testIsSconfittoChimera1() );
+        assertTrue( TestChimera.testIsSconfittoChimera2() );
+        printFooter();
+    }
+
+    @Test
+    public void testCiclope() {
+        printHeader(TestCiclope.class.getName());
+        assertTrue( TestCiclope.testAffliggiDannoCiclope() );
+        assertTrue( TestCiclope.testApplicaDannoCiclope() );
+        assertTrue( TestCiclope.testCiclope() );
+        assertTrue( TestCiclope.testGetVitaCiclope() );
+        assertTrue( TestCiclope.testIsSconfittoCiclope1() );
+        assertTrue( TestCiclope.testIsSconfittoCiclope2() );
+        printFooter();
+    }
+
+    @Test
+    public void testGoblin() {
+        printHeader(TestGoblin.class.getName());
+        assertTrue( TestGoblin.testAffliggiDannoGoblin() );
+        assertTrue( TestGoblin.testApplicaDannoGoblin() );
+        assertTrue( TestGoblin.testGoblin() );
+        assertTrue( TestGoblin.testGetVitaGoblin() );
+        assertTrue( TestGoblin.testIsSconfittoGoblin1() );
+        assertTrue( TestGoblin.testIsSconfittoGoblin2() );
+        printFooter();
+    }
+
+    @Test
+    public void testStrega() {
+        printHeader(TestStrega.class.getName());
+        assertTrue( TestStrega.testAffliggiDannoStrega() );
+        assertTrue( TestStrega.testApplicaDannoStrega() );
+        assertTrue( TestStrega.testStrega() );
+        assertTrue( TestStrega.testGetVitaStrega() );
+        assertTrue( TestStrega.testIsSconfittoStrega1() );
+        assertTrue( TestStrega.testIsSconfittoStrega2() );
+        printFooter();
+    }
+
+    @Test
+    public void testBosco() {
+        printHeader(TestBosco.class.getName());
+        assertTrue( TestBosco.testEsploraBosco() );
+        assertTrue( TestBosco.testGetNemicoChimeraBosco() );
+        assertTrue( TestBosco.testGetNemicoGoblinBosco() );
+        assertTrue( TestBosco.testGetNemicoNullBosco() );
+        assertTrue( TestBosco.testGetNemicoStregaBosco() );
+        printFooter();
+    }
+
+    @Test
+    public void testDeserto() {
+        printHeader(TestDeserto.class.getName());
+        assertTrue( TestDeserto.testEsploraDeserto() );
+        assertTrue( TestDeserto.testGetNemicoChimeraDeserto() );
+        assertTrue( TestDeserto.testGetNemicoGoblinDeserto() );
+        assertTrue( TestDeserto.testGetNemicoNullDeserto() );
+        assertTrue( TestDeserto.testGetNemicoCiclopeDeserto() );
         printFooter();
     }
 

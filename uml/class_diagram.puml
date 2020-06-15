@@ -116,7 +116,9 @@ show Giocatore members
 interface Nemico<<interface>> {
     + getNome(): String
     + applicaDanno(float): void
+    + affliggiDanno(): float
     + isSconfitto(): boolean
+    + getVita(): float
 }
 show Nemico members
 
