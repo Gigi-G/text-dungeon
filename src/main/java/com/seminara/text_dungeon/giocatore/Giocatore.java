@@ -33,6 +33,10 @@ public class Giocatore {
         return arma;
     }
 
+    public void resetVita() {
+        vita = 300f;
+    }
+
     public float getVita() {
         return vita;
     }

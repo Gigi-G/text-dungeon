@@ -1,10 +1,13 @@
 package com.seminara.text_dungeon;
 
+import com.seminara.text_dungeon.partita.*;
 
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println("This is the main!");
+        Partita partita = new Partita();
+        partita.setStato("0");
+        while(partita.mostra());
     }
 }
