@@ -78,5 +78,18 @@ public class TestChimera {
             return false;
         }
     }
+
+    public static boolean testGetStatoCombattimentoChimera() {
+        Chimera chimera = new Chimera();
+        int statoCombattimento = chimera.getStatoCombattimento();
+        if(statoCombattimento >= 0 && statoCombattimento <= 2) {
+            System.out.println("TestChimera.testGetStatoCombattimentoChimera(): OK");
+            return true;
+        }
+        else {
+            System.out.println("TestChimera.testGetStatoCombattimentoChimera(): FAILED");
+            return false;
+        }
+    }
     
 }

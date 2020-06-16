@@ -6,4 +6,5 @@ public interface Nemico {
     public float affliggiDanno();
     public boolean isSconfitto();
     public float getVita();
+    public int getStatoCombattimento();
 }

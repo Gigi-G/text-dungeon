@@ -31,5 +31,10 @@ public class Ciclope implements Nemico {
     public float getVita() {
         return vita;
     }
+
+    @Override
+    public int getStatoCombattimento() {
+        return Math.round((float) Math.random()*2);
+    }
     
 }

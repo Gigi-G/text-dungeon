@@ -96,6 +96,8 @@ public class AppTest
         assertTrue( TestGiocatore.testSingleton() );
         assertTrue( TestGiocatore.testIsSconfitto() );
         assertTrue( TestGiocatore.testArma() );
+        assertTrue( TestGiocatore.testGetStatoCombattimento() );
+        assertTrue( TestGiocatore.testSetStatoCombattimento() );
         printFooter();
     }
 
@@ -108,6 +110,7 @@ public class AppTest
         assertTrue( TestChimera.testGetVitaChimera() );
         assertTrue( TestChimera.testIsSconfittoChimera1() );
         assertTrue( TestChimera.testIsSconfittoChimera2() );
+        assertTrue( TestChimera.testGetStatoCombattimentoChimera() );
         printFooter();
     }
 
@@ -120,6 +123,7 @@ public class AppTest
         assertTrue( TestCiclope.testGetVitaCiclope() );
         assertTrue( TestCiclope.testIsSconfittoCiclope1() );
         assertTrue( TestCiclope.testIsSconfittoCiclope2() );
+        assertTrue( TestCiclope.testGetStatoCombattimentoCiclope() );
         printFooter();
     }
 
@@ -132,6 +136,7 @@ public class AppTest
         assertTrue( TestGoblin.testGetVitaGoblin() );
         assertTrue( TestGoblin.testIsSconfittoGoblin1() );
         assertTrue( TestGoblin.testIsSconfittoGoblin2() );
+        assertTrue( TestGoblin.testGetStatoCombattimentoGoblin() );
         printFooter();
     }
 
@@ -144,6 +149,7 @@ public class AppTest
         assertTrue( TestStrega.testGetVitaStrega() );
         assertTrue( TestStrega.testIsSconfittoStrega1() );
         assertTrue( TestStrega.testIsSconfittoStrega2() );
+        assertTrue( TestStrega.testGetStatoCombattimentoStrega() );
         printFooter();
     }
 

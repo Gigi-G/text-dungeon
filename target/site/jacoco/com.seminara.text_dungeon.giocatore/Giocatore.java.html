@@ -4,35 +4,45 @@ import com.seminara.text_dungeon.armeria.*;
 public class Giocatore {
     private float vita;
     private Arma arma;
+    private int statoCombattimento;
     private static Giocatore instance;
 
-<span class="fc" id="L9">    private Giocatore() {</span>
-<span class="fc" id="L10">        vita = 300f;</span>
-<span class="fc" id="L11">    }</span>
+<span class="fc" id="L10">    private Giocatore() {</span>
+<span class="fc" id="L11">        vita = 300f;</span>
+<span class="fc" id="L12">        statoCombattimento = 0;</span>
+<span class="fc" id="L13">    }</span>
 
     public static Giocatore getInstance() {
-<span class="fc bfc" id="L14" title="All 2 branches covered.">        if  (null == instance) instance = new Giocatore();</span>
-<span class="fc" id="L15">        return instance;</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        if  (null == instance) instance = new Giocatore();</span>
+<span class="fc" id="L17">        return instance;</span>
     }
 
     public boolean isSconfitto() {
-<span class="pc bpc" id="L19" title="1 of 2 branches missed.">        return 0f &gt;= vita;</span>
+<span class="pc bpc" id="L21" title="1 of 2 branches missed.">        return 0f &gt;= vita;</span>
     }
 
     public void applicaDanno(float danno) {
-<span class="fc" id="L23">        vita -= danno;</span>
-<span class="fc" id="L24">    }</span>
+<span class="fc" id="L25">        vita -= danno;</span>
+<span class="fc" id="L26">    }</span>
 
     public void setArma(Arma arma) {
-<span class="fc" id="L27">        this.arma = arma;</span>
-<span class="fc" id="L28">    }</span>
+<span class="fc" id="L29">        this.arma = arma;</span>
+<span class="fc" id="L30">    }</span>
 
     public Arma getArma() {
-<span class="fc" id="L31">        return arma;</span>
+<span class="fc" id="L33">        return arma;</span>
     }
 
     public float getVita() {
-<span class="fc" id="L35">        return vita;</span>
+<span class="fc" id="L37">        return vita;</span>
+    }
+
+    public void setStatoCombattimento(int stato) {
+<span class="fc" id="L41">        statoCombattimento = stato%3;</span>
+<span class="fc" id="L42">    }</span>
+
+    public int getStatoCombattimento() {
+<span class="fc" id="L45">        return statoCombattimento;</span>
     }
 
 }

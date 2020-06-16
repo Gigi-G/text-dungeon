@@ -79,4 +79,17 @@ public class TestGoblin {
         }
     }
 
+    public static boolean testGetStatoCombattimentoGoblin() {
+        Goblin goblin = new Goblin();
+        int statoCombattimento = goblin.getStatoCombattimento();
+        if(statoCombattimento >= 0 && statoCombattimento <= 2) {
+            System.out.println("TestGoblin.testGetStatoCombattimentoGoblin(): OK");
+            return true;
+        }
+        else {
+            System.out.println("TestGoblin.testGetStatoCombattimentoGoblin(): FAILED");
+            return false;
+        }
+    }
+
 }

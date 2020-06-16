@@ -4,10 +4,12 @@ import com.seminara.text_dungeon.armeria.*;
 public class Giocatore {
     private float vita;
     private Arma arma;
+    private int statoCombattimento;
     private static Giocatore instance;
 
     private Giocatore() {
         vita = 300f;
+        statoCombattimento = 0;
     }
 
     public static Giocatore getInstance() {
@@ -33,6 +35,14 @@ public class Giocatore {
 
     public float getVita() {
         return vita;
+    }
+
+    public void setStatoCombattimento(int stato) {
+        statoCombattimento = stato%3;
+    }
+
+    public int getStatoCombattimento() {
+        return statoCombattimento;
     }
 
 }

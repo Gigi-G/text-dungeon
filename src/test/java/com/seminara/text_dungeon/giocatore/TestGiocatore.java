@@ -43,5 +43,30 @@ public class TestGiocatore {
             return false;
         }
     }
+
+    public static boolean testGetStatoCombattimento() {
+        Giocatore giocatore = Giocatore.getInstance();
+        if  (giocatore.getStatoCombattimento() == 0) {
+            System.out.println("TestGiocatore.testGetStatoCombattimento(): OK");
+            return true;
+        }
+        else {
+            System.out.println("TestGiocatore.testGetStatoCombattimento(): FAILED");
+            return false;
+        }
+    }
+
+    public static boolean testSetStatoCombattimento() {
+        Giocatore giocatore = Giocatore.getInstance();
+        giocatore.setStatoCombattimento(2);
+        if  (giocatore.getStatoCombattimento() == 2) {
+            System.out.println("TestGiocatore.testSetStatoCombattimento(): OK");
+            return true;
+        }
+        else {
+            System.out.println("TestGiocatore.testSetStatoCombattimento(): FAILED");
+            return false;
+        }
+    }
     
 }

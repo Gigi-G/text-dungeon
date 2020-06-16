@@ -79,4 +79,17 @@ public class TestStrega {
         }
     }
 
+    public static boolean testGetStatoCombattimentoStrega() {
+        Strega strega = new Strega();
+        int statoCombattimento = strega.getStatoCombattimento();
+        if(statoCombattimento >= 0 && statoCombattimento <= 2) {
+            System.out.println("TestStrega.testGetStatoCombattimentoStrega(): OK");
+            return true;
+        }
+        else {
+            System.out.println("TestStrega.testGetStatoCombattimentoStrega(): FAILED");
+            return false;
+        }
+    }
+
 }
