@@ -1,12 +1,12 @@
 package com.seminara.text_dungeon.nemico;
 
-import com.seminara.text_dungeon.stato_personaggio.Difesa;
+import com.seminara.text_dungeon.stato_personaggio.GeneraStato;
 
 public class TestNemico extends Nemico {
     
     public TestNemico() {
         tipo = "Test";
-        stato = new Difesa();
+        stato = GeneraStato.generaStato("2");
         vita = 200f;
         min = 10;
         max = 50;

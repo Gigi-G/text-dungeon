@@ -1,18 +1,14 @@
 package com.seminara.text_dungeon.nemico;
 
-import java.util.Map;
-import java.util.function.Supplier;
-
-import com.seminara.text_dungeon.stato_personaggio.*;
-import com.seminara.text_dungeon.stato_personaggio.StatoPersonaggio;
+import com.seminara.text_dungeon.stato_personaggio.GeneraStato;
+import com.seminara.text_dungeon.stato_personaggio.IStatoPersonaggio;
 
 public abstract class Nemico implements INemico {
     protected String tipo;
     protected float vita;
-    protected StatoPersonaggio stato;
     protected int min;
     protected int max;
-    protected Map <String, Supplier<StatoPersonaggio>> mapStato = Map.of("0", Attacco::new, "1", Assalto::new, "2", Difesa::new);
+    protected IStatoPersonaggio stato = GeneraStato.generaStato("0");
 
     @Override
     public String getNome() {
@@ -41,7 +37,7 @@ public abstract class Nemico implements INemico {
 
     @Override
     public void setStatoCombattimento() {
-        stato = mapStato.getOrDefault(String.valueOf(Math.round(Math.random()*2)), Attacco::new).get();
+        stato = GeneraStato.generaStato(String.valueOf(Math.round(Math.random()*2)));
     }
 
     @Override

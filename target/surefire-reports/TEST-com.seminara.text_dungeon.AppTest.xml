@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="16" failures="0" name="com.seminara.text_dungeon.AppTest" time="0.067" errors="0" skipped="0">
+<testsuite tests="16" failures="0" name="com.seminara.text_dungeon.AppTest" time="0.046" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="14.0.1+7-Ubuntu-1ubuntu1"/>
@@ -56,19 +56,19 @@
     <property name="sun.cpu.endian" value="little"/>
   </properties>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testAscia" time="0.007"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testBosco" time="0.012"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testSpada" time="0.002"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testGeneraArma" time="0.016"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testPietraBianca" time="0.005"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testGiocatore" time="0.006"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testBosco" time="0.009"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testSpada" time="0.001"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testGeneraArma" time="0.012"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testPietraBianca" time="0.001"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testGiocatore" time="0.003"/>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testPietraGrigia" time="0.001"/>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testChimera" time="0.001"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testCiclope" time="0.002"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testCiclope" time="0.003"/>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testMannaia" time="0.001"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testPietraNera" time="0.009"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testDeserto" time="0"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testGoblin" time="0"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testPietraNera" time="0"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testDeserto" time="0.002"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testGoblin" time="0.001"/>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testNemico" time="0.002"/>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testGeneraPietra" time="0.001"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testStrega" time="0.002"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testStrega" time="0.001"/>
 </testsuite>
