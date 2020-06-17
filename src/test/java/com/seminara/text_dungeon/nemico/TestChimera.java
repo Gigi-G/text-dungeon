@@ -66,15 +66,28 @@ public class TestChimera {
         }
     }
 
-    public static boolean testGetVitaChimera() {
+    public static boolean testGetVitaChimera1() {
         Chimera chimera = new Chimera();
         chimera.applicaDanno(200f);
         if(chimera.getVita() == 50f) {
-            System.out.println("TestChimera.testGetVitaChimera(): OK");
+            System.out.println("TestChimera.testGetVitaChimera1(): OK");
             return true;
         }
         else {
-            System.out.println("TestChimera.testGetVitaChimera(): FAILED");
+            System.out.println("TestChimera.testGetVitaChimera1(): FAILED");
+            return false;
+        }
+    }
+
+    public static boolean testGetVitaChimera2() {
+        Chimera chimera = new Chimera();
+        chimera.applicaDanno(251f);
+        if(chimera.getVita() == 0f) {
+            System.out.println("TestChimera.testGetVitaChimera2(): OK");
+            return true;
+        }
+        else {
+            System.out.println("TestChimera.testGetVitaChimera2(): FAILED");
             return false;
         }
     }

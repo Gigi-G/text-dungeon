@@ -66,15 +66,28 @@ public class TestCiclope {
         }
     }
 
-    public static boolean testGetVitaCiclope() {
+    public static boolean testGetVitaCiclope1() {
         Ciclope ciclope = new Ciclope();
         ciclope.applicaDanno(200f);
         if(ciclope.getVita() == 300f) {
-            System.out.println("TestCiclope.testGetVitaCiclope(): OK");
+            System.out.println("TestCiclope.testGetVitaCiclope1(): OK");
             return true;
         }
         else {
-            System.out.println("TestCiclope.testGetVitaCiclope(): FAILED");
+            System.out.println("TestCiclope.testGetVitaCiclope1(): FAILED");
+            return false;
+        }
+    }
+
+    public static boolean testGetVitaCiclope2() {
+        Ciclope ciclope = new Ciclope();
+        ciclope.applicaDanno(501f);
+        if(ciclope.getVita() == 0f) {
+            System.out.println("TestCiclope.testGetVitaCiclope2(): OK");
+            return true;
+        }
+        else {
+            System.out.println("TestCiclope.testGetVitaCiclope2(): FAILED");
             return false;
         }
     }

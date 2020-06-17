@@ -37,7 +37,7 @@ public class GeneraPietra {
         return (float) Math.random();
     }
 
-    public float getRand() { 
+    protected float getRand() { 
         return rand;
     }
 }

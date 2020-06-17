@@ -87,6 +87,7 @@ public class AppTest
         assertTrue( TestGeneraArma.testGetAscia() );
         assertTrue( TestGeneraArma.testGetMannaia() );
         assertTrue( TestGeneraArma.testGetSpada() );
+        assertTrue( TestGeneraArma.testGetDefault() );
         printFooter();
     }
 
@@ -109,7 +110,8 @@ public class AppTest
         assertTrue( TestNemico.testInfliggiDanno() );
         assertTrue( TestNemico.testApplicaDanno() );
         assertTrue( TestNemico.testNemico() );
-        assertTrue( TestNemico.testGetVita() );
+        assertTrue( TestNemico.testGetVita1() );
+        assertTrue( TestNemico.testGetVita2() );
         assertTrue( TestNemico.testIsSconfitto1() );
         assertTrue( TestNemico.testIsSconfitto2() );
         assertTrue( TestNemico.testGetStatoCombattimento() );
@@ -123,7 +125,8 @@ public class AppTest
         assertTrue( TestChimera.testAffliggiDannoChimera() );
         assertTrue( TestChimera.testApplicaDannoChimera() );
         assertTrue( TestChimera.testChimera() );
-        assertTrue( TestChimera.testGetVitaChimera() );
+        assertTrue( TestChimera.testGetVitaChimera1() );
+        assertTrue( TestChimera.testGetVitaChimera2() );
         assertTrue( TestChimera.testIsSconfittoChimera1() );
         assertTrue( TestChimera.testIsSconfittoChimera2() );
         assertTrue( TestChimera.testGetStatoCombattimentoChimera() );
@@ -136,7 +139,8 @@ public class AppTest
         assertTrue( TestCiclope.testAffliggiDannoCiclope() );
         assertTrue( TestCiclope.testApplicaDannoCiclope() );
         assertTrue( TestCiclope.testCiclope() );
-        assertTrue( TestCiclope.testGetVitaCiclope() );
+        assertTrue( TestCiclope.testGetVitaCiclope1() );
+        assertTrue( TestCiclope.testGetVitaCiclope2() );
         assertTrue( TestCiclope.testIsSconfittoCiclope1() );
         assertTrue( TestCiclope.testIsSconfittoCiclope2() );
         assertTrue( TestCiclope.testGetStatoCombattimentoCiclope() );
@@ -149,7 +153,8 @@ public class AppTest
         assertTrue( TestGoblin.testAffliggiDannoGoblin() );
         assertTrue( TestGoblin.testApplicaDannoGoblin() );
         assertTrue( TestGoblin.testGoblin() );
-        assertTrue( TestGoblin.testGetVitaGoblin() );
+        assertTrue( TestGoblin.testGetVitaGoblin1() );
+        assertTrue( TestGoblin.testGetVitaGoblin2() );
         assertTrue( TestGoblin.testIsSconfittoGoblin1() );
         assertTrue( TestGoblin.testIsSconfittoGoblin2() );
         assertTrue( TestGoblin.testGetStatoCombattimentoGoblin() );
@@ -162,7 +167,8 @@ public class AppTest
         assertTrue( TestStrega.testAffliggiDannoStrega() );
         assertTrue( TestStrega.testApplicaDannoStrega() );
         assertTrue( TestStrega.testStrega() );
-        assertTrue( TestStrega.testGetVitaStrega() );
+        assertTrue( TestStrega.testGetVitaStrega1() );
+        assertTrue( TestStrega.testGetVitaStrega2() );
         assertTrue( TestStrega.testIsSconfittoStrega1() );
         assertTrue( TestStrega.testIsSconfittoStrega2() );
         assertTrue( TestStrega.testGetStatoCombattimentoStrega() );

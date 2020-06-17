@@ -66,15 +66,28 @@ public class TestGoblin {
         }
     }
 
-    public static boolean testGetVitaGoblin() {
+    public static boolean testGetVitaGoblin1() {
         Goblin goblin = new Goblin();
         goblin.applicaDanno(30f);
         if(goblin.getVita() == 50f) {
-            System.out.println("TestGoblin.testGetVitaGoblin(): OK");
+            System.out.println("TestGoblin.testGetVitaGoblin1(): OK");
             return true;
         }
         else {
-            System.out.println("TestGoblin.testGetVitaGoblin(): FAILED");
+            System.out.println("TestGoblin.testGetVitaGoblin1(): FAILED");
+            return false;
+        }
+    }
+
+    public static boolean testGetVitaGoblin2() {
+        Goblin goblin = new Goblin();
+        goblin.applicaDanno(81f);
+        if(goblin.getVita() == 0f) {
+            System.out.println("TestGoblin.testGetVitaGoblin2(): OK");
+            return true;
+        }
+        else {
+            System.out.println("TestGoblin.testGetVitaGoblin2(): FAILED");
             return false;
         }
     }

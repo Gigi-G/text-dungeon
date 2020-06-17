@@ -28,11 +28,11 @@ public class TestNemico extends Nemico {
         TestNemico nemico = new TestNemico();
         nemico.applicaDanno(50f);
         if(nemico.getVita() == 150f) {
-            System.out.println("TestTestNemico.testApplicaDanno(): OK");
+            System.out.println("TestNemico.testApplicaDanno(): OK");
             return true;
         }
         else {
-            System.out.println("TestTestNemico.testApplicaDanno(): FAILED");
+            System.out.println("TestNemico.testApplicaDanno(): FAILED");
             return false;
         }
     }
@@ -41,11 +41,11 @@ public class TestNemico extends Nemico {
         TestNemico nemico = new TestNemico();
         float danno = nemico.infliggiDanno();
         if(danno >= 5f && danno <= 50f) {
-            System.out.println("TestTestNemico.testInfliggiDanno(): OK");
+            System.out.println("TestNemico.testInfliggiDanno(): OK");
             return true;
         }
         else {
-            System.out.println("TestTestNemico.testInfliggiDanno(): FAILED");
+            System.out.println("TestNemico.testInfliggiDanno(): FAILED");
             return false;
         }
     }
@@ -54,11 +54,11 @@ public class TestNemico extends Nemico {
         TestNemico nemico = new TestNemico();
         nemico.applicaDanno(200f);
         if(nemico.isSconfitto()) {
-            System.out.println("TestTestNemico.testIsSconfitto1(): OK");
+            System.out.println("TestNemico.testIsSconfitto1(): OK");
             return true;
         }
         else {
-            System.out.println("TestTestNemico.testIsSconfitto1(): FAILED");
+            System.out.println("TestNemico.testIsSconfitto1(): FAILED");
             return false;
         }
     }
@@ -67,24 +67,37 @@ public class TestNemico extends Nemico {
         TestNemico nemico = new TestNemico();
         nemico.applicaDanno(199f);
         if(!nemico.isSconfitto()) {
-            System.out.println("TestTestNemico.testIsSconfitto2(): OK");
+            System.out.println("TestNemico.testIsSconfitto2(): OK");
             return true;
         }
         else {
-            System.out.println("TestTestNemico.testIsSconfitto2(): FAILED");
+            System.out.println("TestNemico.testIsSconfitto2(): FAILED");
             return false;
         }
     }
 
-    public static boolean testGetVita() {
+    public static boolean testGetVita1() {
         TestNemico nemico = new TestNemico();
         nemico.applicaDanno(100f);
         if(nemico.getVita() == 100f) {
-            System.out.println("TestTestNemico.testGetVita(): OK");
+            System.out.println("TestNemico.testGetVita1(): OK");
             return true;
         }
         else {
-            System.out.println("TestTestNemico.testGetVita(): FAILED");
+            System.out.println("TestNemico.testGetVita1(): FAILED");
+            return false;
+        }
+    }
+
+    public static boolean testGetVita2() {
+        TestNemico nemico = new TestNemico();
+        nemico.applicaDanno(201f);
+        if(nemico.getVita() == 0f) {
+            System.out.println("TestNemico.testGetVita2(): OK");
+            return true;
+        }
+        else {
+            System.out.println("TestNemico.testGetVita2(): FAILED");
             return false;
         }
     }
@@ -92,11 +105,11 @@ public class TestNemico extends Nemico {
     public static boolean testGetStatoCombattimento() {
         TestNemico nemico = new TestNemico();
         if(nemico.getStatoCombattimento().equals("Difesa")) {
-            System.out.println("TestTestNemico.testGetStatoCombattimento(): OK");
+            System.out.println("TestNemico.testGetStatoCombattimento(): OK");
             return true;
         }
         else {
-            System.out.println("TestTestNemico.testGetStatoCombattimento(): FAILED");
+            System.out.println("TestNemico.testGetStatoCombattimento(): FAILED");
             return false;
         }
     }
@@ -105,11 +118,11 @@ public class TestNemico extends Nemico {
         TestNemico nemico = new TestNemico();
         nemico.setStatoCombattimento();
         if(nemico.getStatoCombattimento().equals("Assalto") || nemico.getStatoCombattimento().equals("Difesa") || nemico.getStatoCombattimento().equals("Attacco")) {
-            System.out.println("TestTestNemico.testSetStatoCombattimento(): OK");
+            System.out.println("TestNemico.testSetStatoCombattimento(): OK");
             return true;
         }
         else {
-            System.out.println("TestTestNemico.testSetStatoCombattimento(): FAILED");
+            System.out.println("TestNemico.testSetStatoCombattimento(): FAILED");
             return false;
         }
     }

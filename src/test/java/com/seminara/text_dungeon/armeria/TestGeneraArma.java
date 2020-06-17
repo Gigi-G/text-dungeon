@@ -38,4 +38,15 @@ public class TestGeneraArma {
         }
     }
     
+    public static boolean testGetDefault() {
+        IArma arma = GeneraArma.getInstance().getArma(132465);
+        if(arma.getTipo().contains("Ascia")) {
+            System.out.println("TestGeneraArma.testGetSpada(): OK");
+            return true;
+        }
+        else {
+            System.out.println("TestGeneraArma.testGetSpada(): FAILED");
+            return false;
+        }
+    }
 }

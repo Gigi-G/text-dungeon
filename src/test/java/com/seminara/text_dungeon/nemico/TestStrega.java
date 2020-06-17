@@ -66,15 +66,28 @@ public class TestStrega {
         }
     }
 
-    public static boolean testGetVitaStrega() {
+    public static boolean testGetVitaStrega1() {
         Strega strega = new Strega();
         strega.applicaDanno(400f);
         if(strega.getVita() == 50f) {
-            System.out.println("TestStrega.testGetVitaStrega(): OK");
+            System.out.println("TestStrega.testGetVitaStrega1(): OK");
             return true;
         }
         else {
-            System.out.println("TestStrega.testGetVitaStrega(): FAILED");
+            System.out.println("TestStrega.testGetVitaStrega1(): FAILED");
+            return false;
+        }
+    }
+
+    public static boolean testGetVitaStrega2() {
+        Strega strega = new Strega();
+        strega.applicaDanno(451f);
+        if(strega.getVita() == 0f) {
+            System.out.println("TestStrega.testGetVitaStrega2(): OK");
+            return true;
+        }
+        else {
+            System.out.println("TestStrega.testGetVitaStrega2(): FAILED");
             return false;
         }
     }

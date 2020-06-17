@@ -34,8 +34,8 @@ public class TestGiocatore {
 
     public static boolean testIsSconfitto1() {
         Giocatore giocatore = Giocatore.getInstance();
-        giocatore.applicaDanno(350);
-        if  (giocatore.isSconfitto()) {
+        giocatore.applicaDanno(350f);
+        if  (giocatore.isSconfitto() && giocatore.getVita() == 0f) {
             System.out.println("TestGiocatore.testIsSconfitto1(): OK");
             return true;
         }
