@@ -1,17 +1,17 @@
 package com.seminara.text_dungeon.partita;
 
-public class Livello2 implements IGameState {
+public class End implements IGameState {
 
     @Override
     public boolean play(Game game, Partita partita) {
-        printInfo();
-        partita.startDungeonDeserto();
+        printCredits();
         return false;
     }
 
-    private void printInfo() {
+    private void printCredits() {
         System.out.println();
-        System.out.println("Livello 2:");
+        System.out.println("Grazie per aver giocato!");
+        System.out.println("Design by Luigi Seminara");
         System.out.println();
     }
     

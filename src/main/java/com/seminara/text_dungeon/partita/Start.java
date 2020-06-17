@@ -4,21 +4,22 @@ public class Start implements IGameState {
 
     @Override
     public boolean play(Game game, Partita partita) {
-        printBenvenuto();
+        printGameName();
         printMenu();
-        game.setStato("0");
         return true;
     }
 
-    private void printBenvenuto() {
-        System.out.println("Benvenuto/a su text_dungeon!\n");
+    private void printGameName() {
+        System.out.println("Text_dungeon");
     }
 
     private void printMenu() {
+        System.out.println();
         System.out.println("Cosa vuoi fare?");
         System.out.println("1 - Regole");
         System.out.println("2 - Gioca livello 1");
         System.out.println("3 - Gioca livello 2");
+        System.out.println("q - Esci dal gioco");
         System.out.println();
     }
     
