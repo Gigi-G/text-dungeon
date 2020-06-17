@@ -21,8 +21,8 @@ import com.seminara.text_dungeon.stato_personaggio.IStatoPersonaggio;
 <span class="fc" id="L21">    }</span>
 
     @Override
-    public float affliggiDanno() {
-<span class="fc" id="L25">        return stato.affliggiDanno((float) Math.random()*(max-min+1) + min);</span>
+    public float infliggiDanno() {
+<span class="fc" id="L25">        return stato.infliggiDanno((float) Math.random()*(max-min+1) + min);</span>
     }
 
     @Override
@@ -32,7 +32,7 @@ import com.seminara.text_dungeon.stato_personaggio.IStatoPersonaggio;
 
     @Override
     public float getVita() {
-<span class="fc" id="L35">        return vita;</span>
+<span class="pc bpc" id="L35" title="1 of 2 branches missed.">        return vita&lt;0f?0f:vita;</span>
     }
 
     @Override

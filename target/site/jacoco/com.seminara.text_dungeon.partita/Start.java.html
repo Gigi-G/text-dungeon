@@ -4,23 +4,24 @@
 
     @Override
     public boolean play(Game game, Partita partita) {
-<span class="nc" id="L7">        printBenvenuto();</span>
+<span class="nc" id="L7">        printGameName();</span>
 <span class="nc" id="L8">        printMenu();</span>
-<span class="nc" id="L9">        game.setStato(&quot;0&quot;);</span>
-<span class="nc" id="L10">        return true;</span>
+<span class="nc" id="L9">        return true;</span>
     }
 
-    private void printBenvenuto() {
-<span class="nc" id="L14">        System.out.println(&quot;Benvenuto/a su text_dungeon!\n&quot;);</span>
-<span class="nc" id="L15">    }</span>
+    private void printGameName() {
+<span class="nc" id="L13">        System.out.println(&quot;Text_dungeon&quot;);</span>
+<span class="nc" id="L14">    }</span>
 
     private void printMenu() {
+<span class="nc" id="L17">        System.out.println();</span>
 <span class="nc" id="L18">        System.out.println(&quot;Cosa vuoi fare?&quot;);</span>
 <span class="nc" id="L19">        System.out.println(&quot;1 - Regole&quot;);</span>
 <span class="nc" id="L20">        System.out.println(&quot;2 - Gioca livello 1&quot;);</span>
 <span class="nc" id="L21">        System.out.println(&quot;3 - Gioca livello 2&quot;);</span>
-<span class="nc" id="L22">        System.out.println();</span>
-<span class="nc" id="L23">    }</span>
+<span class="nc" id="L22">        System.out.println(&quot;q - Esci dal gioco&quot;);</span>
+<span class="nc" id="L23">        System.out.println();</span>
+<span class="nc" id="L24">    }</span>
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

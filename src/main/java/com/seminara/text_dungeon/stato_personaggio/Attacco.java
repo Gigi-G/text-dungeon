@@ -8,7 +8,7 @@ public class Attacco implements IStatoPersonaggio {
     }
 
     @Override
-    public float affliggiDanno(float danno) {
+    public float infliggiDanno(float danno) {
         return danno;
     }
     

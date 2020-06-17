@@ -29,7 +29,7 @@ public class TestChimera {
 
     public static boolean testAffliggiDannoChimera() {
         Chimera chimera = new Chimera();
-        float danno = chimera.affliggiDanno();
+        float danno = chimera.infliggiDanno();
         if(danno >= 20f && danno <= 82f) {
             System.out.println("TestChimera.testAffliggiDannoChimera(): OK");
             return true;

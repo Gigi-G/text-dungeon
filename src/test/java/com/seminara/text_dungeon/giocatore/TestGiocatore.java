@@ -87,7 +87,7 @@ public class TestGiocatore {
         Giocatore giocatore = Giocatore.getInstance();
         giocatore.setArma(new Ascia(new PietraGrigia()));
         giocatore.setStatoCombattimento("1");
-        float danno = giocatore.affliggiDanno();
+        float danno = giocatore.infliggiDanno();
         if(danno >= 10f && danno <= 26f && giocatore.getStatoCombattimento().equals("Assalto")) {
             System.out.println("TestGiocatore.testAffliggiDanno(): OK");
             return true;

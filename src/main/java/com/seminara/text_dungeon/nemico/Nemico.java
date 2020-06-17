@@ -21,8 +21,8 @@ public abstract class Nemico implements INemico {
     }
 
     @Override
-    public float affliggiDanno() {
-        return stato.affliggiDanno((float) Math.random()*(max-min+1) + min);
+    public float infliggiDanno() {
+        return stato.infliggiDanno((float) Math.random()*(max-min+1) + min);
     }
 
     @Override

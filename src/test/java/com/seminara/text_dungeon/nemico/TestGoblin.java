@@ -29,7 +29,7 @@ public class TestGoblin {
 
     public static boolean testAffliggiDannoGoblin() {
         Goblin goblin = new Goblin();
-        float danno = goblin.affliggiDanno();
+        float danno = goblin.infliggiDanno();
         if(danno >= 5f && danno <= 22f) {
             System.out.println("TestGoblin.testAffliggiDannoGoblin(): OK");
             return true;

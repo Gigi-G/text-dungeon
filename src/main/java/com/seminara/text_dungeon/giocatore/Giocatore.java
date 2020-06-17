@@ -52,8 +52,8 @@ public class Giocatore {
         return stato.mostra();
     }
 
-    public float affliggiDanno() {
-        return stato.affliggiDanno(arma.getDanno());
+    public float infliggiDanno() {
+        return stato.infliggiDanno(arma.getDanno());
     }
 
 }

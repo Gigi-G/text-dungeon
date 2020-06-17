@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="it"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Battaglia.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">text_dungeon</a> &gt; <a href="index.source.html" class="el_package">com.seminara.text_dungeon.battaglia</a> &gt; <span class="el_source">Battaglia.java</span></div><h1>Battaglia.java</h1><pre class="source lang-java linenums">package com.seminara.text_dungeon.battaglia;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.List;
+import java.util.function.Function;
+
+import com.seminara.text_dungeon.giocatore.Giocatore;
+import com.seminara.text_dungeon.nemico.INemico;
+import com.seminara.text_dungeon.sfida.BattleSystem;
+
+public class Battaglia {
+    private BattleSystem battleSystem;
+    private Giocatore giocatore;
+<span class="nc" id="L16">    private final List &lt;Function&lt;INemico, String&gt;&gt; caseBattle = List.of( x -&gt; &quot;Pareggio&quot;, x -&gt; { x.applicaDanno(giocatore.infliggiDanno()); return &quot;Vittoria&quot;;}, x -&gt; {giocatore.applicaDanno(x.infliggiDanno()); return &quot;Sconfitta&quot;;} );</span>
+
+<span class="nc" id="L18">    public Battaglia() {</span>
+<span class="nc" id="L19">        battleSystem = new BattleSystem();</span>
+<span class="nc" id="L20">        giocatore = Giocatore.getInstance();</span>
+<span class="nc" id="L21">    }</span>
+
+    public String battaglia(INemico nemico) {
+<span class="nc" id="L24">        scegliPosizioneCombattimento();</span>
+<span class="nc" id="L25">        nemico.setStatoCombattimento();</span>
+<span class="nc" id="L26">        printPosizioniAttuali(nemico);</span>
+<span class="nc" id="L27">        int risultatoSfida = battleSystem.vincitoreSfida(giocatore.getStatoCombattimento(), nemico.getStatoCombattimento());</span>
+<span class="nc" id="L28">        return caseBattle.get(risultatoSfida).apply(nemico);</span>
+    }
+
+    private void scegliPosizioneCombattimento() {
+<span class="nc" id="L32">        printPosizioniDaCombattimento();</span>
+<span class="nc" id="L33">        posizioneGiocatore();</span>
+<span class="nc" id="L34">    }</span>
+
+    private void posizioneGiocatore() {
+        BufferedReader input;
+        try {
+<span class="nc" id="L39">            input = new BufferedReader(new InputStreamReader(System.in));</span>
+<span class="nc" id="L40">            String in = input.readLine();</span>
+<span class="nc bnc" id="L41" title="All 2 branches missed.">            if(in.length() &gt; 0) giocatore.setStatoCombattimento(String.valueOf(in.toCharArray()[0]));</span>
+<span class="nc" id="L42">            else giocatore.setStatoCombattimento(&quot;0&quot;);</span>
+<span class="nc" id="L43">        } catch (IOException io) {</span>
+<span class="nc" id="L44">            io.printStackTrace();</span>
+        }
+<span class="nc" id="L46">    }</span>
+
+    private void printPosizioniDaCombattimento() {
+<span class="nc" id="L49">        System.out.println();</span>
+<span class="nc" id="L50">        System.out.println(&quot;Scegli la posizione da combattimento:&quot;);</span>
+<span class="nc" id="L51">        System.out.println(&quot;0- Attacco&quot;);</span>
+<span class="nc" id="L52">        System.out.println(&quot;1- Assalto&quot;);</span>
+<span class="nc" id="L53">        System.out.println(&quot;2- Difesa&quot;);</span>
+<span class="nc" id="L54">        System.out.println();</span>
+<span class="nc" id="L55">    }</span>
+
+    private void printPosizioniAttuali(INemico nemico) {
+<span class="nc" id="L58">        System.out.println();</span>
+<span class="nc" id="L59">        System.out.println(&quot;Posizione Giocatore: &quot; + giocatore.getStatoCombattimento());</span>
+<span class="nc" id="L60">        System.out.println(&quot;Posizione &quot; + nemico.getNome() + &quot;: &quot; + nemico.getStatoCombattimento());</span>
+<span class="nc" id="L61">        System.out.println();</span>
+<span class="nc" id="L62">    }</span>
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

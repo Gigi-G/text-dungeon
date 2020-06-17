@@ -37,14 +37,15 @@ public class TestNemico extends Nemico {
         }
     }
 
-    public static boolean testAffliggiDanno() {
+    public static boolean testInfliggiDanno() {
         TestNemico nemico = new TestNemico();
-        if(nemico.affliggiDanno() == 0) {
-            System.out.println("TestTestNemico.testAffliggiDanno(): OK");
+        float danno = nemico.infliggiDanno();
+        if(danno >= 5f && danno <= 50f) {
+            System.out.println("TestTestNemico.testInfliggiDanno(): OK");
             return true;
         }
         else {
-            System.out.println("TestTestNemico.testAffliggiDanno(): FAILED");
+            System.out.println("TestTestNemico.testInfliggiDanno(): FAILED");
             return false;
         }
     }

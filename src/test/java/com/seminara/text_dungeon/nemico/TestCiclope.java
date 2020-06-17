@@ -29,7 +29,7 @@ public class TestCiclope {
 
     public static boolean testAffliggiDannoCiclope() {
         Ciclope ciclope = new Ciclope();
-        float danno = ciclope.affliggiDanno();
+        float danno = ciclope.infliggiDanno();
         if(danno >= 50f && danno <= 102f) {
             System.out.println("TestCiclope.testAffliggiDannoCiclope(): OK");
             return true;

@@ -29,7 +29,7 @@ public class TestStrega {
 
     public static boolean testAffliggiDannoStrega() {
         Strega strega = new Strega();
-        float danno = strega.affliggiDanno();
+        float danno = strega.infliggiDanno();
         if(danno >= 40f && danno <= 92f) {
             System.out.println("TestStrega.testAffliggiDannoStrega(): OK");
             return true;

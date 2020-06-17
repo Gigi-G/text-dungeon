@@ -5,104 +5,135 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import com.seminara.text_dungeon.armeria.GeneraArma;
+import com.seminara.text_dungeon.armeria.IArma;
+import com.seminara.text_dungeon.battaglia.Battaglia;
 import com.seminara.text_dungeon.dungeon.*;
 import com.seminara.text_dungeon.giocatore.Giocatore;
 import com.seminara.text_dungeon.nemico.INemico;
-import com.seminara.text_dungeon.sfida.Battaglia;
 
 public class Partita {
     private Giocatore giocatore;
     private Dungeon dungeon;
     private INemico nemico;
     private GeneraArma generaArma;
+    private Battaglia lotta;
     private BufferedReader input;
-    private Battaglia battaglia;
+<span class="nc" id="L21">    String risultato = &quot;&quot;;</span>
 
-<span class="nc" id="L21">    public Partita() {</span>
-<span class="nc" id="L22">        giocatore = Giocatore.getInstance();</span>
-<span class="nc" id="L23">        generaArma = GeneraArma.getInstance();</span>
-<span class="nc" id="L24">        battaglia = new Battaglia();</span>
-<span class="nc" id="L25">    }</span>
+<span class="nc" id="L23">    public Partita() {</span>
+<span class="nc" id="L24">        giocatore = Giocatore.getInstance();</span>
+<span class="nc" id="L25">        generaArma = GeneraArma.getInstance();</span>
+<span class="nc" id="L26">        lotta = new Battaglia();</span>
+<span class="nc" id="L27">    }</span>
 
-    public boolean startDungeonBosco() {
-<span class="nc" id="L28">        dungeon = new Bosco();</span>
-<span class="nc" id="L29">        return startAvventura();</span>
+    public String startDungeonBosco() {
+<span class="nc" id="L30">        dungeon = new Bosco();</span>
+<span class="nc" id="L31">        startAvventura();</span>
+<span class="nc" id="L32">        return risultato;</span>
     }
 
-    public boolean startDungeonDeserto() {
-<span class="nc" id="L33">        dungeon = new Deserto();</span>
-<span class="nc" id="L34">        return startAvventura();</span>
+    public String startDungeonDeserto() {
+<span class="nc" id="L36">        dungeon = new Deserto();</span>
+<span class="nc" id="L37">        startAvventura();</span>
+<span class="nc" id="L38">        return risultato;</span>
     }
 
-    private boolean startAvventura() {
-<span class="nc" id="L38">        scegliArma();</span>
-        do {
-<span class="nc" id="L40">            nextLevel();</span>
-<span class="nc" id="L41">            printLevel();</span>
-<span class="nc" id="L42">            printVita();</span>
-<span class="nc bnc" id="L43" title="All 4 branches missed.">        } while(lotta() &amp;&amp; !giocatore.isSconfitto());</span>
-<span class="nc" id="L44">        return giocatore.isSconfitto();</span>
+    private void startAvventura() {
+<span class="nc" id="L42">        scegliArma();</span>
+<span class="nc" id="L43">        nextLevel();</span>
+<span class="nc" id="L44">        printLevel();</span>
+<span class="nc" id="L45">        avventura();</span>
+<span class="nc" id="L46">    }</span>
+
+    private void avventura() {
+<span class="nc bnc" id="L49" title="All 4 branches missed.">        while(lotta() &amp;&amp; !giocatore.isSconfitto()) {</span>
+<span class="nc" id="L50">            generaArma();</span>
+<span class="nc" id="L51">            printLevel();</span>
+        }
+<span class="nc" id="L53">    }</span>
+
+    private boolean lotta() {
+<span class="nc bnc" id="L56" title="All 4 branches missed.">        while(!nemico.isSconfitto() &amp;&amp; !giocatore.isSconfitto()) {</span>
+<span class="nc" id="L57">            risultato = lotta.battaglia(nemico);</span>
+<span class="nc" id="L58">            printVita();</span>
+        }
+<span class="nc" id="L60">        nextLevel();</span>
+<span class="nc bnc" id="L61" title="All 2 branches missed.">        return null!=nemico;</span>
     }
 
     private void scegliArma() {
-<span class="nc" id="L48">        System.out.println(&quot;\nScegli la tua arma:\n0- Ascia \n1- Mannaia \n2- Spada&quot;);</span>
+<span class="nc" id="L65">        printScegliArma();</span>
         try {
-<span class="nc" id="L50">            input = new BufferedReader(new InputStreamReader(System.in));</span>
-<span class="nc" id="L51">            giocatore.setArma(generaArma.getArma(Integer.parseInt(input.readLine().substring(0, 1))));</span>
-<span class="nc" id="L52">        } catch (IOException io) {</span>
-<span class="nc" id="L53">            giocatore.setArma(generaArma.getArma(0));</span>
-<span class="nc" id="L54">        }</span>
-<span class="nc" id="L55">    }</span>
+<span class="nc" id="L67">            input = new BufferedReader(new InputStreamReader(System.in));</span>
+<span class="nc" id="L68">            String in = input.readLine();</span>
+<span class="nc bnc" id="L69" title="All 2 branches missed.">            if(in.length() &gt; 0) giocatore.setArma(generaArma.getArma(Integer.parseInt(String.valueOf(in.toCharArray()[0]))));</span>
+<span class="nc" id="L70">            else giocatore.setArma(generaArma.getArma(0));</span>
+<span class="nc" id="L71">        } catch (IOException io) {</span>
+<span class="nc" id="L72">            io.printStackTrace();</span>
+        }
+<span class="nc" id="L74">    }</span>
     
     private void nextLevel() {
-<span class="nc" id="L58">        nemico = dungeon.esplora();</span>
-<span class="nc" id="L59">        printLevel();</span>
-<span class="nc" id="L60">    }</span>
+<span class="nc" id="L77">        nemico = dungeon.esplora();</span>
+<span class="nc" id="L78">    }</span>
 
-    private boolean lotta() {
-<span class="nc bnc" id="L63" title="All 4 branches missed.">        while(!nemico.isSconfitto() &amp;&amp; !giocatore.isSconfitto()) {</span>
-            try {
-<span class="nc" id="L65">                input = new BufferedReader(new InputStreamReader(System.in));</span>
-<span class="nc" id="L66">                giocatore.setStatoCombattimento(input.readLine().substring(0, 1));</span>
-<span class="nc" id="L67">            } catch (IOException io) {</span>
-<span class="nc" id="L68">                giocatore.setStatoCombattimento(&quot;0&quot;);</span>
-<span class="nc" id="L69">            }</span>
-<span class="nc" id="L70">            nemico.setStatoCombattimento();</span>
-<span class="nc" id="L71">            int r = battaglia.vincitoreSfida(giocatore.getStatoCombattimento(), nemico.getStatoCombattimento());</span>
-<span class="nc bnc" id="L72" title="All 2 branches missed.">            if  (r == 1) {</span>
-<span class="nc" id="L73">                nemico.applicaDanno(giocatore.affliggiDanno());</span>
+    private void generaArma() {
+<span class="nc" id="L81">        IArma arma = generaArma.getArma(numeroRandom());</span>
+<span class="nc" id="L82">        confrontoArmi(arma);</span>
+<span class="nc" id="L83">        System.out.println(&quot;Vuoi cambiare arma: y/[N]? &quot;);</span>
+<span class="nc" id="L84">        input = new BufferedReader(new InputStreamReader(System.in));</span>
+        try {
+<span class="nc" id="L86">            String in = input.readLine();</span>
+<span class="nc" id="L87">            in = String.valueOf(in.toCharArray()[0]);</span>
+<span class="nc bnc" id="L88" title="All 4 branches missed.">            if(in.length() &gt; 0 &amp;&amp; in.equalsIgnoreCase(&quot;Y&quot;)) {</span>
+<span class="nc" id="L89">                giocatore.setArma(arma);</span>
+<span class="nc" id="L90">                System.out.println(&quot;Hai cambiato arma!&quot;);</span>
             }
-<span class="nc bnc" id="L75" title="All 2 branches missed.">            else if(r == 2) {</span>
-<span class="nc" id="L76">                giocatore.applicaDanno(nemico.affliggiDanno());</span>
-            }
-<span class="nc" id="L78">            risultatoLotta();</span>
-<span class="nc" id="L79">        }</span>
-<span class="nc" id="L80">        return nemico.isSconfitto();</span>
+<span class="nc" id="L92">        } catch (IOException io) {</span>
+<span class="nc" id="L93">            io.printStackTrace();</span>
+        }
+<span class="nc" id="L95">    }</span>
+
+    private void confrontoArmi(IArma arma) {
+<span class="nc" id="L98">        System.out.println(&quot;Nuova arma trovata: &quot;);</span>
+<span class="nc" id="L99">        printArma(arma);</span>
+<span class="nc" id="L100">        System.out.println(&quot;Vecchia arma:&quot;);</span>
+<span class="nc" id="L101">        printArma(giocatore.getArma());</span>
+<span class="nc" id="L102">    }</span>
+
+    private int numeroRandom() {
+<span class="nc" id="L105">        return Math.round((float) Math.random()*2);</span>
     }
 
     private void printLevel() {
-<span class="nc" id="L84">        System.out.println(&quot;\nLivello: &quot; + dungeon.getLivello());</span>
-<span class="nc" id="L85">        System.out.println(&quot;Nemico: &quot; + nemico.getNome());</span>
-<span class="nc" id="L86">        printArmaGiocatore();</span>
-<span class="nc" id="L87">        System.out.println();</span>
-<span class="nc" id="L88">    }</span>
+<span class="nc" id="L109">        System.out.println();</span>
+<span class="nc" id="L110">        System.out.println(&quot;Livello: &quot; + dungeon.getLivello());</span>
+<span class="nc" id="L111">        System.out.println(&quot;Nemico: &quot; + nemico.getNome());</span>
+<span class="nc" id="L112">        printArma(giocatore.getArma());</span>
+<span class="nc" id="L113">        printVita();</span>
+<span class="nc" id="L114">        System.out.println();</span>
+<span class="nc" id="L115">    }</span>
 
-    private void printArmaGiocatore() {
-<span class="nc" id="L91">        System.out.println(&quot;\nArma Giocatore: &quot; + giocatore.getArma().getTipo());</span>
-<span class="nc" id="L92">        System.out.println();</span>
-<span class="nc" id="L93">    }</span>
+    private void printArma(IArma arma) {
+<span class="nc" id="L118">        System.out.println();</span>
+<span class="nc" id="L119">        System.out.println(&quot;Tipo: &quot; + arma.getTipo());</span>
+<span class="nc" id="L120">        System.out.println(&quot;Danno: &quot; + arma.getDanno());;</span>
+<span class="nc" id="L121">        System.out.println();</span>
+<span class="nc" id="L122">    }</span>
 
     private void printVita() {
-<span class="nc" id="L96">        System.out.println(&quot;\nVita Giocatore: &quot; + giocatore.getVita());</span>
-<span class="nc" id="L97">        System.out.println(&quot;Vita Nemico: &quot; + nemico.getVita());</span>
-<span class="nc" id="L98">        System.out.println();</span>
-<span class="nc" id="L99">    }</span>
+<span class="nc" id="L125">        System.out.println(&quot;Vita Giocatore: &quot; + giocatore.getVita());</span>
+<span class="nc" id="L126">        System.out.println(&quot;Vita Nemico: &quot; + nemico.getVita());</span>
+<span class="nc" id="L127">        System.out.println();</span>
+<span class="nc" id="L128">    }</span>
 
-    private void risultatoLotta() {
-<span class="nc" id="L102">        System.out.println(&quot;\nStato combattimento Giocatore: &quot; + giocatore.getStatoCombattimento());</span>
-<span class="nc" id="L103">        System.out.println(&quot;Stato combattimento Nemico: &quot; + nemico.getStatoCombattimento());</span>
-<span class="nc" id="L104">        printVita();</span>
-<span class="nc" id="L105">        System.out.println();</span>
-<span class="nc" id="L106">    }</span>
+    private void printScegliArma() {
+<span class="nc" id="L131">        System.out.println();</span>
+<span class="nc" id="L132">        System.out.println(&quot;Scegli la tua arma:&quot;);</span>
+<span class="nc" id="L133">        System.out.println(&quot;0- Ascia&quot;);</span>
+<span class="nc" id="L134">        System.out.println(&quot;1- Mannaia&quot;);</span>
+<span class="nc" id="L135">        System.out.println(&quot;2- Spada&quot;);</span>
+<span class="nc" id="L136">        System.out.println();</span>
+<span class="nc" id="L137">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

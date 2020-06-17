@@ -8,8 +8,8 @@ public class Difesa implements IStatoPersonaggio {
     }
 
     @Override
-    public float affliggiDanno(float danno) {
-        return danno*(float) Math.random() * (2f - 0.5f) + 0.5f;
+    public float infliggiDanno(float danno) {
+        return danno/((float) Math.random() * 2 + 1);
     }
     
 }

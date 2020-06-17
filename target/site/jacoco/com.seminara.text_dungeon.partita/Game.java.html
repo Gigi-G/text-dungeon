@@ -5,7 +5,7 @@ import java.util.function.Supplier;
 
 public class Game {
     private IGameState stato;
-<span class="nc" id="L8">    private Map &lt;String, Supplier&lt;IGameState&gt;&gt; map = Map.of(&quot;1&quot;, Regole::new, &quot;2&quot;, Livello1::new, &quot;3&quot;, Livello2::new);</span>
+<span class="nc" id="L8">    private Map &lt;String, Supplier&lt;IGameState&gt;&gt; map = Map.of(&quot;1&quot;, Regole::new, &quot;2&quot;, Livello1::new, &quot;3&quot;, Livello2::new, &quot;q&quot;, End::new, &quot;Vittoria&quot;, Vittoria::new, &quot;Sconfitta&quot;, Sconfitta::new);</span>
     private Partita partita;
 
 <span class="nc" id="L11">    public Game() {</span>

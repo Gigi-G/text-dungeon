@@ -4,9 +4,16 @@
 
     @Override
     public boolean play(Game game, Partita partita) {
-<span class="nc" id="L7">        System.out.println(&quot;Livello2&quot;);</span>
-<span class="nc" id="L8">        return false;</span>
+<span class="nc" id="L7">        printInfo();</span>
+<span class="nc" id="L8">        game.setStato(partita.startDungeonDeserto());</span>
+<span class="nc" id="L9">        return game.gioca();</span>
     }
+
+    private void printInfo() {
+<span class="nc" id="L13">        System.out.println();</span>
+<span class="nc" id="L14">        System.out.println(&quot;Livello 2:&quot;);</span>
+<span class="nc" id="L15">        System.out.println();</span>
+<span class="nc" id="L16">    }</span>
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

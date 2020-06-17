@@ -106,7 +106,7 @@ public class AppTest
     @Test
     public void testNemico() {
         printHeader(TestNemico.class.getName());
-        assertTrue( TestNemico.testAffliggiDanno() );
+        assertTrue( TestNemico.testInfliggiDanno() );
         assertTrue( TestNemico.testApplicaDanno() );
         assertTrue( TestNemico.testNemico() );
         assertTrue( TestNemico.testGetVita() );

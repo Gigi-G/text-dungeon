@@ -13,7 +13,7 @@ import com.seminara.text_dungeon.sfida.BattleSystem;
 public class Battaglia {
     private BattleSystem battleSystem;
     private Giocatore giocatore;
-    private final List <Function<INemico, String>> caseBattle = List.of( x -> "Pareggio", x -> { x.applicaDanno(giocatore.affliggiDanno()); return "Vittoria";}, x -> {giocatore.applicaDanno(x.affliggiDanno()); return "Sconfitta";} );
+    private final List <Function<INemico, String>> caseBattle = List.of( x -> "Pareggio", x -> { x.applicaDanno(giocatore.infliggiDanno()); return "Vittoria";}, x -> {giocatore.applicaDanno(x.infliggiDanno()); return "Sconfitta";} );
 
     public Battaglia() {
         battleSystem = new BattleSystem();
