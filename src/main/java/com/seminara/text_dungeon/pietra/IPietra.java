@@ -1,6 +1,6 @@
 package com.seminara.text_dungeon.pietra;
 
-public interface Pietra {
+public interface IPietra {
     public String getTipo();
     public float moltiplicatoreDanno();
 }

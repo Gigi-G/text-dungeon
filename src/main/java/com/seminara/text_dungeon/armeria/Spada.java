@@ -3,7 +3,7 @@ import com.seminara.text_dungeon.pietra.*;
 
 public class Spada extends Arma {
     
-    public Spada(Pietra p) {
+    public Spada(IPietra p) {
         pietra = p;
         maxDanno = 60;
         minDanno = 5;

@@ -1,6 +1,6 @@
 package com.seminara.text_dungeon.pietra;
 
-public class PietraNera implements Pietra {
+public class PietraNera implements IPietra {
 
     @Override
     public String getTipo() {

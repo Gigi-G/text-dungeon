@@ -6,7 +6,7 @@ import java.util.function.Function;
 
 public class GeneraArma {
     private GeneraPietra generapietra;
-    private final Map<Integer, Function<Pietra, IArma>> genera;
+    private final Map<Integer, Function<IPietra, IArma>> genera;
     private static GeneraArma instance;
 
     private GeneraArma() {

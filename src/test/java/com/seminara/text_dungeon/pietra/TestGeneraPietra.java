@@ -3,7 +3,7 @@ package com.seminara.text_dungeon.pietra;
 public class TestGeneraPietra {
 
     public static boolean testGetPietra() {
-        Pietra pietra = GeneraPietra.getInstance().getPietra();
+        IPietra pietra = GeneraPietra.getInstance().getPietra();
         float rand = GeneraPietra.getInstance().getRand();
         if  ((rand >= 0f && rand <= 0.74f) && pietra.getTipo() == "Pietra Grigia") {
             System.out.println("TestGeneraPietra.testGetPietra(): OK");

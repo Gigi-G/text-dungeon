@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.function.Function;
 
 public class GeneraPietra {
-    private List<Function<Float, Pietra>> genera; 
-    private Pietra pietra;
+    private List<Function<Float, IPietra>> genera; 
+    private IPietra pietra;
     private float rand;
     private static GeneraPietra instance;
     
@@ -20,12 +20,12 @@ public class GeneraPietra {
         return instance;
     }
 
-    public Pietra getPietra() {
+    public IPietra getPietra() {
         rand = calcolaProbabilita();
         
         genera.parallelStream()
                 .forEach(x -> {
-                    Pietra p = x.apply(rand);
+                    IPietra p = x.apply(rand);
                     if  (null != p) 
                         pietra = p;
                 });

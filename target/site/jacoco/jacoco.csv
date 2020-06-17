@@ -19,7 +19,7 @@ text_dungeon,com.seminara.text_dungeon.stato_personaggio,Attacco,0,7,0,0,0,3,0,3
 text_dungeon,com.seminara.text_dungeon.pietra,PietraBianca,0,20,0,4,0,6,0,6,0,4
 text_dungeon,com.seminara.text_dungeon.pietra,PietraNera,0,20,0,4,0,6,0,6,0,4
 text_dungeon,com.seminara.text_dungeon.pietra,PietraGrigia,0,7,0,0,0,3,0,3,0,3
-text_dungeon,com.seminara.text_dungeon.pietra,GeneraPietra,0,99,2,14,0,17,2,15,0,9
+text_dungeon,com.seminara.text_dungeon.pietra,GeneraPietra,4,95,3,13,0,17,3,14,0,9
 text_dungeon,com.seminara.text_dungeon,App,35,0,2,0,11,0,3,0,2,0
 text_dungeon,com.seminara.text_dungeon.nemico,Chimera,0,20,0,0,0,7,0,1,0,1
 text_dungeon,com.seminara.text_dungeon.nemico,Nemico,15,57,0,2,2,9,1,8,1,7

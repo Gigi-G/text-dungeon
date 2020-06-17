@@ -4,14 +4,14 @@ import java.util.List;
 import java.util.function.Function;
 
 public class GeneraPietra {
-    private List&lt;Function&lt;Float, Pietra&gt;&gt; genera; 
-    private Pietra pietra;
+    private List&lt;Function&lt;Float, IPietra&gt;&gt; genera; 
+    private IPietra pietra;
     private float rand;
     private static GeneraPietra instance;
     
 <span class="fc" id="L12">    private GeneraPietra() {</span>
 <span class="pc bpc" id="L13" title="1 of 4 branches missed.">        genera = List.of( x -&gt; (x &gt;= 0f &amp;&amp; x &lt;= 0.74f)?new PietraGrigia():null, </span>
-<span class="fc bfc" id="L14" title="All 4 branches covered.">                                x -&gt; (x &gt;= 0.75f &amp;&amp; x &lt;= 0.89f)?new PietraBianca():null, </span>
+<span class="pc bpc" id="L14" title="1 of 4 branches missed.">                                x -&gt; (x &gt;= 0.75f &amp;&amp; x &lt;= 0.89f)?new PietraBianca():null, </span>
 <span class="pc bpc" id="L15" title="1 of 4 branches missed.">                                x -&gt; (x &gt;= 0.90f &amp;&amp; x &lt;= 1.0f)?new PietraNera():null);</span>
 <span class="fc" id="L16">    }</span>
 
@@ -20,12 +20,12 @@ public class GeneraPietra {
 <span class="fc" id="L20">        return instance;</span>
     }
 
-    public Pietra getPietra() {
+    public IPietra getPietra() {
 <span class="fc" id="L24">        rand = calcolaProbabilita();</span>
         
 <span class="fc" id="L26">        genera.parallelStream()</span>
 <span class="fc" id="L27">                .forEach(x -&gt; {</span>
-<span class="fc" id="L28">                    Pietra p = x.apply(rand);</span>
+<span class="fc" id="L28">                    IPietra p = x.apply(rand);</span>
 <span class="fc bfc" id="L29" title="All 2 branches covered.">                    if  (null != p) </span>
 <span class="fc" id="L30">                        pietra = p;</span>
 <span class="fc" id="L31">                });</span>

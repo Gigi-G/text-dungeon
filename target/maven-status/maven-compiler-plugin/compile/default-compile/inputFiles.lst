@@ -11,8 +11,8 @@
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/partita/Livello1.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/stato_personaggio/Difesa.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/armeria/Spada.java
+/home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/pietra/IPietra.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/armeria/Arma.java
-/home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/pietra/Pietra.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/stato_personaggio/Assalto.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/pietra/PietraGrigia.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/nemico/Chimera.java
