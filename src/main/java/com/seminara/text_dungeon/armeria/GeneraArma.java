@@ -6,7 +6,7 @@ import java.util.function.Function;
 
 public class GeneraArma {
     private GeneraPietra generapietra;
-    private final Map<Integer, Function<Pietra, Arma>> genera;
+    private final Map<Integer, Function<Pietra, IArma>> genera;
     private static GeneraArma instance;
 
     private GeneraArma() {
@@ -19,7 +19,7 @@ public class GeneraArma {
         return instance;
     }
 
-    public Arma getArma(int i) {
+    public IArma getArma(int i) {
         return genera.get(i).apply(generapietra.getPietra());
     }
 

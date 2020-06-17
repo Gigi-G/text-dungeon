@@ -11,7 +11,7 @@ import com.seminara.text_dungeon.stato_personaggio.StatoPersonaggio;
 
 public class Giocatore {
     private float vita;
-    private Arma arma;
+    private IArma arma;
     private StatoPersonaggio stato;
     private Map <String, Supplier<StatoPersonaggio>> mapStato = Map.of("0", Attacco::new, "1", Assalto::new, "2", Difesa::new);
     private static Giocatore instance;
@@ -34,11 +34,11 @@ public class Giocatore {
         vita -= danno;
     }
 
-    public void setArma(Arma arma) {
+    public void setArma(IArma arma) {
         this.arma = arma;
     }
 
-    public Arma getArma() {
+    public IArma getArma() {
         return arma;
     }
 
