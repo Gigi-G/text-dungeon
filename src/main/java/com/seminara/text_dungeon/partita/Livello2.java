@@ -5,8 +5,8 @@ public class Livello2 implements IGameState {
     @Override
     public boolean play(Game game, Partita partita) {
         printInfo();
-        partita.startDungeonDeserto();
-        return false;
+        game.setStato(partita.startDungeonDeserto());
+        return game.gioca();
     }
 
     private void printInfo() {

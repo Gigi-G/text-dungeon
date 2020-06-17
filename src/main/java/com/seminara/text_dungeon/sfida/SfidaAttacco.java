@@ -14,12 +14,12 @@ public class SfidaAttacco implements ISfida {
 
     @Override
     public int getRisultato(SfidaAssalto sfidaAssalto) {
-        return 1;
+        return 2;
     }
 
     @Override
     public int getRisultato(SfidaDifesa sfidaDifesa) {
-        return 2;
+        return 1;
     }
     
 }

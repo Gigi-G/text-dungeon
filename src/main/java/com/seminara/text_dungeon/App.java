@@ -16,7 +16,8 @@ public class App
         while(gioco.gioca()) {
             try {
                 input = new BufferedReader(new InputStreamReader(System.in));
-                gioco.setStato(input.readLine());
+                String in = input.readLine();
+                if(in.length() > 0) gioco.setStato(String.valueOf(in.toCharArray()[0]).toLowerCase());
             } catch (IOException io) {
                 gioco.setStato("0");
             }

@@ -9,7 +9,7 @@ public class SfidaAssalto implements ISfida {
 
     @Override
     public int getRisultato(SfidaAttacco sfidaAttacco) {
-        return 2;
+        return 1;
     }
 
     @Override
@@ -19,7 +19,7 @@ public class SfidaAssalto implements ISfida {
 
     @Override
     public int getRisultato(SfidaDifesa sfidaDifesa) {
-        return 1;
+        return 2;
     }
     
 }

@@ -5,103 +5,134 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import com.seminara.text_dungeon.armeria.GeneraArma;
+import com.seminara.text_dungeon.armeria.IArma;
+import com.seminara.text_dungeon.battaglia.Battaglia;
 import com.seminara.text_dungeon.dungeon.*;
 import com.seminara.text_dungeon.giocatore.Giocatore;
 import com.seminara.text_dungeon.nemico.INemico;
-import com.seminara.text_dungeon.sfida.Battaglia;
 
 public class Partita {
     private Giocatore giocatore;
     private Dungeon dungeon;
     private INemico nemico;
     private GeneraArma generaArma;
+    private Battaglia lotta;
     private BufferedReader input;
-    private Battaglia battaglia;
+    String risultato = "";
 
     public Partita() {
         giocatore = Giocatore.getInstance();
         generaArma = GeneraArma.getInstance();
-        battaglia = new Battaglia();
+        lotta = new Battaglia();
     }
 
-    public boolean startDungeonBosco() {
+    public String startDungeonBosco() {
         dungeon = new Bosco();
-        return startAvventura();
+        startAvventura();
+        return risultato;
     }
 
-    public boolean startDungeonDeserto() {
+    public String startDungeonDeserto() {
         dungeon = new Deserto();
-        return startAvventura();
+        startAvventura();
+        return risultato;
     }
 
-    private boolean startAvventura() {
+    private void startAvventura() {
         scegliArma();
-        do {
-            nextLevel();
+        nextLevel();
+        printLevel();
+        avventura();
+    }
+
+    private void avventura() {
+        while(lotta() && !giocatore.isSconfitto()) {
+            generaArma();
             printLevel();
+        }
+    }
+
+    private boolean lotta() {
+        while(!nemico.isSconfitto() && !giocatore.isSconfitto()) {
+            risultato = lotta.battaglia(nemico);
             printVita();
-        } while(lotta() && !giocatore.isSconfitto());
-        return giocatore.isSconfitto();
+        }
+        nextLevel();
+        return null!=nemico;
     }
 
     private void scegliArma() {
-        System.out.println("\nScegli la tua arma:\n0- Ascia \n1- Mannaia \n2- Spada");
+        printScegliArma();
         try {
             input = new BufferedReader(new InputStreamReader(System.in));
-            giocatore.setArma(generaArma.getArma(Integer.parseInt(input.readLine().substring(0, 1))));
+            String in = input.readLine();
+            if(in.length() > 0) giocatore.setArma(generaArma.getArma(Integer.parseInt(String.valueOf(in.toCharArray()[0]))));
+            else giocatore.setArma(generaArma.getArma(0));
         } catch (IOException io) {
-            giocatore.setArma(generaArma.getArma(0));
+            io.printStackTrace();
         }
     }
     
     private void nextLevel() {
         nemico = dungeon.esplora();
-        printLevel();
     }
 
-    private boolean lotta() {
-        while(!nemico.isSconfitto() && !giocatore.isSconfitto()) {
-            try {
-                input = new BufferedReader(new InputStreamReader(System.in));
-                giocatore.setStatoCombattimento(input.readLine().substring(0, 1));
-            } catch (IOException io) {
-                giocatore.setStatoCombattimento("0");
+    private void generaArma() {
+        IArma arma = generaArma.getArma(numeroRandom());
+        confrontoArmi(arma);
+        System.out.println("Vuoi cambiare arma: y/[N]? ");
+        input = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            String in = input.readLine();
+            in = String.valueOf(in.toCharArray()[0]);
+            if(in.length() > 0 && in.equalsIgnoreCase("Y")) {
+                giocatore.setArma(arma);
+                System.out.println("Hai cambiato arma!");
             }
-            nemico.setStatoCombattimento();
-            int r = battaglia.vincitoreSfida(giocatore.getStatoCombattimento(), nemico.getStatoCombattimento());
-            if  (r == 1) {
-                nemico.applicaDanno(giocatore.affliggiDanno());
-            }
-            else if(r == 2) {
-                giocatore.applicaDanno(nemico.affliggiDanno());
-            }
-            risultatoLotta();
+        } catch (IOException io) {
+            io.printStackTrace();
         }
-        return nemico.isSconfitto();
+    }
+
+    private void confrontoArmi(IArma arma) {
+        System.out.println("Nuova arma trovata: ");
+        printArma(arma);
+        System.out.println("Vecchia arma:");
+        printArma(giocatore.getArma());
+    }
+
+    private int numeroRandom() {
+        return Math.round((float) Math.random()*2);
     }
 
     private void printLevel() {
-        System.out.println("\nLivello: " + dungeon.getLivello());
+        System.out.println();
+        System.out.println("Livello: " + dungeon.getLivello());
         System.out.println("Nemico: " + nemico.getNome());
-        printArmaGiocatore();
+        printArma(giocatore.getArma());
+        printVita();
         System.out.println();
     }
 
-    private void printArmaGiocatore() {
-        System.out.println("\nArma Giocatore: " + giocatore.getArma().getTipo());
+    private void printArma(IArma arma) {
+        System.out.println();
+        System.out.println("Tipo: " + arma.getTipo());
+        System.out.println("Danno: " + arma.getDanno());;
         System.out.println();
     }
 
     private void printVita() {
-        System.out.println("\nVita Giocatore: " + giocatore.getVita());
+        System.out.println("Vita Giocatore: " + giocatore.getVita());
         System.out.println("Vita Nemico: " + nemico.getVita());
         System.out.println();
     }
 
-    private void risultatoLotta() {
-        System.out.println("\nStato combattimento Giocatore: " + giocatore.getStatoCombattimento());
-        System.out.println("Stato combattimento Nemico: " + nemico.getStatoCombattimento());
-        printVita();
+    private void printScegliArma() {
+        System.out.println();
+        System.out.println("Scegli la tua arma:");
+        System.out.println("0- Ascia");
+        System.out.println("1- Mannaia");
+        System.out.println("2- Spada");
         System.out.println();
     }
 }

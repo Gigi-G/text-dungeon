@@ -9,7 +9,7 @@ public class Difesa implements IStatoPersonaggio {
 
     @Override
     public float affliggiDanno(float danno) {
-        return danno*0f;
+        return danno*(float) Math.random() * (2f - 0.5f) + 0.5f;
     }
     
 }

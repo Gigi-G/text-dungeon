@@ -9,12 +9,12 @@ public class SfidaDifesa implements ISfida {
 
     @Override
     public int getRisultato(SfidaAttacco sfidaAttacco) {
-        return 1;
+        return 2;
     }
 
     @Override
     public int getRisultato(SfidaAssalto sfidaAssalto) {
-        return 2;
+        return 1;
     }
 
     @Override

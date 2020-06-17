@@ -20,7 +20,7 @@ public class GeneraArma {
     }
 
     public IArma getArma(int i) {
-        return genera.get(i).apply(generapietra.getPietra());
+        return genera.getOrDefault(i, x -> new Ascia(x)).apply(generapietra.getPietra());
     }
 
 }

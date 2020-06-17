@@ -32,7 +32,7 @@ public abstract class Nemico implements INemico {
 
     @Override
     public float getVita() {
-        return vita;
+        return vita<0f?0f:vita;
     }
 
     @Override

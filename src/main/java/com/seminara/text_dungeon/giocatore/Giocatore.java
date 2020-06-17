@@ -41,7 +41,7 @@ public class Giocatore {
     }
 
     public float getVita() {
-        return vita;
+        return vita<=0f?0f:vita;
     }
 
     public void setStatoCombattimento(String stat) {

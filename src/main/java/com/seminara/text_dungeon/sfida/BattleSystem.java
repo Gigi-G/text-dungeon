@@ -3,7 +3,7 @@ package com.seminara.text_dungeon.sfida;
 import java.util.Map;
 import java.util.function.Supplier;
 
-public class Battaglia {
+public class BattleSystem {
     private Map <String, Supplier<ISfida>> mapStato = Map.of("Attacco", SfidaAttacco::new, "Assalto", SfidaAssalto::new, "Difesa", SfidaDifesa::new);
     
     public int vincitoreSfida(String stat1, String stat2) {

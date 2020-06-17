@@ -8,4 +8,5 @@ public class Strega extends Nemico {
         min = 40;
         max = 90;
     }
+
 }
