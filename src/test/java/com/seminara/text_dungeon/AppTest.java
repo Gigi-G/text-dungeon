@@ -94,10 +94,26 @@ public class AppTest
     public void testGiocatore() {
         printHeader(TestGiocatore.class.getName());
         assertTrue( TestGiocatore.testSingleton() );
-        assertTrue( TestGiocatore.testIsSconfitto() );
+        assertTrue( TestGiocatore.testIsSconfitto1() );
+        assertTrue( TestGiocatore.testIsSconfitto2() );
         assertTrue( TestGiocatore.testArma() );
         assertTrue( TestGiocatore.testGetStatoCombattimento() );
         assertTrue( TestGiocatore.testSetStatoCombattimento() );
+        assertTrue( TestGiocatore.testAffliggiDanno() );
+        printFooter();
+    }
+
+    @Test
+    public void testNemico() {
+        printHeader(TestNemico.class.getName());
+        assertTrue( TestNemico.testAffliggiDanno() );
+        assertTrue( TestNemico.testApplicaDanno() );
+        assertTrue( TestNemico.testNemico() );
+        assertTrue( TestNemico.testGetVita() );
+        assertTrue( TestNemico.testIsSconfitto1() );
+        assertTrue( TestNemico.testIsSconfitto2() );
+        assertTrue( TestNemico.testGetStatoCombattimento() );
+        assertTrue( TestNemico.testSetStatoCombattimento() );
         printFooter();
     }
 

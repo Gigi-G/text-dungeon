@@ -27,7 +27,7 @@ public class Giocatore {
     }
 
     public boolean isSconfitto() {
-<span class="pc bpc" id="L30" title="1 of 2 branches missed.">        return 0f &gt;= vita;</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">        return 0f &gt;= vita;</span>
     }
 
     public void applicaDanno(float danno) {
@@ -43,8 +43,8 @@ public class Giocatore {
     }
 
     public void resetVita() {
-<span class="nc" id="L46">        vita = 300f;</span>
-<span class="nc" id="L47">    }</span>
+<span class="fc" id="L46">        vita = 300f;</span>
+<span class="fc" id="L47">    }</span>
 
     public float getVita() {
 <span class="fc" id="L50">        return vita;</span>
@@ -59,7 +59,7 @@ public class Giocatore {
     }
 
     public float affliggiDanno() {
-<span class="nc" id="L62">        return stato.affliggiDanno(arma.getDanno());</span>
+<span class="fc" id="L62">        return stato.affliggiDanno(arma.getDanno());</span>
     }
 
 }

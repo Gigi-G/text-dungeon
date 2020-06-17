@@ -3,6 +3,7 @@
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/AppTest.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/pietra/TestPietraNera.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/armeria/TestAscia.java
+/home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/nemico/TestNemico.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/pietra/TestPietraBianca.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/armeria/TestSpada.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/nemico/TestStrega.java
