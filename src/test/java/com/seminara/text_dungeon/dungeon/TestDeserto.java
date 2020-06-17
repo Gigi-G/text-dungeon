@@ -7,7 +7,7 @@ public class TestDeserto {
     
     public static boolean testGetNemicoGoblinDeserto() {
         Dungeon dungeon = new Deserto();
-        Nemico nemico = dungeon.getNemico(TipoNemico.FACILE);
+        INemico nemico = dungeon.getNemico(TipoNemico.FACILE);
         if(nemico.getNome() == "Goblin") {
             System.out.println("TestDeserto.testGetNemicoGoblin(): OK");
             return true;
@@ -20,7 +20,7 @@ public class TestDeserto {
 
     public static boolean testGetNemicoChimeraDeserto() {
         Dungeon dungeon = new Deserto();
-        Nemico nemico = dungeon.getNemico(TipoNemico.MEDIO);
+        INemico nemico = dungeon.getNemico(TipoNemico.MEDIO);
         if(nemico.getNome() == "Chimera") {
             System.out.println("TestDeserto.testGetNemicoChimera(): OK");
             return true;
@@ -33,7 +33,7 @@ public class TestDeserto {
 
     public static boolean testGetNemicoCiclopeDeserto() {
         Dungeon dungeon = new Deserto();
-        Nemico nemico = dungeon.getNemico(TipoNemico.DIFFICILE);
+        INemico nemico = dungeon.getNemico(TipoNemico.DIFFICILE);
         if(nemico.getNome() == "Ciclope") {
             System.out.println("TestDeserto.testGetNemicoCiclope(): OK");
             return true;
@@ -46,7 +46,7 @@ public class TestDeserto {
 
     public static boolean testGetNemicoNullDeserto() {
         Dungeon dungeon = new Deserto();
-        Nemico nemico = dungeon.getNemico(null);
+        INemico nemico = dungeon.getNemico(null);
         if(nemico == null) {
             System.out.println("TestDeserto.testGetNemicoNull(): OK");
             return true;
@@ -59,7 +59,7 @@ public class TestDeserto {
 
     public static boolean testEsploraDeserto() {
         Dungeon dungeon = new Deserto();
-        Nemico nemico = dungeon.esplora();
+        INemico nemico = dungeon.esplora();
         if(nemico.getNome() == "Goblin" && dungeon.getLivello() == 1) {
             System.out.println("TestDeserto.testEsploraDeserto(): OK");
             return true;

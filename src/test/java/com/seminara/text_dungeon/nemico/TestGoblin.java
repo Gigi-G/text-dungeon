@@ -81,8 +81,7 @@ public class TestGoblin {
 
     public static boolean testGetStatoCombattimentoGoblin() {
         Goblin goblin = new Goblin();
-        int statoCombattimento = goblin.getStatoCombattimento();
-        if(statoCombattimento >= 0 && statoCombattimento <= 2) {
+        if(goblin.getStatoCombattimento().equals("Attacco")) {
             System.out.println("TestGoblin.testGetStatoCombattimentoGoblin(): OK");
             return true;
         }

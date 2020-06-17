@@ -46,7 +46,7 @@ public class TestGiocatore {
 
     public static boolean testGetStatoCombattimento() {
         Giocatore giocatore = Giocatore.getInstance();
-        if  (giocatore.getStatoCombattimento() == 0) {
+        if  (giocatore.getStatoCombattimento().equals("Attacco")) {
             System.out.println("TestGiocatore.testGetStatoCombattimento(): OK");
             return true;
         }
@@ -58,8 +58,8 @@ public class TestGiocatore {
 
     public static boolean testSetStatoCombattimento() {
         Giocatore giocatore = Giocatore.getInstance();
-        giocatore.setStatoCombattimento(2);
-        if  (giocatore.getStatoCombattimento() == 2) {
+        giocatore.setStatoCombattimento("2");
+        if  (giocatore.getStatoCombattimento().equals("Difesa")) {
             System.out.println("TestGiocatore.testSetStatoCombattimento(): OK");
             return true;
         }

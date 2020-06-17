@@ -12,13 +12,13 @@ import java.util.Map;
 <span class="fc" id="L12">        return livello;</span>
     }
 
-    public Nemico esplora() {
-        Nemico next;
+    public INemico esplora() {
+        INemico next;
 <span class="fc" id="L17">        next = getNemico(generaTipo.getOrDefault(livello, null));</span>
 <span class="fc" id="L18">        livello++;</span>
 <span class="fc" id="L19">        return next;</span>
     }
 
-    protected abstract Nemico getNemico(TipoNemico tipo);
+    protected abstract INemico getNemico(TipoNemico tipo);
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

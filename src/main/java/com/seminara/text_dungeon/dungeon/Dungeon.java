@@ -12,12 +12,12 @@ public abstract class Dungeon {
         return livello;
     }
 
-    public Nemico esplora() {
-        Nemico next;
+    public INemico esplora() {
+        INemico next;
         next = getNemico(generaTipo.getOrDefault(livello, null));
         livello++;
         return next;
     }
 
-    protected abstract Nemico getNemico(TipoNemico tipo);
+    protected abstract INemico getNemico(TipoNemico tipo);
 }

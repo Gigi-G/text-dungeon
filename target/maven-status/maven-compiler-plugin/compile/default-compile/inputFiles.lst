@@ -1,4 +1,3 @@
-/home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/partita/Partita.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/pietra/PietraBianca.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/pietra/GeneraPietra.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/partita/GameState.java
@@ -8,13 +7,16 @@
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/nemico/Strega.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/armeria/Ascia.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/partita/Livello1.java
+/home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/stato_personaggio/Difesa.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/armeria/Spada.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/armeria/Arma.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/pietra/Pietra.java
+/home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/stato_personaggio/Assalto.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/pietra/PietraGrigia.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/nemico/Chimera.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/nemico/Goblin.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/nemico/Ciclope.java
+/home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/nemico/INemico.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/giocatore/Giocatore.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/partita/Start.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/armeria/GeneraArma.java
@@ -22,5 +24,8 @@
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/partita/Regole.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/dungeon/Deserto.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/partita/Livello2.java
+/home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/partita/Game.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/armeria/Mannaia.java
+/home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/stato_personaggio/StatoPersonaggio.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/pietra/PietraNera.java
+/home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/stato_personaggio/Attacco.java

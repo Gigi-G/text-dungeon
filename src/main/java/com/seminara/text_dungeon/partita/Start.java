@@ -1,23 +1,12 @@
 package com.seminara.text_dungeon.partita;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
-public class Start implements GameState {
-    BufferedReader input;
+public class Start implements IGameState {
 
     @Override
-    public boolean play(Partita partita) {
+    public boolean play(Game game, Partita partita) {
         printBenvenuto();
         printMenu();
-        try {
-            input = new BufferedReader(new InputStreamReader(System.in));
-            partita.setStato(input.readLine());
-        } catch (IOException io) {
-            partita.setStato("0");
-            return true;
-        }
+        game.setStato("0");
         return true;
     }
 

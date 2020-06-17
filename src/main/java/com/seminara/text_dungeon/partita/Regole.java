@@ -1,11 +1,11 @@
 package com.seminara.text_dungeon.partita;
 
-public class Regole implements GameState {
+public class Regole implements IGameState {
 
     @Override
-    public boolean play(Partita partita) {
+    public boolean play(Game game, Partita partita) {
         printRegole();
-        partita.setStato("0");
+        game.setStato("0");
         return true;
     }
 

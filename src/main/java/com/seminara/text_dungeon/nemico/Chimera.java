@@ -1,40 +1,15 @@
 package com.seminara.text_dungeon.nemico;
 
-public class Chimera implements Nemico {
-    private float vita;
+import com.seminara.text_dungeon.stato_personaggio.Attacco;
+
+public class Chimera extends Nemico {
 
     public Chimera() {
+        tipo = "Chimera";
         vita = 250f;
+        stato = new Attacco();
+        min = 20;
+        max = 80;
     }
 
-    @Override
-    public String getNome() {
-        return "Chimera";
-    }
-
-    @Override
-    public void applicaDanno(float danno) {
-        vita -= danno;
-    }
-
-    @Override
-    public float affliggiDanno() {
-        return (float) Math.random()*(80-20+1) + 20;
-    }
-
-    @Override
-    public boolean isSconfitto() {
-        return 0 >= vita;
-    }
-
-    @Override
-    public float getVita() {
-        return vita;
-    }
-
-    @Override
-    public int getStatoCombattimento() {
-        return Math.round((float) Math.random()*2);
-    }
-    
 }

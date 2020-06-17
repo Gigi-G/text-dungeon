@@ -81,8 +81,7 @@ public class TestChimera {
 
     public static boolean testGetStatoCombattimentoChimera() {
         Chimera chimera = new Chimera();
-        int statoCombattimento = chimera.getStatoCombattimento();
-        if(statoCombattimento >= 0 && statoCombattimento <= 2) {
+        if(chimera.getStatoCombattimento().equals("Attacco")) {
             System.out.println("TestChimera.testGetStatoCombattimentoChimera(): OK");
             return true;
         }

@@ -81,8 +81,7 @@ public class TestStrega {
 
     public static boolean testGetStatoCombattimentoStrega() {
         Strega strega = new Strega();
-        int statoCombattimento = strega.getStatoCombattimento();
-        if(statoCombattimento >= 0 && statoCombattimento <= 2) {
+        if(strega.getStatoCombattimento().equals("Attacco")) {
             System.out.println("TestStrega.testGetStatoCombattimentoStrega(): OK");
             return true;
         }

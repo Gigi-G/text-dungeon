@@ -1,5 +1,4 @@
-' Documentazione: https://plantuml.com/class-diagram
-  
+
 @startuml
 ' START STYLE
 skinparam {
@@ -27,7 +26,15 @@ class GeneraPietra {
 }
 show GeneraPietra members
 
-class Partita
+class Partita {
+    - giocatore: Giocatore
+    - nemico: Nemico
+    - dungeon: Dungeon
+    - generaArma: GeneraArma
+    + setDungeonBosco(): void
+    + setDungeonDeserto: void
+
+}
 
 interface Pietra <<interface>> {
     + getTipo(): String
@@ -127,6 +134,7 @@ interface Nemico<<interface>> {
 show Nemico members
 
 class Dungeon<<abstract>> {
+    - TipoNemico: enum
     - livello: int
     - generaTipo: Map<Integer, TipoNemico>
     + getLivello(): int

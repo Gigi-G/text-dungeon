@@ -81,8 +81,7 @@ public class TestCiclope {
 
     public static boolean testGetStatoCombattimentoCiclope() {
         Ciclope ciclope = new Ciclope();
-        int statoCombattimento = ciclope.getStatoCombattimento();
-        if(statoCombattimento >= 0 && statoCombattimento <= 2) {
+        if(ciclope.getStatoCombattimento().equals("Attacco")) {
             System.out.println("TestCiclope.testGetStatoCombattimentoCiclope(): OK");
             return true;
         }

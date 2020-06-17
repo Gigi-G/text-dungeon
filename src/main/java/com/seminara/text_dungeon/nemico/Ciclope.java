@@ -1,40 +1,15 @@
 package com.seminara.text_dungeon.nemico;
 
-public class Ciclope implements Nemico {
-    private float vita;
+import com.seminara.text_dungeon.stato_personaggio.Attacco;
+
+public class Ciclope extends Nemico {
     
     public Ciclope() {
+        tipo = "Ciclope";
         vita = 500f;
-    }
-
-    @Override
-    public String getNome() {
-        return "Ciclope";
-    }
-
-    @Override
-    public void applicaDanno(float danno) {
-        vita -= danno;
-    }
-
-    @Override
-    public float affliggiDanno() {
-        return (float) Math.random()*(100-50+1) + 50;
-    }
-
-    @Override
-    public boolean isSconfitto() {
-        return 0 >= vita;
-    }
-
-    @Override
-    public float getVita() {
-        return vita;
-    }
-
-    @Override
-    public int getStatoCombattimento() {
-        return Math.round((float) Math.random()*2);
+        stato = new Attacco();
+        min = 50;
+        max = 100;
     }
     
 }

@@ -5,10 +5,10 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 <span class="fc" id="L7">public class Deserto extends Dungeon {</span>
-<span class="fc" id="L8">    private Map&lt;TipoNemico, Supplier&lt;Nemico&gt;&gt; generaNemico = Map.of(TipoNemico.FACILE, Goblin::new, TipoNemico.MEDIO, Chimera::new, TipoNemico.DIFFICILE, Ciclope::new);</span>
+<span class="fc" id="L8">    private Map&lt;TipoNemico, Supplier&lt;INemico&gt;&gt; generaNemico = Map.of(TipoNemico.FACILE, Goblin::new, TipoNemico.MEDIO, Chimera::new, TipoNemico.DIFFICILE, Ciclope::new);</span>
 
     @Override
-    protected Nemico getNemico(TipoNemico tipo) {
+    protected INemico getNemico(TipoNemico tipo) {
 <span class="fc bfc" id="L12" title="All 2 branches covered.">        if(null == tipo) return null;</span>
 <span class="fc" id="L13">        return generaNemico.get(tipo).get();</span>
     }

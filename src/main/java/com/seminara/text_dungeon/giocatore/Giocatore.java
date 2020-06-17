@@ -1,15 +1,24 @@
 package com.seminara.text_dungeon.giocatore;
+
+import java.util.Map;
+import java.util.function.Supplier;
+
 import com.seminara.text_dungeon.armeria.*;
+import com.seminara.text_dungeon.stato_personaggio.Assalto;
+import com.seminara.text_dungeon.stato_personaggio.Attacco;
+import com.seminara.text_dungeon.stato_personaggio.Difesa;
+import com.seminara.text_dungeon.stato_personaggio.StatoPersonaggio;
 
 public class Giocatore {
     private float vita;
     private Arma arma;
-    private int statoCombattimento;
+    private StatoPersonaggio stato;
+    private Map <String, Supplier<StatoPersonaggio>> mapStato = Map.of("0", Attacco::new, "1", Assalto::new, "2", Difesa::new);
     private static Giocatore instance;
 
     private Giocatore() {
         vita = 300f;
-        statoCombattimento = 0;
+        stato = new Attacco();
     }
 
     public static Giocatore getInstance() {
@@ -41,12 +50,16 @@ public class Giocatore {
         return vita;
     }
 
-    public void setStatoCombattimento(int stato) {
-        statoCombattimento = stato%3;
+    public void setStatoCombattimento(String stat) {
+        stato = mapStato.getOrDefault(stat, Attacco::new).get();
     }
 
-    public int getStatoCombattimento() {
-        return statoCombattimento;
+    public String getStatoCombattimento() {
+        return stato.mostra();
+    }
+
+    public float affliggiDanno() {
+        return stato.affliggiDanno(arma.getDanno());
     }
 
 }
