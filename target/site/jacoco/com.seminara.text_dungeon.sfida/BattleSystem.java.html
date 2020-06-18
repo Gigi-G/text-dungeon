@@ -3,11 +3,11 @@
 import java.util.Map;
 import java.util.function.Supplier;
 
-<span class="nc" id="L6">public class BattleSystem {</span>
-<span class="nc" id="L7">    private Map &lt;String, Supplier&lt;ISfida&gt;&gt; mapStato = Map.of(&quot;Attacco&quot;, SfidaAttacco::new, &quot;Assalto&quot;, SfidaAssalto::new, &quot;Difesa&quot;, SfidaDifesa::new);</span>
+<span class="fc" id="L6">public class BattleSystem {</span>
+<span class="fc" id="L7">    private Map &lt;String, Supplier&lt;ISfida&gt;&gt; mapStato = Map.of(&quot;Attacco&quot;, SfidaAttacco::new, &quot;Assalto&quot;, SfidaAssalto::new, &quot;Difesa&quot;, SfidaDifesa::new);</span>
     
     public int vincitoreSfida(String stat1, String stat2) {
-<span class="nc" id="L10">        return mapStato.get(stat1).get().competizione(mapStato.get(stat2).get());</span>
+<span class="fc" id="L10">        return mapStato.get(stat1).get().competizione(mapStato.get(stat2).get());</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

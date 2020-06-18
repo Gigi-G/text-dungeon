@@ -2,6 +2,7 @@ package com.seminara.text_dungeon;
 
 import com.seminara.text_dungeon.armeria.*;
 import com.seminara.text_dungeon.pietra.*;
+import com.seminara.text_dungeon.sfida.TestBattleSystem;
 import com.seminara.text_dungeon.giocatore.*;
 import com.seminara.text_dungeon.nemico.*;
 import com.seminara.text_dungeon.dungeon.*;
@@ -194,6 +195,21 @@ public class AppTest
         assertTrue( TestDeserto.testGetNemicoGoblinDeserto() );
         assertTrue( TestDeserto.testGetNemicoNullDeserto() );
         assertTrue( TestDeserto.testGetNemicoCiclopeDeserto() );
+        printFooter();
+    }
+
+    @Test
+    public void testBattleSystem() {
+        printHeader(TestBattleSystem.class.getName());
+        assertTrue( TestBattleSystem.testAssaltoVsAssalto() );
+        assertTrue( TestBattleSystem.testAssaltoVsAttacco() );
+        assertTrue( TestBattleSystem.testAssaltoVsDifesa() );
+        assertTrue( TestBattleSystem.testAttaccoVsAssalto() );
+        assertTrue( TestBattleSystem.testAttaccoVsAttacco() );
+        assertTrue( TestBattleSystem.testAttaccoVsDifesa() );
+        assertTrue( TestBattleSystem.testDifesaVsAssalto() );
+        assertTrue( TestBattleSystem.testDifesaVsAttacco() );
+        assertTrue( TestBattleSystem.testDifesaVsDifesa() );
         printFooter();
     }
 
