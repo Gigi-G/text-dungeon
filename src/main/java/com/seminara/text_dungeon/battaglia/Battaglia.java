@@ -35,11 +35,12 @@ public class Battaglia {
 
     private void posizioneGiocatore() {
         BufferedReader input;
+        input = new BufferedReader(new InputStreamReader(System.in));
         try {
-            input = new BufferedReader(new InputStreamReader(System.in));
             String in = input.readLine();
             if(in.length() > 0) giocatore.setStatoCombattimento(String.valueOf(in.toCharArray()[0]));
             else giocatore.setStatoCombattimento("0");
+            input.close();
         } catch (IOException io) {
             io.printStackTrace();
         }

@@ -8,11 +8,15 @@
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/pietra/TestPietraBianca.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/armeria/TestSpada.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/nemico/TestStrega.java
+/home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/nemico/TestNemicoAttacco.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/dungeon/TestDeserto.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/nemico/TestChimera.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/dungeon/TestBosco.java
+/home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/nemico/TestNemicoDifesa.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/nemico/TestCiclope.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/armeria/TestGeneraArma.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/pietra/TestGeneraPietra.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/armeria/TestMannaia.java
+/home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/battaglia/TestBattaglia.java
+/home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/nemico/TestNemicoAssalto.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/giocatore/TestGiocatore.java
