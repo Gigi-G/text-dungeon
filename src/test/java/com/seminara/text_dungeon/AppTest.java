@@ -11,9 +11,6 @@ import com.seminara.text_dungeon.dungeon.*;
 
 import static org.junit.Assert.assertTrue;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-
 import org.junit.Test;
 
 public class AppTest {
@@ -219,9 +216,6 @@ public class AppTest {
 
     @Test
     public void testBattaglia() {
-        String input = "2";
-        InputStream in = new ByteArrayInputStream(input.getBytes());
-        System.setIn(in);
         printHeader(TestBattaglia.class.getName());
         assertTrue(TestBattaglia.testBattagliaVittoriaDifesa());
         assertTrue(TestBattaglia.testBattagliaSconfittaDifesa());

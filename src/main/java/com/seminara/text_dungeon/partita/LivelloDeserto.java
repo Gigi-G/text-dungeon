@@ -1,6 +1,6 @@
 package com.seminara.text_dungeon.partita;
 
-public class Livello2 implements IGameState {
+public class LivelloDeserto implements IGameState {
 
     @Override
     public boolean play(Game game, Partita partita) {
@@ -11,7 +11,7 @@ public class Livello2 implements IGameState {
 
     private void printInfo() {
         System.out.println();
-        System.out.println("Livello 2:");
+        System.out.println("Livello Deserto:");
         System.out.println();
     }
     
