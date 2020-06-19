@@ -12,7 +12,7 @@ public class GeneraPietra {
     private GeneraPietra() {
         genera = List.of( x -> (x >= 0f && x <= 0.74f)?new PietraGrigia():null, 
                                 x -> (x >= 0.75f && x <= 0.89f)?new PietraBianca():null, 
-                                x -> (x >= 0.90f && x <= 1.0f)?new PietraNera():null);
+                                x -> (x >= 0.90f)?new PietraNera():null);
     }
 
     public static GeneraPietra getInstance() {

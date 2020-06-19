@@ -1,12 +1,10 @@
 package com.seminara.text_dungeon.battaglia;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.List;
 import java.util.function.Function;
 
 import com.seminara.text_dungeon.giocatore.Giocatore;
+import com.seminara.text_dungeon.keylistener.KeyListener;
 import com.seminara.text_dungeon.nemico.INemico;
 import com.seminara.text_dungeon.sfida.BattleSystem;
 
@@ -30,20 +28,7 @@ public class Battaglia {
 
     private void scegliPosizioneCombattimento() {
         printPosizioniDaCombattimento();
-        posizioneGiocatore();
-    }
-
-    private void posizioneGiocatore() {
-        BufferedReader input;
-        input = new BufferedReader(new InputStreamReader(System.in));
-        try {
-            String in = input.readLine();
-            if(in.length() > 0) giocatore.setStatoCombattimento(String.valueOf(in.toCharArray()[0]));
-            else giocatore.setStatoCombattimento("0");
-            input.close();
-        } catch (IOException io) {
-            io.printStackTrace();
-        }
+        giocatore.setStatoCombattimento(KeyListener.inputKey());
     }
 
     private void printPosizioniDaCombattimento() {

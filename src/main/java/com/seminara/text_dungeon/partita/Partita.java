@@ -1,14 +1,11 @@
 package com.seminara.text_dungeon.partita;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 import com.seminara.text_dungeon.armeria.GeneraArma;
 import com.seminara.text_dungeon.armeria.IArma;
 import com.seminara.text_dungeon.battaglia.Battaglia;
 import com.seminara.text_dungeon.dungeon.*;
 import com.seminara.text_dungeon.giocatore.Giocatore;
+import com.seminara.text_dungeon.keylistener.KeyListener;
 import com.seminara.text_dungeon.nemico.INemico;
 
 public class Partita {
@@ -17,7 +14,6 @@ public class Partita {
     private INemico nemico;
     private GeneraArma generaArma;
     private Battaglia lotta;
-    private BufferedReader input;
     String risultato = "";
 
     public Partita() {
@@ -29,12 +25,14 @@ public class Partita {
     public String startDungeonBosco() {
         dungeon = new Bosco();
         startAvventura();
+        giocatore.resetVita();
         return risultato;
     }
 
     public String startDungeonDeserto() {
         dungeon = new Deserto();
         startAvventura();
+        giocatore.resetVita();
         return risultato;
     }
 
@@ -63,14 +61,7 @@ public class Partita {
 
     private void scegliArma() {
         printScegliArma();
-        try {
-            input = new BufferedReader(new InputStreamReader(System.in));
-            String in = input.readLine();
-            if(in.length() > 0) giocatore.setArma(generaArma.getArma(Integer.parseInt(String.valueOf(in.toCharArray()[0]))));
-            else giocatore.setArma(generaArma.getArma(0));
-        } catch (IOException io) {
-            io.printStackTrace();
-        }
+        giocatore.setArma(generaArma.getArma(Integer.parseInt(KeyListener.inputKey())));
     }
     
     private void nextLevel() {
@@ -80,18 +71,11 @@ public class Partita {
     private void generaArma() {
         IArma arma = generaArma.getArma(numeroRandom());
         confrontoArmi(arma);
-        System.out.println("Vuoi cambiare arma: y/[N]? ");
-        input = new BufferedReader(new InputStreamReader(System.in));
-        try {
-            String in = input.readLine();
-            in = String.valueOf(in.toCharArray()[0]);
-            if(in.length() > 0 && in.equalsIgnoreCase("Y")) {
-                giocatore.setArma(arma);
-                System.out.println("Hai cambiato arma!");
-            }
-        } catch (IOException io) {
-            io.printStackTrace();
-        }
+        chiediCambioArma(arma);
+    }
+
+    private int numeroRandom() {
+        return Math.round((float) Math.random()*2);
     }
 
     private void confrontoArmi(IArma arma) {
@@ -99,10 +83,19 @@ public class Partita {
         printArma(arma);
         System.out.println("Vecchia arma:");
         printArma(giocatore.getArma());
+        System.out.println("Differenza danno: " + differenzaDannoArmi(arma));
     }
 
-    private int numeroRandom() {
-        return Math.round((float) Math.random()*2);
+    private float differenzaDannoArmi(IArma arma) {
+        return arma.getDanno() - giocatore.getArma().getDanno();
+    }
+
+    private void chiediCambioArma(IArma arma) {
+        System.out.println("Vuoi cambiare arma: y/[N]? ");
+        if(KeyListener.inputKey().equalsIgnoreCase("Y")) {
+            giocatore.setArma(arma);
+            System.out.println("Hai cambiato arma!");
+        }
     }
 
     private void printLevel() {

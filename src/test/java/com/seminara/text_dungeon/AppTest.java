@@ -6,6 +6,7 @@ import com.seminara.text_dungeon.pietra.*;
 import com.seminara.text_dungeon.sfida.TestBattleSystem;
 import com.seminara.text_dungeon.giocatore.*;
 import com.seminara.text_dungeon.nemico.*;
+import com.seminara.text_dungeon.partita.TestPartita;
 import com.seminara.text_dungeon.dungeon.*;
 
 import static org.junit.Assert.assertTrue;
@@ -234,6 +235,14 @@ public class AppTest {
         assertTrue(TestBattaglia.testBattagliaInputErratoVittoria());
         assertTrue(TestBattaglia.testBattagliaInputErratoSconfitta());
         assertTrue(TestBattaglia.testBattagliaInputErratoPareggio());
+        printFooter();
+    }
+
+    @Test
+    public void testPartita() {
+        printHeader(TestPartita.class.getName());
+        assertTrue(TestPartita.testStartDungeonBosco());
+        assertTrue(TestPartita.testStartDungeonDeserto());
         printFooter();
     }
 

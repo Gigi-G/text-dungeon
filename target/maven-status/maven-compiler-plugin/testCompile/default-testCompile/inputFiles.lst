@@ -15,6 +15,7 @@
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/nemico/TestNemicoDifesa.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/nemico/TestCiclope.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/armeria/TestGeneraArma.java
+/home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/partita/TestPartita.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/pietra/TestGeneraPietra.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/armeria/TestMannaia.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/battaglia/TestBattaglia.java
