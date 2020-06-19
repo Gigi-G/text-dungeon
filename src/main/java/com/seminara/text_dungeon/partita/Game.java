@@ -9,7 +9,7 @@ public class Game {
     private Partita partita;
 
     public Game() {
-        stato = new Start();
+        stato = new Title();
         partita = new Partita();
     }
 

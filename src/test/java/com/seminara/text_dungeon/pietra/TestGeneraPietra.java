@@ -13,7 +13,7 @@ public class TestGeneraPietra {
             System.out.println("TestGeneraPietra.testGetPietra(): OK");
             return true;
         }
-        else if  ((rand >= 0.90f && rand <= 1.0f) && pietra.getTipo() == "Pietra Nera") {
+        else if  (rand >= 0.90f && pietra.getTipo() == "Pietra Nera") {
             System.out.println("TestGeneraPietra.testGetPietra(): OK");
             return true;
         }

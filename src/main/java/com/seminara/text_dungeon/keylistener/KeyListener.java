@@ -13,7 +13,6 @@ public class KeyListener {
         input = new BufferedReader(new InputStreamReader(System.in));
         try {
             String in = input.readLine();
-            input.close();
             if(null != in && in.length() > 0) return String.valueOf(in.toCharArray()[0]);
             else return "0";
         } catch (IOException io) {
