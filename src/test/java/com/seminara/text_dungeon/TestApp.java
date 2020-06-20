@@ -10,7 +10,7 @@ import com.seminara.text_dungeon.keylistener.KeyListener;
 public class TestApp {
 
     public static boolean testMain() {
-        File file = new File("src/test/java/com/seminara/text_dungeon/GameAction.txt");
+        File file = new File("/home/luigi/Progetto/prjSeminara/text_dungeon/src/test/java/com/seminara/text_dungeon/GameAction.txt");
         InputStream in;
         try {
             in = new FileInputStream(file);
