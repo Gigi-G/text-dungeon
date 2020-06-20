@@ -10,7 +10,7 @@ text_dungeon,com.seminara.text_dungeon.partita,LivelloBosco,0,20,0,0,0,8,0,3,0,3
 text_dungeon,com.seminara.text_dungeon.partita,Title,0,34,0,0,0,11,0,3,0,3
 text_dungeon,com.seminara.text_dungeon.partita,Start,0,27,0,0,0,11,0,3,0,3
 text_dungeon,com.seminara.text_dungeon.partita,End,0,18,0,0,0,8,0,3,0,3
-text_dungeon,com.seminara.text_dungeon.partita,Partita,0,282,0,12,0,73,0,23,0,17
+text_dungeon,com.seminara.text_dungeon.partita,Partita,0,282,1,11,0,73,1,22,0,17
 text_dungeon,com.seminara.text_dungeon.partita,LivelloDeserto,0,20,0,0,0,8,0,3,0,3
 text_dungeon,com.seminara.text_dungeon.partita,Game,0,46,0,0,0,8,0,3,0,3
 text_dungeon,com.seminara.text_dungeon.battaglia,Battaglia,0,115,0,0,0,25,0,8,0,8
