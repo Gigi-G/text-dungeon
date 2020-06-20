@@ -44,7 +44,7 @@ public class Partita {
 <span class="fc" id="L44">    }</span>
 
     private void avventura() {
-<span class="pc bpc" id="L47" title="1 of 4 branches missed.">        while(lotta() &amp;&amp; !giocatore.isSconfitto()) {</span>
+<span class="fc bfc" id="L47" title="All 4 branches covered.">        while(lotta() &amp;&amp; !giocatore.isSconfitto()) {</span>
 <span class="fc" id="L48">            generaArma();</span>
 <span class="fc" id="L49">            printLevel();</span>
         }
@@ -61,7 +61,7 @@ public class Partita {
 
     private void scegliArma() {
 <span class="fc" id="L63">        printScegliArma();</span>
-<span class="fc" id="L64">        giocatore.setArma(generaArma.getArma(Integer.parseInt(KeyListener.inputKey())));</span>
+<span class="fc" id="L64">        giocatore.setArma(generaArma.getArma(KeyListener.inputKey().toCharArray()[0]-48));</span>
 <span class="fc" id="L65">    }</span>
     
     private void nextLevel() {
@@ -92,9 +92,9 @@ public class Partita {
 
     private void chiediCambioArma(IArma arma) {
 <span class="fc" id="L94">        System.out.println(&quot;Vuoi cambiare arma: y/[N]? &quot;);</span>
-<span class="pc bpc" id="L95" title="1 of 2 branches missed.">        if(KeyListener.inputKey().equalsIgnoreCase(&quot;Y&quot;)) {</span>
-<span class="nc" id="L96">            giocatore.setArma(arma);</span>
-<span class="nc" id="L97">            System.out.println(&quot;Hai cambiato arma!&quot;);</span>
+<span class="fc bfc" id="L95" title="All 2 branches covered.">        if(KeyListener.inputKey().equalsIgnoreCase(&quot;Y&quot;)) {</span>
+<span class="fc" id="L96">            giocatore.setArma(arma);</span>
+<span class="fc" id="L97">            System.out.println(&quot;Hai cambiato arma!&quot;);</span>
         }
 <span class="fc" id="L99">    }</span>
 

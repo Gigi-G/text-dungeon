@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="it"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Regole.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">text_dungeon</a> &gt; <a href="index.source.html" class="el_package">com.seminara.text_dungeon.partita</a> &gt; <span class="el_source">Regole.java</span></div><h1>Regole.java</h1><pre class="source lang-java linenums">package com.seminara.text_dungeon.partita;
 
-<span class="nc" id="L3">public class Regole implements IGameState {</span>
+<span class="fc" id="L3">public class Regole implements IGameState {</span>
 
     @Override
     public boolean play(Game game, Partita partita) {
-<span class="nc" id="L7">        printRegole();</span>
-<span class="nc" id="L8">        game.setStato(&quot;0&quot;);</span>
-<span class="nc" id="L9">        return game.gioca();</span>
+<span class="fc" id="L7">        printRegole();</span>
+<span class="fc" id="L8">        game.setStato(&quot;0&quot;);</span>
+<span class="fc" id="L9">        return game.gioca();</span>
     }
 
     private void printRegole() {
-<span class="nc" id="L13">        printTitle();</span>
-<span class="nc" id="L14">        printDungeonInfo();</span>
-<span class="nc" id="L15">        printBattagliaInfo();</span>
-<span class="nc" id="L16">        printComVincereInfo();</span>
-<span class="nc" id="L17">        System.out.println(&quot;Buona fortuna!&quot;);</span>
-<span class="nc" id="L18">    }</span>
+<span class="fc" id="L13">        printTitle();</span>
+<span class="fc" id="L14">        printDungeonInfo();</span>
+<span class="fc" id="L15">        printBattagliaInfo();</span>
+<span class="fc" id="L16">        printComVincereInfo();</span>
+<span class="fc" id="L17">        System.out.println(&quot;Buona fortuna!&quot;);</span>
+<span class="fc" id="L18">    }</span>
 
     private void printTitle() {
-<span class="nc" id="L21">        System.out.println();</span>
-<span class="nc" id="L22">        System.out.println(&quot;REGOLE:&quot;);</span>
-<span class="nc" id="L23">        System.out.println();</span>
-<span class="nc" id="L24">    }</span>
+<span class="fc" id="L21">        System.out.println();</span>
+<span class="fc" id="L22">        System.out.println(&quot;REGOLE:&quot;);</span>
+<span class="fc" id="L23">        System.out.println();</span>
+<span class="fc" id="L24">    }</span>
 
     private void printDungeonInfo() {
-<span class="nc" id="L27">        System.out.println();</span>
-<span class="nc" id="L28">        System.out.println(&quot;Nei dungeon sono presenti 4 mostri da dover affrontare.&quot;);</span>
-<span class="nc" id="L29">        System.out.println();</span>
-<span class="nc" id="L30">    }</span>
+<span class="fc" id="L27">        System.out.println();</span>
+<span class="fc" id="L28">        System.out.println(&quot;Nei dungeon sono presenti 4 mostri da dover affrontare.&quot;);</span>
+<span class="fc" id="L29">        System.out.println();</span>
+<span class="fc" id="L30">    }</span>
 
     private void printBattagliaInfo() {
-<span class="nc" id="L33">        System.out.println();</span>
-<span class="nc" id="L34">        System.out.println(&quot;L'utente ogni turno dovrà selezionare una modalità fra: Attacco, Assalto e Difesa.&quot;);</span>
-<span class="nc" id="L35">        System.out.println(&quot;L’Attacco batte l’Assalto e chi si trova nello stato di Assalto subisce un danno pari a quello che può infliggere chi si trova nello stato di attacco.&quot;); </span>
-<span class="nc" id="L36">        System.out.println(&quot;La Difesa batte l’Attacco e non si hanno danni da entrambe le parti.&quot;);</span>
-<span class="nc" id="L37">        System.out.println(&quot;L’Assalto batte la Difesa e chi si trova nello stato di Difesa subisce un danno pari alla metà di quello che può essere inflitto da chi si trova nello stato di assalto.&quot;);</span>
-<span class="nc" id="L38">        System.out.println(&quot;In caso di pareggio non accade nulla.&quot;);</span>
-<span class="nc" id="L39">        System.out.println(&quot;ATTENZIONE: se si sbaglia a digitare, per default la modalità sarà Attacco.&quot;);</span>
-<span class="nc" id="L40">        System.out.println();</span>
-<span class="nc" id="L41">    }</span>
+<span class="fc" id="L33">        System.out.println();</span>
+<span class="fc" id="L34">        System.out.println(&quot;L'utente ogni turno dovrà selezionare una modalità fra: Attacco, Assalto e Difesa.&quot;);</span>
+<span class="fc" id="L35">        System.out.println(&quot;L’Attacco batte l’Assalto e chi si trova nello stato di Assalto subisce un danno pari a quello che può infliggere chi si trova nello stato di attacco.&quot;); </span>
+<span class="fc" id="L36">        System.out.println(&quot;La Difesa batte l’Attacco e non si hanno danni da entrambe le parti.&quot;);</span>
+<span class="fc" id="L37">        System.out.println(&quot;L’Assalto batte la Difesa e chi si trova nello stato di Difesa subisce un danno pari alla metà di quello che può essere inflitto da chi si trova nello stato di assalto.&quot;);</span>
+<span class="fc" id="L38">        System.out.println(&quot;In caso di pareggio non accade nulla.&quot;);</span>
+<span class="fc" id="L39">        System.out.println(&quot;ATTENZIONE: se si sbaglia a digitare, per default la modalità sarà Attacco.&quot;);</span>
+<span class="fc" id="L40">        System.out.println();</span>
+<span class="fc" id="L41">    }</span>
 
     private void printComVincereInfo() {
-<span class="nc" id="L44">        System.out.println();</span>
-<span class="nc" id="L45">        System.out.println(&quot;Dopo ogni attacco vengono visualizzati i punti vita.&quot;);</span>
-<span class="nc" id="L46">        System.out.println(&quot;In caso di sconfitta la partita si conclude, ma in caso di vittoria viene proposta una nuova arma e i punti vita vengono ripristinati.&quot;);</span>
-<span class="nc" id="L47">        System.out.println(&quot;Si vince se si riescono a battere tutti i nemici.\n&quot;);</span>
-<span class="nc" id="L48">        System.out.println();</span>
-<span class="nc" id="L49">    }</span>
+<span class="fc" id="L44">        System.out.println();</span>
+<span class="fc" id="L45">        System.out.println(&quot;Dopo ogni attacco vengono visualizzati i punti vita.&quot;);</span>
+<span class="fc" id="L46">        System.out.println(&quot;In caso di sconfitta la partita si conclude, ma in caso di vittoria viene proposta una nuova arma e i punti vita vengono ripristinati.&quot;);</span>
+<span class="fc" id="L47">        System.out.println(&quot;Si vince se si riescono a battere tutti i nemici.\n&quot;);</span>
+<span class="fc" id="L48">        System.out.println();</span>
+<span class="fc" id="L49">    }</span>
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

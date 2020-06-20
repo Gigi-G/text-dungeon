@@ -61,7 +61,7 @@ public class Partita {
 
     private void scegliArma() {
         printScegliArma();
-        giocatore.setArma(generaArma.getArma(Integer.parseInt(KeyListener.inputKey())));
+        giocatore.setArma(generaArma.getArma(KeyListener.inputKey().toCharArray()[0]-48));
     }
     
     private void nextLevel() {

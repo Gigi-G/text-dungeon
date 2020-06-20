@@ -6,6 +6,7 @@ import com.seminara.text_dungeon.pietra.*;
 import com.seminara.text_dungeon.sfida.TestBattleSystem;
 import com.seminara.text_dungeon.giocatore.*;
 import com.seminara.text_dungeon.nemico.*;
+import com.seminara.text_dungeon.partita.TestGame;
 import com.seminara.text_dungeon.partita.TestPartita;
 import com.seminara.text_dungeon.dungeon.*;
 
@@ -237,6 +238,26 @@ public class AppTest {
         printHeader(TestPartita.class.getName());
         assertTrue(TestPartita.testStartDungeonBosco());
         assertTrue(TestPartita.testStartDungeonDeserto());
+        printFooter();
+    }
+
+    @Test
+    public void testGame() {
+        printHeader(TestGame.class.getName());
+        assertTrue(TestGame.testGameStatoIniziale());
+        assertTrue(TestGame.testSetStatoRegole());
+        assertTrue(TestGame.testSetStatoLivelloBosco());
+        assertTrue(TestGame.testSetStatoLivelloDeserto());
+        assertTrue(TestGame.testSetStatoVittoria());
+        assertTrue(TestGame.testSetStatoSconfitta());
+        assertTrue(TestGame.testSetStatoEnd());
+        printFooter();
+    }
+
+    @Test
+    public void testApp() {
+        printHeader(TestApp.class.getName());
+        assertTrue(TestApp.testMain());
         printFooter();
     }
 

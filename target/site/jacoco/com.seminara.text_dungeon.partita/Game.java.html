@@ -5,21 +5,21 @@ import java.util.function.Supplier;
 
 public class Game {
     private IGameState stato;
-<span class="nc" id="L8">    private Map &lt;String, Supplier&lt;IGameState&gt;&gt; map = Map.of(&quot;1&quot;, Regole::new, &quot;2&quot;, LivelloBosco::new, &quot;3&quot;, LivelloDeserto::new, &quot;q&quot;, End::new, &quot;Vittoria&quot;, Vittoria::new, &quot;Sconfitta&quot;, Sconfitta::new);</span>
+<span class="fc" id="L8">    private Map &lt;String, Supplier&lt;IGameState&gt;&gt; map = Map.of(&quot;1&quot;, Regole::new, &quot;2&quot;, LivelloBosco::new, &quot;3&quot;, LivelloDeserto::new, &quot;q&quot;, End::new, &quot;Vittoria&quot;, Vittoria::new, &quot;Sconfitta&quot;, Sconfitta::new);</span>
     private Partita partita;
 
-<span class="nc" id="L11">    public Game() {</span>
-<span class="nc" id="L12">        stato = new Start();</span>
-<span class="nc" id="L13">        partita = new Partita();</span>
-<span class="nc" id="L14">    }</span>
+<span class="fc" id="L11">    public Game() {</span>
+<span class="fc" id="L12">        stato = new Title();</span>
+<span class="fc" id="L13">        partita = new Partita();</span>
+<span class="fc" id="L14">    }</span>
 
     public boolean gioca() {
-<span class="nc" id="L17">        return stato.play(this, partita);</span>
+<span class="fc" id="L17">        return stato.play(this, partita);</span>
     }
 
     public void setStato(String i) {
-<span class="nc" id="L21">        stato = map.getOrDefault(i, Start::new).get();</span>
-<span class="nc" id="L22">    }</span>
+<span class="fc" id="L21">        stato = map.getOrDefault(i, Start::new).get();</span>
+<span class="fc" id="L22">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

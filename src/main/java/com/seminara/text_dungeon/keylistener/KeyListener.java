@@ -5,12 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class KeyListener {
+    private static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
     
     private KeyListener() {}
 
     public static String inputKey() {
-        BufferedReader input;
-        input = new BufferedReader(new InputStreamReader(System.in));
         try {
             String in = input.readLine();
             if(null != in && in.length() > 0) return String.valueOf(in.toCharArray()[0]);
@@ -19,6 +18,10 @@ public class KeyListener {
             io.printStackTrace();
         }
         return null;
+    }
+
+    public static void resetBuffer() {
+        input = new BufferedReader(new InputStreamReader(System.in));
     }
 
 }

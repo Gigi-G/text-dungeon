@@ -5,6 +5,7 @@
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/stato_personaggio/IStatoPersonaggio.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/partita/LivelloBosco.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/armeria/IArma.java
+/home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/partita/Title.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/sfida/ISfida.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/dungeon/Bosco.java
 /home/luigi/Progetto/prjSeminara/text_dungeon/src/main/java/com/seminara/text_dungeon/App.java

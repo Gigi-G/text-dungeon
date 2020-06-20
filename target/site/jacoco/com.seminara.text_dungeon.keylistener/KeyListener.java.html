@@ -5,21 +5,24 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class KeyListener {
+<span class="fc" id="L8">    private static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));</span>
     
     private KeyListener() {}
 
     public static String inputKey() {
-        BufferedReader input;
-<span class="fc" id="L13">        input = new BufferedReader(new InputStreamReader(System.in));</span>
         try {
-<span class="fc" id="L15">            String in = input.readLine();</span>
-<span class="fc bfc" id="L16" title="All 4 branches covered.">            if(null != in &amp;&amp; in.length() &gt; 0) return String.valueOf(in.toCharArray()[0]);</span>
-<span class="fc" id="L17">            else return &quot;0&quot;;</span>
-<span class="nc" id="L18">        } catch (IOException io) {</span>
-<span class="nc" id="L19">            io.printStackTrace();</span>
+<span class="fc" id="L14">            String in = input.readLine();</span>
+<span class="fc bfc" id="L15" title="All 4 branches covered.">            if(null != in &amp;&amp; in.length() &gt; 0) return String.valueOf(in.toCharArray()[0]);</span>
+<span class="fc" id="L16">            else return &quot;0&quot;;</span>
+<span class="nc" id="L17">        } catch (IOException io) {</span>
+<span class="nc" id="L18">            io.printStackTrace();</span>
         }
-<span class="nc" id="L21">        return null;</span>
+<span class="nc" id="L20">        return null;</span>
     }
+
+    public static void resetBuffer() {
+<span class="fc" id="L24">        input = new BufferedReader(new InputStreamReader(System.in));</span>
+<span class="fc" id="L25">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
