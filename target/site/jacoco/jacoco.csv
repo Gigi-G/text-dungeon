@@ -25,7 +25,7 @@ text_dungeon,com.seminara.text_dungeon.stato_personaggio,Attacco,0,7,0,0,0,3,0,3
 text_dungeon,com.seminara.text_dungeon.pietra,PietraBianca,0,20,0,4,0,6,0,6,0,4
 text_dungeon,com.seminara.text_dungeon.pietra,PietraNera,0,20,0,4,0,6,0,6,0,4
 text_dungeon,com.seminara.text_dungeon.pietra,PietraGrigia,0,7,0,0,0,3,0,3,0,3
-text_dungeon,com.seminara.text_dungeon.pietra,GeneraPietra,0,92,1,13,0,17,1,15,0,9
+text_dungeon,com.seminara.text_dungeon.pietra,GeneraPietra,0,73,1,11,0,14,1,13,0,8
 text_dungeon,com.seminara.text_dungeon,App,3,13,0,2,1,4,1,2,1,1
 text_dungeon,com.seminara.text_dungeon.nemico,Chimera,0,15,0,0,0,6,0,1,0,1
 text_dungeon,com.seminara.text_dungeon.nemico,Nemico,0,68,0,4,0,11,0,10,0,8
@@ -35,7 +35,7 @@ text_dungeon,com.seminara.text_dungeon.nemico,Goblin,0,15,0,0,0,6,0,1,0,1
 text_dungeon,com.seminara.text_dungeon.giocatore,Giocatore,0,71,0,6,0,19,0,14,0,11
 text_dungeon,com.seminara.text_dungeon.keylistener,KeyListener,5,34,0,4,3,6,0,5,0,3
 text_dungeon,com.seminara.text_dungeon.armeria,Mannaia,0,19,0,0,0,7,0,1,0,1
-text_dungeon,com.seminara.text_dungeon.armeria,GeneraArma,0,43,0,0,0,2,0,6,0,6
+text_dungeon,com.seminara.text_dungeon.armeria,GeneraArma,0,42,0,0,0,2,0,6,0,6
 text_dungeon,com.seminara.text_dungeon.armeria,Spada,0,19,0,0,0,7,0,1,0,1
 text_dungeon,com.seminara.text_dungeon.armeria,Ascia,0,19,0,0,0,7,0,1,0,1
 text_dungeon,com.seminara.text_dungeon.armeria,Arma,0,43,0,0,0,5,0,5,0,5

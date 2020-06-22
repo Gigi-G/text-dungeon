@@ -4,23 +4,15 @@ import java.util.List;
 import java.util.function.Function;
 
 public class GeneraPietra {
-    private List<Function<Float, IPietra>> genera; 
-    private IPietra pietra;
-    private float rand;
-    private static GeneraPietra instance;
-    
-    private GeneraPietra() {
-        genera = List.of( x -> (x >= 0f && x <= 0.74f)?new PietraGrigia():null, 
-                                x -> (x >= 0.75f && x <= 0.89f)?new PietraBianca():null, 
-                                x -> (x >= 0.90f)?new PietraNera():null);
-    }
+    private static List<Function<Float, IPietra>> genera = List.of( x -> (x >= 0f && x <= 0.74f)?new PietraGrigia():null, 
+                                                             x -> (x >= 0.75f && x <= 0.89f)?new PietraBianca():null, 
+                                                             x -> (x >= 0.90f)?new PietraNera():null);
+    private static float rand;
+    private static IPietra pietra;
 
-    public static GeneraPietra getInstance() {
-        if  (null == instance) instance = new GeneraPietra();
-        return instance;
-    }
+    private GeneraPietra() {}
 
-    public IPietra getPietra() {
+    public static IPietra getPietra() {
         rand = calcolaProbabilita();
         
         genera.parallelStream()
@@ -33,11 +25,11 @@ public class GeneraPietra {
         return pietra;
     }
 
-    private float calcolaProbabilita() {
+    private static float calcolaProbabilita() {
         return (float) Math.random();
     }
 
-    protected float getRand() { 
+    protected static float getRand() { 
         return rand;
     }
 }

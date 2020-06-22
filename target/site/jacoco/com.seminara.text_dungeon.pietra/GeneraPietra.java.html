@@ -4,41 +4,33 @@ import java.util.List;
 import java.util.function.Function;
 
 public class GeneraPietra {
-    private List&lt;Function&lt;Float, IPietra&gt;&gt; genera; 
-    private IPietra pietra;
-    private float rand;
-    private static GeneraPietra instance;
-    
-<span class="fc" id="L12">    private GeneraPietra() {</span>
-<span class="pc bpc" id="L13" title="1 of 4 branches missed.">        genera = List.of( x -&gt; (x &gt;= 0f &amp;&amp; x &lt;= 0.74f)?new PietraGrigia():null, </span>
-<span class="fc bfc" id="L14" title="All 4 branches covered.">                                x -&gt; (x &gt;= 0.75f &amp;&amp; x &lt;= 0.89f)?new PietraBianca():null, </span>
-<span class="fc bfc" id="L15" title="All 2 branches covered.">                                x -&gt; (x &gt;= 0.90f)?new PietraNera():null);</span>
-<span class="fc" id="L16">    }</span>
+<span class="pc bpc" id="L7" title="1 of 4 branches missed.">    private static List&lt;Function&lt;Float, IPietra&gt;&gt; genera = List.of( x -&gt; (x &gt;= 0f &amp;&amp; x &lt;= 0.74f)?new PietraGrigia():null, </span>
+<span class="fc bfc" id="L8" title="All 4 branches covered.">                                                             x -&gt; (x &gt;= 0.75f &amp;&amp; x &lt;= 0.89f)?new PietraBianca():null, </span>
+<span class="fc bfc" id="L9" title="All 2 branches covered.">                                                             x -&gt; (x &gt;= 0.90f)?new PietraNera():null);</span>
+    private static float rand;
+<span class="fc" id="L11">    private static IPietra pietra;</span>
 
-    public static GeneraPietra getInstance() {
-<span class="fc bfc" id="L19" title="All 2 branches covered.">        if  (null == instance) instance = new GeneraPietra();</span>
-<span class="fc" id="L20">        return instance;</span>
-    }
+    private GeneraPietra() {}
 
-    public IPietra getPietra() {
-<span class="fc" id="L24">        rand = calcolaProbabilita();</span>
+    public static IPietra getPietra() {
+<span class="fc" id="L16">        rand = calcolaProbabilita();</span>
         
-<span class="fc" id="L26">        genera.parallelStream()</span>
-<span class="fc" id="L27">                .forEach(x -&gt; {</span>
-<span class="fc" id="L28">                    IPietra p = x.apply(rand);</span>
-<span class="fc bfc" id="L29" title="All 2 branches covered.">                    if  (null != p) </span>
-<span class="fc" id="L30">                        pietra = p;</span>
-<span class="fc" id="L31">                });</span>
+<span class="fc" id="L18">        genera.parallelStream()</span>
+<span class="fc" id="L19">                .forEach(x -&gt; {</span>
+<span class="fc" id="L20">                    IPietra p = x.apply(rand);</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">                    if  (null != p) </span>
+<span class="fc" id="L22">                        pietra = p;</span>
+<span class="fc" id="L23">                });</span>
 
-<span class="fc" id="L33">        return pietra;</span>
+<span class="fc" id="L25">        return pietra;</span>
     }
 
-    private float calcolaProbabilita() {
-<span class="fc" id="L37">        return (float) Math.random();</span>
+    private static float calcolaProbabilita() {
+<span class="fc" id="L29">        return (float) Math.random();</span>
     }
 
-    protected float getRand() { 
-<span class="fc" id="L41">        return rand;</span>
+    protected static float getRand() { 
+<span class="fc" id="L33">        return rand;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
