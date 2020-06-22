@@ -77,11 +77,13 @@ public class Partita {
     }
 
     private void confrontoArmi(IArma arma) {
+        System.out.println();
         System.out.println("Nuova arma trovata: ");
         printArma(arma);
         System.out.println("Vecchia arma:");
         printArma(giocatore.getArma());
         System.out.println("Differenza danno: " + differenzaDannoArmi(arma));
+        System.out.println();
     }
 
     private float differenzaDannoArmi(IArma arma) {
@@ -108,7 +110,7 @@ public class Partita {
     private void printArma(IArma arma) {
         System.out.println();
         System.out.println("Tipo: " + arma.getTipo());
-        System.out.println("Danno: " + arma.getDanno());;
+        System.out.println("Danno: " + arma.getDanno());
         System.out.println();
     }
 

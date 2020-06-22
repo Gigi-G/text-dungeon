@@ -77,54 +77,56 @@ public class Partita {
     }
 
     private void confrontoArmi(IArma arma) {
-<span class="fc" id="L80">        System.out.println(&quot;Nuova arma trovata: &quot;);</span>
-<span class="fc" id="L81">        printArma(arma);</span>
-<span class="fc" id="L82">        System.out.println(&quot;Vecchia arma:&quot;);</span>
-<span class="fc" id="L83">        printArma(giocatore.getArma());</span>
-<span class="fc" id="L84">        System.out.println(&quot;Differenza danno: &quot; + differenzaDannoArmi(arma));</span>
-<span class="fc" id="L85">    }</span>
+<span class="fc" id="L80">        System.out.println();</span>
+<span class="fc" id="L81">        System.out.println(&quot;Nuova arma trovata: &quot;);</span>
+<span class="fc" id="L82">        printArma(arma);</span>
+<span class="fc" id="L83">        System.out.println(&quot;Vecchia arma:&quot;);</span>
+<span class="fc" id="L84">        printArma(giocatore.getArma());</span>
+<span class="fc" id="L85">        System.out.println(&quot;Differenza danno: &quot; + differenzaDannoArmi(arma));</span>
+<span class="fc" id="L86">        System.out.println();</span>
+<span class="fc" id="L87">    }</span>
 
     private float differenzaDannoArmi(IArma arma) {
-<span class="fc" id="L88">        return arma.getDanno() - giocatore.getArma().getDanno();</span>
+<span class="fc" id="L90">        return arma.getDanno() - giocatore.getArma().getDanno();</span>
     }
 
     private void chiediCambioArma(IArma arma) {
-<span class="fc" id="L92">        System.out.println(&quot;Vuoi cambiare arma: y/[N]? &quot;);</span>
-<span class="fc bfc" id="L93" title="All 2 branches covered.">        if(KeyListener.inputKey().equalsIgnoreCase(&quot;Y&quot;)) {</span>
-<span class="fc" id="L94">            giocatore.setArma(arma);</span>
-<span class="fc" id="L95">            System.out.println(&quot;Hai cambiato arma!&quot;);</span>
+<span class="fc" id="L94">        System.out.println(&quot;Vuoi cambiare arma: y/[N]? &quot;);</span>
+<span class="fc bfc" id="L95" title="All 2 branches covered.">        if(KeyListener.inputKey().equalsIgnoreCase(&quot;Y&quot;)) {</span>
+<span class="fc" id="L96">            giocatore.setArma(arma);</span>
+<span class="fc" id="L97">            System.out.println(&quot;Hai cambiato arma!&quot;);</span>
         }
-<span class="fc" id="L97">    }</span>
+<span class="fc" id="L99">    }</span>
 
     private void printLevel() {
-<span class="fc" id="L100">        System.out.println();</span>
-<span class="fc" id="L101">        System.out.println(&quot;Livello: &quot; + dungeon.getLivello());</span>
-<span class="fc" id="L102">        System.out.println(&quot;Nemico: &quot; + nemico.getNome());</span>
-<span class="fc" id="L103">        printArma(giocatore.getArma());</span>
-<span class="fc" id="L104">        printVita();</span>
-<span class="fc" id="L105">        System.out.println();</span>
-<span class="fc" id="L106">    }</span>
+<span class="fc" id="L102">        System.out.println();</span>
+<span class="fc" id="L103">        System.out.println(&quot;Livello: &quot; + dungeon.getLivello());</span>
+<span class="fc" id="L104">        System.out.println(&quot;Nemico: &quot; + nemico.getNome());</span>
+<span class="fc" id="L105">        printArma(giocatore.getArma());</span>
+<span class="fc" id="L106">        printVita();</span>
+<span class="fc" id="L107">        System.out.println();</span>
+<span class="fc" id="L108">    }</span>
 
     private void printArma(IArma arma) {
-<span class="fc" id="L109">        System.out.println();</span>
-<span class="fc" id="L110">        System.out.println(&quot;Tipo: &quot; + arma.getTipo());</span>
-<span class="fc" id="L111">        System.out.println(&quot;Danno: &quot; + arma.getDanno());;</span>
-<span class="fc" id="L112">        System.out.println();</span>
-<span class="fc" id="L113">    }</span>
+<span class="fc" id="L111">        System.out.println();</span>
+<span class="fc" id="L112">        System.out.println(&quot;Tipo: &quot; + arma.getTipo());</span>
+<span class="fc" id="L113">        System.out.println(&quot;Danno: &quot; + arma.getDanno());</span>
+<span class="fc" id="L114">        System.out.println();</span>
+<span class="fc" id="L115">    }</span>
 
     private void printVita() {
-<span class="fc" id="L116">        System.out.println(&quot;Vita Giocatore: &quot; + giocatore.getVita());</span>
-<span class="fc" id="L117">        System.out.println(&quot;Vita Nemico: &quot; + nemico.getVita());</span>
-<span class="fc" id="L118">        System.out.println();</span>
-<span class="fc" id="L119">    }</span>
+<span class="fc" id="L118">        System.out.println(&quot;Vita Giocatore: &quot; + giocatore.getVita());</span>
+<span class="fc" id="L119">        System.out.println(&quot;Vita Nemico: &quot; + nemico.getVita());</span>
+<span class="fc" id="L120">        System.out.println();</span>
+<span class="fc" id="L121">    }</span>
 
     private void printScegliArma() {
-<span class="fc" id="L122">        System.out.println();</span>
-<span class="fc" id="L123">        System.out.println(&quot;Scegli la tua arma:&quot;);</span>
-<span class="fc" id="L124">        System.out.println(&quot;0- Ascia&quot;);</span>
-<span class="fc" id="L125">        System.out.println(&quot;1- Mannaia&quot;);</span>
-<span class="fc" id="L126">        System.out.println(&quot;2- Spada&quot;);</span>
-<span class="fc" id="L127">        System.out.println();</span>
-<span class="fc" id="L128">    }</span>
+<span class="fc" id="L124">        System.out.println();</span>
+<span class="fc" id="L125">        System.out.println(&quot;Scegli la tua arma:&quot;);</span>
+<span class="fc" id="L126">        System.out.println(&quot;0- Ascia&quot;);</span>
+<span class="fc" id="L127">        System.out.println(&quot;1- Mannaia&quot;);</span>
+<span class="fc" id="L128">        System.out.println(&quot;2- Spada&quot;);</span>
+<span class="fc" id="L129">        System.out.println();</span>
+<span class="fc" id="L130">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
