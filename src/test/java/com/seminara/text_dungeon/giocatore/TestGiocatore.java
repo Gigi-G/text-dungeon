@@ -21,7 +21,7 @@ public class TestGiocatore {
 
     public static boolean testArma() {
         Giocatore giocatore = Giocatore.getInstance();
-        giocatore.setArma(GeneraArma.getInstance().getArma(0));
+        giocatore.setArma(GeneraArma.getArma(0));
         if  (giocatore.getArma().getTipo().contains("Ascia")) {
             System.out.println("TestGiocatore.testArma(): OK");
             return true;

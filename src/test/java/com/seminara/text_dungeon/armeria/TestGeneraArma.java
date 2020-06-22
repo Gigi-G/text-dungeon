@@ -2,50 +2,58 @@ package com.seminara.text_dungeon.armeria;
 
 public class TestGeneraArma {
 
+    private static void printRed(String str){
+        System.out.println("\u001B[31m"+str+ "\u001B[0m");
+    }
+
+    private static void printGreen(String str){
+        System.out.println("\u001B[32m"+str+ "\u001B[0m");
+    }
+
     public static boolean testGetAscia() {
-        IArma arma = GeneraArma.getInstance().getArma(0);
+        IArma arma = GeneraArma.getArma(0);
         if(arma.getTipo().contains("Ascia")) {
-            System.out.println("TestGeneraArma.testGetAscia(): OK");
+            printGreen("TestGeneraArma.testGetAscia(): OK");
             return true;
         }
         else {
-            System.out.println("TestGeneraArma.testGetAscia(): FAILED");
+            printRed("TestGeneraArma.testGetAscia(): FAILED");
             return false;
         }
     }
 
     public static boolean testGetMannaia() {
-        IArma arma = GeneraArma.getInstance().getArma(1);
+        IArma arma = GeneraArma.getArma(1);
         if(arma.getTipo().contains("Mannaia")) {
-            System.out.println("TestGeneraArma.testGetMannaia(): OK");
+            printGreen("TestGeneraArma.testGetMannaia(): OK");
             return true;
         }
         else {
-            System.out.println("TestGeneraArma.testGetMannaia(): FAILED");
+            printRed("TestGeneraArma.testGetMannaia(): FAILED");
             return false;
         }
     }
 
     public static boolean testGetSpada() {
-        IArma arma = GeneraArma.getInstance().getArma(2);
+        IArma arma = GeneraArma.getArma(2);
         if(arma.getTipo().contains("Spada")) {
-            System.out.println("TestGeneraArma.testGetSpada(): OK");
+            printGreen("TestGeneraArma.testGetSpada(): OK");
             return true;
         }
         else {
-            System.out.println("TestGeneraArma.testGetSpada(): FAILED");
+            printRed("TestGeneraArma.testGetSpada(): FAILED");
             return false;
         }
     }
     
     public static boolean testGetDefault() {
-        IArma arma = GeneraArma.getInstance().getArma(132465);
+        IArma arma = GeneraArma.getArma(132465);
         if(arma.getTipo().contains("Ascia")) {
-            System.out.println("TestGeneraArma.testGetSpada(): OK");
+            printGreen("TestGeneraArma.testGetSpada(): OK");
             return true;
         }
         else {
-            System.out.println("TestGeneraArma.testGetSpada(): FAILED");
+            printRed("TestGeneraArma.testGetSpada(): FAILED");
             return false;
         }
     }

@@ -5,22 +5,12 @@ import java.util.Map;
 import java.util.function.Function;
 
 public class GeneraArma {
-    private GeneraPietra generapietra;
-    private final Map&lt;Integer, Function&lt;IPietra, IArma&gt;&gt; genera;
-    private static GeneraArma instance;
+<span class="fc" id="L8">    private static Map&lt;Integer, Function&lt;IPietra, IArma&gt;&gt; genera = Map.of(0, x -&gt; new Ascia(x), 1, x -&gt; new Mannaia(x), 2, x -&gt; new Spada(x));</span>
 
-<span class="fc" id="L12">    private GeneraArma() {</span>
-<span class="fc" id="L13">        generapietra = GeneraPietra.getInstance();</span>
-<span class="fc" id="L14">        genera = Map.of(0, x -&gt; new Ascia(x), 1, x -&gt; new Mannaia(x), 2, x -&gt; new Spada(x));</span>
-<span class="fc" id="L15">    }</span>
+    private GeneraArma() {}
 
-    public static GeneraArma getInstance() {
-<span class="fc bfc" id="L18" title="All 2 branches covered.">        if  (null == instance) instance = new GeneraArma();</span>
-<span class="fc" id="L19">        return instance;</span>
-    }
-
-    public IArma getArma(int i) {
-<span class="fc" id="L23">        return genera.getOrDefault(i, x -&gt; new Ascia(x)).apply(generapietra.getPietra());</span>
+    public static IArma getArma(int i) {
+<span class="fc" id="L13">        return genera.getOrDefault(i, x -&gt; new Ascia(x)).apply(GeneraPietra.getInstance().getPietra());</span>
     }
 
 }

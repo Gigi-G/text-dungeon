@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="21" failures="0" name="com.seminara.text_dungeon.AppTest" time="0.472" errors="0" skipped="0">
+<testsuite tests="21" failures="0" name="com.seminara.text_dungeon.AppTest" time="0.278" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="14.0.1+7-Ubuntu-1ubuntu1"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-14-openjdk-amd64/lib"/>
+    <property name="java.vm.version" value="11.0.7+10"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-11.0.7+10/lib"/>
     <property name="maven.multiModuleProjectDirectory" value="/home/luigi/Progetto/prjSeminara/text_dungeon"/>
-    <property name="java.vm.vendor" value="Private Build"/>
-    <property name="java.vendor.url" value="Unknown"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="path.separator" value=":"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
     <property name="user.country" value="IT"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/home/luigi/Progetto/prjSeminara/text_dungeon"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
-    <property name="java.runtime.version" value="14.0.1+7-Ubuntu-1ubuntu1"/>
+    <property name="java.runtime.version" value="11.0.7+10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="line.separator" value="
@@ -24,56 +26,61 @@
     <property name="os.name" value="Linux"/>
     <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="maven.conf" value="/usr/share/maven/conf"/>
     <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="58.0"/>
+    <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="5.4.0-37-generic"/>
     <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
     <property name="user.home" value="/home/luigi"/>
     <property name="user.timezone" value="Europe/Rome"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.specification.version" value="14"/>
+    <property name="java.specification.version" value="11"/>
     <property name="user.name" value="luigi"/>
     <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
-    <property name="java.vm.specification.version" value="14"/>
+    <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
-    <property name="java.home" value="/usr/lib/jvm/java-14-openjdk-amd64"/>
+    <property name="java.home" value="/usr/lib/jvm/jdk-11.0.7+10"/>
     <property name="user.language" value="it"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="14.0.1"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.7"/>
     <property name="securerandom.source" value="file:/dev/./urandom"/>
-    <property name="java.vendor" value="Private Build"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
     <property name="maven.home" value="/usr/share/maven"/>
     <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2020-04-14"/>
-    <property name="java.vendor.url.bug" value="Unknown"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testApp" time="0.166"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testAscia" time="0.011"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testApp" time="0.133"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testAscia" time="0"/>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testBosco" time="0"/>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testSpada" time="0"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testPartita" time="0.103"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testGame" time="0.115"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testPartita" time="0.044"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testGame" time="0.039"/>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testBattleSystem" time="0"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testGeneraArma" time="0.039"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testGeneraArma" time="0.026"/>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testPietraBianca" time="0"/>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testGiocatore" time="0.001"/>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testPietraGrigia" time="0"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testBattaglia" time="0.001"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testChimera" time="0.021"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testCiclope" time="0.001"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testMannaia" time="0"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testPietraNera" time="0"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testBattaglia" time="0.018"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testChimera" time="0"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testCiclope" time="0"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testMannaia" time="0.001"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testPietraNera" time="0.01"/>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testDeserto" time="0"/>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testGoblin" time="0"/>
   <testcase classname="com.seminara.text_dungeon.AppTest" name="testNemico" time="0"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testGeneraPietra" time="0"/>
-  <testcase classname="com.seminara.text_dungeon.AppTest" name="testStrega" time="0.014"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testGeneraPietra" time="0.005"/>
+  <testcase classname="com.seminara.text_dungeon.AppTest" name="testStrega" time="0.001"/>
 </testsuite>

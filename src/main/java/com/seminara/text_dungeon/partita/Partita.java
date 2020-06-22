@@ -12,13 +12,11 @@ public class Partita {
     private Giocatore giocatore;
     private Dungeon dungeon;
     private INemico nemico;
-    private GeneraArma generaArma;
     private Battaglia lotta;
     String risultato = "";
 
     public Partita() {
         giocatore = Giocatore.getInstance();
-        generaArma = GeneraArma.getInstance();
         lotta = new Battaglia();
     }
 
@@ -61,7 +59,7 @@ public class Partita {
 
     private void scegliArma() {
         printScegliArma();
-        giocatore.setArma(generaArma.getArma(KeyListener.inputKey().toCharArray()[0]-48));
+        giocatore.setArma(GeneraArma.getArma(KeyListener.inputKey().toCharArray()[0] - 48));
     }
     
     private void nextLevel() {
@@ -69,7 +67,7 @@ public class Partita {
     }
 
     private void generaArma() {
-        IArma arma = generaArma.getArma(numeroRandom());
+        IArma arma = GeneraArma.getArma(numeroRandom());
         confrontoArmi(arma);
         chiediCambioArma(arma);
     }

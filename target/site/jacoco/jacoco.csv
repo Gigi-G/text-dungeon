@@ -10,7 +10,7 @@ text_dungeon,com.seminara.text_dungeon.partita,LivelloBosco,0,20,0,0,0,8,0,3,0,3
 text_dungeon,com.seminara.text_dungeon.partita,Title,0,34,0,0,0,11,0,3,0,3
 text_dungeon,com.seminara.text_dungeon.partita,Start,0,27,0,0,0,11,0,3,0,3
 text_dungeon,com.seminara.text_dungeon.partita,End,0,18,0,0,0,8,0,3,0,3
-text_dungeon,com.seminara.text_dungeon.partita,Partita,0,282,1,11,0,73,1,22,0,17
+text_dungeon,com.seminara.text_dungeon.partita,Partita,0,275,0,12,0,72,0,23,0,17
 text_dungeon,com.seminara.text_dungeon.partita,LivelloDeserto,0,20,0,0,0,8,0,3,0,3
 text_dungeon,com.seminara.text_dungeon.partita,Game,0,46,0,0,0,8,0,3,0,3
 text_dungeon,com.seminara.text_dungeon.battaglia,Battaglia,0,115,0,0,0,25,0,8,0,8
@@ -35,7 +35,7 @@ text_dungeon,com.seminara.text_dungeon.nemico,Goblin,0,15,0,0,0,6,0,1,0,1
 text_dungeon,com.seminara.text_dungeon.giocatore,Giocatore,0,71,0,6,0,19,0,14,0,11
 text_dungeon,com.seminara.text_dungeon.keylistener,KeyListener,5,34,0,4,3,6,0,5,0,3
 text_dungeon,com.seminara.text_dungeon.armeria,Mannaia,0,19,0,0,0,7,0,1,0,1
-text_dungeon,com.seminara.text_dungeon.armeria,GeneraArma,0,59,0,2,0,7,0,8,0,7
+text_dungeon,com.seminara.text_dungeon.armeria,GeneraArma,0,43,0,0,0,2,0,6,0,6
 text_dungeon,com.seminara.text_dungeon.armeria,Spada,0,19,0,0,0,7,0,1,0,1
 text_dungeon,com.seminara.text_dungeon.armeria,Ascia,0,19,0,0,0,7,0,1,0,1
 text_dungeon,com.seminara.text_dungeon.armeria,Arma,0,43,0,0,0,5,0,5,0,5

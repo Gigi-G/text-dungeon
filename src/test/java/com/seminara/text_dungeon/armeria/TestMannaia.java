@@ -3,14 +3,22 @@ import com.seminara.text_dungeon.pietra.*;
 
 public class TestMannaia {
 
+    static void printRed(String str){
+        System.out.println("\u001B[31m"+str+ "\u001B[0m");
+    }
+
+    static void printGreen(String str){
+        System.out.println("\u001B[32m"+str+ "\u001B[0m");
+    }
+
     public static boolean testGetTipoMannaiaPietraGrigia() {
         Mannaia mannaia = new Mannaia(new PietraGrigia());
         if  (mannaia.getTipo().equals("Mannaia con Pietra Grigia")) {
-            System.out.println("TestMannaia.testGetTipoMannaiaPietraGrigia(): OK");
+            printGreen("TestMannaia.testGetTipoMannaiaPietraGrigia(): OK");
             return true;
         }
         else {
-            System.out.println("TestMannaia.testGetTipoMannaiaPietraGrigia(): FAILED");
+            printRed("TestMannaia.testGetTipoMannaiaPietraGrigia(): FAILED");
             return false;
         }
     }
@@ -18,11 +26,11 @@ public class TestMannaia {
     public static boolean testGetTipoMannaiaPietraBianca() {
         Mannaia mannaia = new Mannaia(new PietraBianca());
         if  (mannaia.getTipo().equals("Mannaia con Pietra Bianca")) {
-            System.out.println("TestMannaia.testGetTipoMannaiaPietraBianca(): OK");
+            printGreen("TestMannaia.testGetTipoMannaiaPietraBianca(): OK");
             return true;
         }
         else {
-            System.out.println("TestMannaia.testGetTipoMannaiaPietraBianca(): FAILED");
+            printRed("TestMannaia.testGetTipoMannaiaPietraBianca(): FAILED");
             return false;
         }
     }
@@ -30,11 +38,11 @@ public class TestMannaia {
     public static boolean testGetTipoMannaiaPietraNera() {
         Mannaia mannaia = new Mannaia(new PietraNera());
         if  (mannaia.getTipo().equals("Mannaia con Pietra Nera")) {
-            System.out.println("TestMannaia.testGetTipoMannaiaPietraNera(): OK");
+            printGreen("TestMannaia.testGetTipoMannaiaPietraNera(): OK");
             return true;
         }
         else {
-            System.out.println("TestMannaia.testGetTipoMannaiaPietraNera(): FAILED");
+            printRed("TestMannaia.testGetTipoMannaiaPietraNera(): FAILED");
             return false;
         }
     }
@@ -43,11 +51,11 @@ public class TestMannaia {
         Mannaia mannaia = new Mannaia(new PietraGrigia());
         float danno = mannaia.getDanno();
         if  (danno >= 10f && danno <= 42f) {
-            System.out.println("TestMannaia.testGetDannoMannaiaPietraGrigia(): OK");
+            printGreen("TestMannaia.testGetDannoMannaiaPietraGrigia(): OK");
             return true;
         }
         else {
-            System.out.println("TestMannaia.testGetDannoMannaiaPietraGrigia(): FAILED");
+            printRed("TestMannaia.testGetDannoMannaiaPietraGrigia(): FAILED");
             return false;
         }
     }
@@ -56,11 +64,11 @@ public class TestMannaia {
         Mannaia mannaia = new Mannaia(new PietraBianca());
         float danno = mannaia.getDanno();
         if  (danno >= 10f && danno <= 46f) {
-            System.out.println("TestMannaia.testGetDannoMannaiaPietraBianca(): OK");
+            printGreen("TestMannaia.testGetDannoMannaiaPietraBianca(): OK");
             return true;
         }
         else {
-            System.out.println("TestMannaia.testGetDannoMannaiaPietraBianca(): FAILED");
+            printRed("TestMannaia.testGetDannoMannaiaPietraBianca(): FAILED");
             return false;
         }
     }
@@ -69,11 +77,11 @@ public class TestMannaia {
         Mannaia mannaia = new Mannaia(new PietraNera());
         float danno = mannaia.getDanno();
         if  (danno >= 10f && danno <= 52f) {
-            System.out.println("TestMannaia.testGetDannoMannaiaPietraNera(): OK");
+            printGreen("TestMannaia.testGetDannoMannaiaPietraNera(): OK");
             return true;
         }
         else {
-            System.out.println("TestMannaia.testGetDannoMannaiaPietraNera(): FAILED");
+            printRed("TestMannaia.testGetDannoMannaiaPietraNera(): FAILED");
             return false;
         }
     }

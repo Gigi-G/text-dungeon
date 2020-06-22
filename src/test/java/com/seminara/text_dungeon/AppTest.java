@@ -257,20 +257,29 @@ public class AppTest {
     @Test
     public void testApp() {
         printHeader(TestApp.class.getName());
-        assertTrue(TestApp.testMain());
+        assertTrue(TestApp.testMain("src/test/java/com/seminara/text_dungeon/GameAction.txt"));
         printFooter();
     }
 
     private void printHeader(String nome) {
         System.out.println();
-        System.out.println("-------------------------------------------------------");
-        System.out.println(nome);
-        System.out.println("-------------------------------------------------------");
+        printYellow("-------------------------------------------------------");
+        printBlue(nome);
+        printYellow("-------------------------------------------------------");
     }
 
     private void printFooter() {
-        System.out.println("-------------------------------------------------------");
+        printYellow("-------------------------------------------------------");
         System.out.println();
+        System.out.println();
+    }
+
+    private void printYellow(String str) {
+        System.out.println("\u001B[33m" + str + "\u001B[0m");
+    }
+
+    private void printBlue(String str) {
+        System.out.println("\u001B[34m" + str + "\u001B[0m");
     }
 
 }

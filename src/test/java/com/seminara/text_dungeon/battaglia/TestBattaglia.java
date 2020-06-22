@@ -12,6 +12,14 @@ import com.seminara.text_dungeon.nemico.TestNemicoDifesa;
 
 public class TestBattaglia {
 
+    private static void printRed(String str){
+        System.out.println("\u001B[31m"+str+ "\u001B[0m");
+    }
+
+    private static void printGreen(String str){
+        System.out.println("\u001B[32m"+str+ "\u001B[0m");
+    }
+
     private static void init(String pos) {
         String input = pos;
         InputStream in = new ByteArrayInputStream(input.getBytes());
@@ -20,127 +28,127 @@ public class TestBattaglia {
     }
 
     public static boolean testBattagliaVittoriaDifesa() {
-        Giocatore.getInstance().setArma(GeneraArma.getInstance().getArma(0));
+        Giocatore.getInstance().setArma(GeneraArma.getArma(0));
         Battaglia battaglia = new Battaglia();
         init("2");
         if ( battaglia.battaglia(new TestNemicoAttacco()).equals("Vittoria")) {
-            System.out.println("TestBattaglia.testBattagliaVittoriaDifesa(): OK");
+            printGreen("TestBattaglia.testBattagliaVittoriaDifesa(): OK");
             return true;
         }
         else {
-            System.out.println("TestBattaglia.testBattagliaVittoriaDifesa(): FAILED");
+            printRed("TestBattaglia.testBattagliaVittoriaDifesa(): FAILED");
             return false;
         }
     }
 
     public static boolean testBattagliaSconfittaDifesa() {
-        Giocatore.getInstance().setArma(GeneraArma.getInstance().getArma(1));
+        Giocatore.getInstance().setArma(GeneraArma.getArma(1));
         Battaglia battaglia = new Battaglia();
         init("2");
         if ( battaglia.battaglia(new TestNemicoAssalto()).equals("Sconfitta")) {
-            System.out.println("TestBattaglia.testBattagliaSconfittaDifesa(): OK");
+            printGreen("TestBattaglia.testBattagliaSconfittaDifesa(): OK");
             return true;
         }
         else {
-            System.out.println("TestBattaglia.testBattagliaSconfittaDifesa(): FAILED");
+            printRed("TestBattaglia.testBattagliaSconfittaDifesa(): FAILED");
             return false;
         }
     }
 
     public static boolean testBattagliaPareggioDifesa() {
-        Giocatore.getInstance().setArma(GeneraArma.getInstance().getArma(2));
+        Giocatore.getInstance().setArma(GeneraArma.getArma(2));
         Battaglia battaglia = new Battaglia();
         init("2");
         if ( battaglia.battaglia(new TestNemicoDifesa()).equals("Pareggio")) {
-            System.out.println("TestBattaglia.testBattagliaPareggioDifesa(): OK");
+            printGreen("TestBattaglia.testBattagliaPareggioDifesa(): OK");
             return true;
         }
         else {
-            System.out.println("TestBattaglia.testBattagliaPareggioDifesa(): FAILED");
+            printRed("TestBattaglia.testBattagliaPareggioDifesa(): FAILED");
             return false;
         }
     }
 
     public static boolean testBattagliaVittoriaAttacco() {
-        Giocatore.getInstance().setArma(GeneraArma.getInstance().getArma(0));
+        Giocatore.getInstance().setArma(GeneraArma.getArma(0));
         Battaglia battaglia = new Battaglia();
         init("0");
         if ( battaglia.battaglia(new TestNemicoAssalto()).equals("Vittoria")) {
-            System.out.println("TestBattaglia.testBattagliaVittoriaAttacco(): OK");
+            printGreen("TestBattaglia.testBattagliaVittoriaAttacco(): OK");
             return true;
         }
         else {
-            System.out.println("TestBattaglia.testBattagliaVittoriaAttacco(): FAILED");
+            printRed("TestBattaglia.testBattagliaVittoriaAttacco(): FAILED");
             return false;
         }
     }
 
     public static boolean testBattagliaSconfittaAttacco() {
-        Giocatore.getInstance().setArma(GeneraArma.getInstance().getArma(1));
+        Giocatore.getInstance().setArma(GeneraArma.getArma(1));
         Battaglia battaglia = new Battaglia();
         init("0");
         if ( battaglia.battaglia(new TestNemicoDifesa()).equals("Sconfitta")) {
-            System.out.println("TestBattaglia.testBattagliaSconfittaAttacco(): OK");
+            printGreen("TestBattaglia.testBattagliaSconfittaAttacco(): OK");
             return true;
         }
         else {
-            System.out.println("TestBattaglia.testBattagliaSconfittaAttacco(): FAILED");
+            printRed("TestBattaglia.testBattagliaSconfittaAttacco(): FAILED");
             return false;
         }
     }
 
     public static boolean testBattagliaPareggioAttacco() {
-        Giocatore.getInstance().setArma(GeneraArma.getInstance().getArma(2));
+        Giocatore.getInstance().setArma(GeneraArma.getArma(2));
         Battaglia battaglia = new Battaglia();
         init("0");
         if ( battaglia.battaglia(new TestNemicoAttacco()).equals("Pareggio")) {
-            System.out.println("TestBattaglia.testBattagliaPareggioAttacco(): OK");
+            printGreen("TestBattaglia.testBattagliaPareggioAttacco(): OK");
             return true;
         }
         else {
-            System.out.println("TestBattaglia.testBattagliaPareggioAttacco(): FAILED");
+            printRed("TestBattaglia.testBattagliaPareggioAttacco(): FAILED");
             return false;
         }
     }
 
     public static boolean testBattagliaVittoriaAssalto() {
-        Giocatore.getInstance().setArma(GeneraArma.getInstance().getArma(0));
+        Giocatore.getInstance().setArma(GeneraArma.getArma(0));
         Battaglia battaglia = new Battaglia();
         init("1");
         if ( battaglia.battaglia(new TestNemicoDifesa()).equals("Vittoria")) {
-            System.out.println("TestBattaglia.testBattagliaVittoriaAssalto(): OK");
+            printGreen("TestBattaglia.testBattagliaVittoriaAssalto(): OK");
             return true;
         }
         else {
-            System.out.println("TestBattaglia.testBattagliaVittoriaAssalto(): FAILED");
+            printRed("TestBattaglia.testBattagliaVittoriaAssalto(): FAILED");
             return false;
         }
     }
 
     public static boolean testBattagliaSconfittaAssalto() {
-        Giocatore.getInstance().setArma(GeneraArma.getInstance().getArma(1));
+        Giocatore.getInstance().setArma(GeneraArma.getArma(1));
         Battaglia battaglia = new Battaglia();
         init("1");
         if ( battaglia.battaglia(new TestNemicoAttacco()).equals("Sconfitta")) {
-            System.out.println("TestBattaglia.testBattagliaSconfittaAssalto(): OK");
+            printGreen("TestBattaglia.testBattagliaSconfittaAssalto(): OK");
             return true;
         }
         else {
-            System.out.println("TestBattaglia.testBattagliaSconfittaAssalto(): FAILED");
+            printRed("TestBattaglia.testBattagliaSconfittaAssalto(): FAILED");
             return false;
         }
     }
 
     public static boolean testBattagliaPareggioAssalto() {
-        Giocatore.getInstance().setArma(GeneraArma.getInstance().getArma(2));
+        Giocatore.getInstance().setArma(GeneraArma.getArma(2));
         Battaglia battaglia = new Battaglia();
         init("1");
         if ( battaglia.battaglia(new TestNemicoAssalto()).equals("Pareggio")) {
-            System.out.println("TestBattaglia.testBattagliaPareggioAssalto(): OK");
+            printGreen("TestBattaglia.testBattagliaPareggioAssalto(): OK");
             return true;
         }
         else {
-            System.out.println("TestBattaglia.testBattagliaPareggioAssalto(): FAILED");
+            printRed("TestBattaglia.testBattagliaPareggioAssalto(): FAILED");
             return false;
         }
     }
@@ -149,11 +157,11 @@ public class TestBattaglia {
         Battaglia battaglia = new Battaglia();
         init("\n");
         if ( battaglia.battaglia(new TestNemicoAssalto()).equals("Vittoria")) {
-            System.out.println("TestBattaglia.testBattagliaInputErratoVittoria(): OK");
+            printGreen("TestBattaglia.testBattagliaInputErratoVittoria(): OK");
             return true;
         }
         else {
-            System.out.println("TestBattaglia.testBattagliaInputErratoVittoria(): FAILED");
+            printRed("TestBattaglia.testBattagliaInputErratoVittoria(): FAILED");
             return false;
         }
     }
@@ -162,11 +170,11 @@ public class TestBattaglia {
         Battaglia battaglia = new Battaglia();
         init("\n");
         if ( battaglia.battaglia(new TestNemicoAttacco()).equals("Pareggio")) {
-            System.out.println("TestBattaglia.testBattagliaInputErratoPareggio(): OK");
+            printGreen("TestBattaglia.testBattagliaInputErratoPareggio(): OK");
             return true;
         }
         else {
-            System.out.println("TestBattaglia.testBattagliaInputErratoPareggio(): FAILED");
+            printRed("TestBattaglia.testBattagliaInputErratoPareggio(): FAILED");
             return false;
         }
     }
@@ -175,11 +183,11 @@ public class TestBattaglia {
         Battaglia battaglia = new Battaglia();
         init("\n");
         if ( battaglia.battaglia(new TestNemicoDifesa()).equals("Sconfitta")) {
-            System.out.println("TestBattaglia.testBattagliaInputErratoSconfitta(): OK");
+            printGreen("TestBattaglia.testBattagliaInputErratoSconfitta(): OK");
             return true;
         }
         else {
-            System.out.println("TestBattaglia.testBattagliaInputErratoSconfitta(): FAILED");
+            printRed("TestBattaglia.testBattagliaInputErratoSconfitta(): FAILED");
             return false;
         }
     }

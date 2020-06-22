@@ -5,16 +5,24 @@ import com.seminara.text_dungeon.nemico.*;
 
 
 public class TestBosco {
+
+    private static void printRed(String str){
+        System.out.println("\u001B[31m"+str+ "\u001B[0m");
+    }
+
+    private static void printGreen(String str){
+        System.out.println("\u001B[32m"+str+ "\u001B[0m");
+    }
     
     public static boolean testGetNemicoGoblinBosco() {
         Dungeon dungeon = new Bosco();
         INemico nemico = dungeon.getNemico(TipoNemico.FACILE);
         if(nemico.getNome() == "Goblin") {
-            System.out.println("TestBosco.testGetNemicoGoblin(): OK");
+            printGreen("TestBosco.testGetNemicoGoblin(): OK");
             return true;
         }
         else {
-            System.out.println("TestBosco.testGetNemicoGoblin(): FAILED");
+            printRed("TestBosco.testGetNemicoGoblin(): FAILED");
             return false;
         }
     }
@@ -23,11 +31,11 @@ public class TestBosco {
         Dungeon dungeon = new Bosco();
         INemico nemico = dungeon.getNemico(TipoNemico.MEDIO);
         if(nemico.getNome() == "Chimera") {
-            System.out.println("TestBosco.testGetNemicoChimera(): OK");
+            printGreen("TestBosco.testGetNemicoChimera(): OK");
             return true;
         }
         else {
-            System.out.println("TestBosco.testGetNemicoChimera(): FAILED");
+            printRed("TestBosco.testGetNemicoChimera(): FAILED");
             return false;
         }
     }
@@ -36,11 +44,11 @@ public class TestBosco {
         Dungeon dungeon = new Bosco();
         INemico nemico = dungeon.getNemico(TipoNemico.DIFFICILE);
         if(nemico.getNome() == "Strega") {
-            System.out.println("TestBosco.testGetNemicoStrega(): OK");
+            printGreen("TestBosco.testGetNemicoStrega(): OK");
             return true;
         }
         else {
-            System.out.println("TestBosco.testGetNemicoStrega(): FAILED");
+            printRed("TestBosco.testGetNemicoStrega(): FAILED");
             return false;
         }
     }
@@ -49,11 +57,11 @@ public class TestBosco {
         Dungeon dungeon = new Bosco();
         INemico nemico = dungeon.getNemico(null);
         if(nemico == null) {
-            System.out.println("TestBosco.testGetNemicoNull(): OK");
+            printGreen("TestBosco.testGetNemicoNull(): OK");
             return true;
         }
         else {
-            System.out.println("TestBosco.testGetNemicoNull(): FAILED");
+            printRed("TestBosco.testGetNemicoNull(): FAILED");
             return false;
         }
     }
@@ -62,11 +70,11 @@ public class TestBosco {
         Dungeon dungeon = new Bosco();
         INemico nemico = dungeon.esplora();
         if(nemico.getNome() == "Goblin" && dungeon.getLivello() == 1) {
-            System.out.println("TestBosco.testEsploraBosco(): OK");
+            printGreen("TestBosco.testEsploraBosco(): OK");
             return true;
         }
         else {
-            System.out.println("TestBosco.testEsploraBosco(): FAILED");
+            printRed("TestBosco.testEsploraBosco(): FAILED");
             return false;
         }
     }

@@ -2,15 +2,23 @@ package com.seminara.text_dungeon.armeria;
 import com.seminara.text_dungeon.pietra.*;
 
 public class TestAscia {
+
+    private static void printRed(String str){
+        System.out.println("\u001B[31m"+str+ "\u001B[0m");
+    }
+
+    private static void printGreen(String str){
+        System.out.println("\u001B[32m"+str+ "\u001B[0m");
+    }
     
     public static boolean testGetTipoAsciaPietraGrigia() {
         Ascia ascia = new Ascia(new PietraGrigia());
         if  (ascia.getTipo().equals("Ascia con Pietra Grigia")) {
-            System.out.println("TestAscia.testGetTipoAsciaPietraGrigia(): OK");
+            printGreen("TestAscia.testGetTipoAsciaPietraGrigia(): OK");
             return true;
         }
         else {
-            System.out.println("TestAscia.testGetTipoAsciaPietraGrigia(): FAILED");
+            printRed("TestAscia.testGetTipoAsciaPietraGrigia(): FAILED");
             return false;
         }
     }
@@ -18,11 +26,11 @@ public class TestAscia {
     public static boolean testGetTipoAsciaPietraBianca() {
         Ascia ascia = new Ascia(new PietraBianca());
         if  (ascia.getTipo().equals("Ascia con Pietra Bianca")) {
-            System.out.println("TestAscia.testGetTipoAsciaPietraBianca(): OK");
+            printGreen("TestAscia.testGetTipoAsciaPietraBianca(): OK");
             return true;
         }
         else {
-            System.out.println("TestAscia.testGetTipoAsciaPietraBianca(): FAILED");
+            printRed("TestAscia.testGetTipoAsciaPietraBianca(): FAILED");
             return false;
         }
     }
@@ -30,11 +38,11 @@ public class TestAscia {
     public static boolean testGetTipoAsciaPietraNera() {
         Ascia ascia = new Ascia(new PietraNera());
         if  (ascia.getTipo().equals("Ascia con Pietra Nera")) {
-            System.out.println("TestAscia.testGetTipoAsciaPietraNera(): OK");
+            printGreen("TestAscia.testGetTipoAsciaPietraNera(): OK");
             return true;
         }
         else {
-            System.out.println("TestAscia.testGetTipoAsciaPietraNera(): FAILED");
+            printRed("TestAscia.testGetTipoAsciaPietraNera(): FAILED");
             return false;
         }
     }
@@ -43,11 +51,11 @@ public class TestAscia {
         Ascia ascia = new Ascia(new PietraGrigia());
         float danno = ascia.getDanno();
         if  (danno >= 20f && danno <= 52f) {
-            System.out.println("TestAscia.testGetDannoAsciaPietraGrigia(): OK");
+            printGreen("TestAscia.testGetDannoAsciaPietraGrigia(): OK");
             return true;
         }
         else {
-            System.out.println("TestAscia.testGetDannoAsciaPietraGrigia(): FAILED");
+            printRed("TestAscia.testGetDannoAsciaPietraGrigia(): FAILED");
             return false;
         }
     }
@@ -56,11 +64,11 @@ public class TestAscia {
         Ascia ascia = new Ascia(new PietraBianca());
         float danno = ascia.getDanno();
         if  (danno >= 20f && danno <= 57f) {
-            System.out.println("TestAscia.testGetDannoAsciaPietraBianca(): OK");
+            printGreen("TestAscia.testGetDannoAsciaPietraBianca(): OK");
             return true;
         }
         else {
-            System.out.println("TestAscia.testGetDannoAsciaPietraBianca(): FAILED");
+            printRed("TestAscia.testGetDannoAsciaPietraBianca(): FAILED");
             return false;
         }
     }
@@ -69,11 +77,11 @@ public class TestAscia {
         Ascia ascia = new Ascia(new PietraNera());
         float danno = ascia.getDanno();
         if  (danno >= 20f && danno <= 64.5f) {
-            System.out.println("TestAscia.testGetDannoAsciaPietraNera(): OK");
+            printGreen("TestAscia.testGetDannoAsciaPietraNera(): OK");
             return true;
         }
         else {
-            System.out.println("TestAscia.testGetDannoAsciaPietraNera(): FAILED");
+            printRed("TestAscia.testGetDannoAsciaPietraNera(): FAILED");
             return false;
         }
     }

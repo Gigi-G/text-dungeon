@@ -33,7 +33,7 @@ public class Regole implements IGameState {
         System.out.println();
         System.out.println("L'utente ogni turno dovrà selezionare una modalità fra: Attacco, Assalto e Difesa.");
         System.out.println("L’Attacco batte l’Assalto e chi si trova nello stato di Assalto subisce un danno pari a quello che può infliggere chi si trova nello stato di attacco."); 
-        System.out.println("La Difesa batte l’Attacco e non si hanno danni da entrambe le parti.");
+        System.out.println("La Difesa batte l’Attacco e chi si trova nello stato di attacco subisce un danno più o meno alla metà di quello che può essere inflitto da chi si trova nello stato di difesa.");
         System.out.println("L’Assalto batte la Difesa e chi si trova nello stato di Difesa subisce un danno pari alla metà di quello che può essere inflitto da chi si trova nello stato di assalto.");
         System.out.println("In caso di pareggio non accade nulla.");
         System.out.println("ATTENZIONE: se si sbaglia a digitare, per default la modalità sarà Attacco.");

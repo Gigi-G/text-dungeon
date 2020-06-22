@@ -9,14 +9,14 @@ import com.seminara.text_dungeon.keylistener.KeyListener;
 
 public class TestApp {
 
-    public static boolean testMain() {
-        File file = new File("src/test/java/com/seminara/text_dungeon/GameAction.txt");
+    public static boolean testMain(String path) {
+        File file = new File(path);
         InputStream in;
         try {
             in = new FileInputStream(file);
             System.setIn(in);
             KeyListener.resetBuffer();
-            App.main(new String[] { "com.seminara.text_dungeon" });
+            App.main(new String[] { "com.seminara.text_dungeon.App" });
             return true;
         } catch (IOException e) {
             e.printStackTrace();
