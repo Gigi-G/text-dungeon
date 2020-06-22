@@ -3,22 +3,14 @@ import com.seminara.text_dungeon.pietra.*;
 
 public class TestSpada {
 
-    private static void printRed(String str){
-        System.out.println("\u001B[31m"+str+ "\u001B[0m");
-    }
-
-    private static void printGreen(String str){
-        System.out.println("\u001B[32m"+str+ "\u001B[0m");
-    }
-
     public static boolean testGetTipoSpadaPietraGrigia() {
         Spada spada = new Spada(new PietraGrigia());
         if  (spada.getTipo().equals("Spada con Pietra Grigia")) {
-            printGreen("TestSpada.testGetTipoSpadaPietraGrigia(): OK");
+            System.out.println("TestSpada.testGetTipoSpadaPietraGrigia(): OK");
             return true;
         }
         else {
-            printRed("TestSpada.testGetTipoSpadaPietraGrigia(): FAILED");
+            System.out.println("TestSpada.testGetTipoSpadaPietraGrigia(): FAILED");
             return false;
         }
     }
@@ -26,11 +18,11 @@ public class TestSpada {
     public static boolean testGetTipoSpadaPietraBianca() {
         Spada spada = new Spada(new PietraBianca());
         if  (spada.getTipo().equals("Spada con Pietra Bianca")) {
-            printGreen("TestSpada.testGetTipoSpadaPietraBianca(): OK");
+            System.out.println("TestSpada.testGetTipoSpadaPietraBianca(): OK");
             return true;
         }
         else {
-            printRed("TestSpada.testGetTipoSpadaPietraBianca(): FAILED");
+            System.out.println("TestSpada.testGetTipoSpadaPietraBianca(): FAILED");
             return false;
         }
     }
@@ -38,11 +30,11 @@ public class TestSpada {
     public static boolean testGetTipoSpadaPietraNera() {
         Spada spada = new Spada(new PietraNera());
         if  (spada.getTipo().equals("Spada con Pietra Nera")) {
-            printGreen("TestSpada.testGetTipoSpadaPietraNera(): OK");
+            System.out.println("TestSpada.testGetTipoSpadaPietraNera(): OK");
             return true;
         }
         else {
-            printRed("TestSpada.testGetTipoSpadaPietraNera(): FAILED");
+            System.out.println("TestSpada.testGetTipoSpadaPietraNera(): FAILED");
             return false;
         }
     }
@@ -51,11 +43,11 @@ public class TestSpada {
         Spada spada = new Spada(new PietraGrigia());
         float danno = spada.getDanno();
         if  (danno >= 5f && danno <= 62f) {
-            printGreen("TestSpada.testGetDannoSpadaPietraGrigia(): OK");
+            System.out.println("TestSpada.testGetDannoSpadaPietraGrigia(): OK");
             return true;
         }
         else {
-            printRed("TestSpada.testGetDannoSpadaPietraGrigia(): FAILED");
+            System.out.println("TestSpada.testGetDannoSpadaPietraGrigia(): FAILED");
             return false;
         }
     }
@@ -64,11 +56,11 @@ public class TestSpada {
         Spada spada = new Spada(new PietraBianca());
         float danno = spada.getDanno();
         if  (danno >= 5f && danno <= 68f) {
-            printGreen("TestSpada.testGetDannoSpadaPietraBianca(): OK");
+            System.out.println("TestSpada.testGetDannoSpadaPietraBianca(): OK");
             return true;
         }
         else {
-            printRed("TestSpada.testGetDannoSpadaPietraBianca(): FAILED");
+            System.out.println("TestSpada.testGetDannoSpadaPietraBianca(): FAILED");
             return false;
         }
     }
@@ -77,11 +69,11 @@ public class TestSpada {
         Spada spada = new Spada(new PietraNera());
         float danno = spada.getDanno();
         if  (danno >= 5f && danno <= 77f) {
-            printGreen("TestSpada.testGetDannoSpadaPietraNera(): OK");
+            System.out.println("TestSpada.testGetDannoSpadaPietraNera(): OK");
             return true;
         }
         else {
-            printRed("TestSpada.testGetDannoSpadaPietraNera(): FAILED");
+            System.out.println("TestSpada.testGetDannoSpadaPietraNera(): FAILED");
             return false;
         }
     }

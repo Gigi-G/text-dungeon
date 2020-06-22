@@ -17,11 +17,13 @@ public class TestApp {
             System.setIn(in);
             KeyListener.resetBuffer();
             App.main(new String[] { "com.seminara.text_dungeon.App" });
+            System.out.println("TestApp.testMain(): OK");
             return true;
         } catch (IOException e) {
+            System.out.println("TestApp.testMain(): OK");
             e.printStackTrace();
+            return false;
         }
-        return false;
     }
     
 }

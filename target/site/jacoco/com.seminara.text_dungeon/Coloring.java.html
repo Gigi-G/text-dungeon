@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="it"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Coloring.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">text_dungeon</a> &gt; <a href="index.source.html" class="el_package">com.seminara.text_dungeon</a> &gt; <span class="el_source">Coloring.java</span></div><h1>Coloring.java</h1><pre class="source lang-java linenums">package com.seminara.text_dungeon;
+
+public class Coloring {
+
+    private static final String RESET = &quot;\u001B[0m&quot;;
+
+    private Coloring() {}
+
+    public static void printblue(String str) {
+<span class="nc" id="L10">        System.out.println(&quot;\u001B[34m&quot; + str + RESET);</span>
+<span class="nc" id="L11">    }</span>
+
+    public static void printcyan(String str) {
+<span class="nc" id="L14">        System.out.println(&quot;\u001B[36m&quot; + str + RESET);</span>
+<span class="nc" id="L15">    }</span>
+
+    public static void printpurple(String str) {
+<span class="nc" id="L18">        System.out.println(&quot;\u001B[35m&quot; + str + RESET);</span>
+<span class="nc" id="L19">    }</span>
+
+    public static void printyellow(String str) {
+<span class="nc" id="L22">        System.out.println(&quot;\u001B[33m&quot; + str + RESET);</span>
+<span class="nc" id="L23">    }</span>
+
+    public static void printmagenta(String str) {
+<span class="nc" id="L26">        System.out.println(&quot;\u001b[35m&quot; + str + RESET);</span>
+<span class="nc" id="L27">    }</span>
+
+    public static void printred(String str){
+<span class="nc" id="L30">        System.out.println(&quot;\u001B[31m&quot;+str+ RESET);</span>
+<span class="nc" id="L31">    }</span>
+
+    public static void printgreen(String str){
+<span class="nc" id="L34">        System.out.println(&quot;\u001B[32m&quot;+str+ RESET);</span>
+<span class="nc" id="L35">    }</span>
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
