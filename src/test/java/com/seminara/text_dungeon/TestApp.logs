@@ -1,0 +1,940 @@
+
+***Si consiglia di visualizzare il file Test.logs con il comando cat***
+
+----------------------------------------------------------
+[32m~~|~~    |        |~~\                          
+  |/~/\/~|~  ---  |   ||   ||/~\ /~~|/~//~\|/~\ 
+  |\/_/\ |        |__/  \_/||   |\__|\/_\_/|   |
+                                 \__|           [0m
+----------------------------------------------------------
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+REGOLE:
+
+
+Nei dungeon sono presenti 4 mostri da dover affrontare.
+
+
+L'utente ogni turno dovrà selezionare una modalità fra: Attacco, Assalto e Difesa.
+L’Attacco batte l’Assalto e chi si trova nello stato di Assalto subisce un danno pari a quello che può infliggere chi si trova nello stato di attacco.
+La Difesa batte l’Attacco e chi si trova nello stato di attacco subisce un danno più o meno alla metà di quello che può essere inflitto da chi si trova nello stato di difesa.
+L’Assalto batte la Difesa e chi si trova nello stato di Difesa subisce un danno pari alla metà di quello che può essere inflitto da chi si trova nello stato di assalto.
+In caso di pareggio non accade nulla.
+ATTENZIONE: se si sbaglia a digitare, per default la modalità sarà Attacco.
+
+
+Dopo ogni attacco vengono visualizzati i punti vita.
+In caso di sconfitta la partita si conclude, ma in caso di vittoria viene proposta una nuova arma e i punti vita vengono ripristinati.
+Si vince se si riescono a battere tutti i nemici.
+
+
+Buona fortuna!
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+----------------------------------------------------------
+[32mLivello Bosco:[0m
+----------------------------------------------------------
+
+
+Scegli la tua arma:
+0- Ascia
+1- Mannaia
+2- Spada
+
+
+Livello: 1
+Nemico: Goblin
+
+Tipo: Ascia con Pietra Grigia
+Danno: 41.110058
+
+Vita Giocatore: 300.0
+Vita Nemico: 80.0
+
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Assalto
+
+Vita Giocatore: 300.0
+Vita Nemico: 38.889942
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Attacco
+
+Vita Giocatore: 300.0
+Vita Nemico: 38.889942
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Attacco
+
+Vita Giocatore: 300.0
+Vita Nemico: 38.889942
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Assalto
+
+Vita Giocatore: 300.0
+Vita Nemico: 0.0
+
+
+Nuova arma trovata: 
+
+Tipo: Ascia con Pietra Grigia
+Danno: 21.034615
+
+Vecchia arma:
+
+Tipo: Ascia con Pietra Grigia
+Danno: 41.110058
+
+Differenza danno: -20.075443
+
+Vuoi cambiare arma: y/[N]? 
+
+Livello: 2
+Nemico: Chimera
+
+Tipo: Ascia con Pietra Grigia
+Danno: 41.110058
+
+Vita Giocatore: 300.0
+Vita Nemico: 250.0
+
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Assalto
+
+Vita Giocatore: 300.0
+Vita Nemico: 208.88994
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Assalto
+
+Vita Giocatore: 300.0
+Vita Nemico: 167.77988
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Attacco
+
+Vita Giocatore: 300.0
+Vita Nemico: 167.77988
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Assalto
+
+Vita Giocatore: 300.0
+Vita Nemico: 126.669815
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Assalto
+
+Vita Giocatore: 300.0
+Vita Nemico: 85.55975
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Assalto
+
+Vita Giocatore: 300.0
+Vita Nemico: 44.449696
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Attacco
+
+Vita Giocatore: 300.0
+Vita Nemico: 44.449696
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Difesa
+
+Vita Giocatore: 265.55402
+Vita Nemico: 44.449696
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Assalto
+
+Vita Giocatore: 265.55402
+Vita Nemico: 3.3396378
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Difesa
+
+Vita Giocatore: 241.87123
+Vita Nemico: 3.3396378
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Difesa
+
+Vita Giocatore: 194.3144
+Vita Nemico: 3.3396378
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Assalto
+
+Vita Giocatore: 194.3144
+Vita Nemico: 0.0
+
+
+Nuova arma trovata: 
+
+Tipo: Spada con Pietra Grigia
+Danno: 8.938122
+
+Vecchia arma:
+
+Tipo: Ascia con Pietra Grigia
+Danno: 41.110058
+
+Differenza danno: -32.171936
+
+Vuoi cambiare arma: y/[N]? 
+Hai cambiato arma!
+
+Livello: 3
+Nemico: Goblin
+
+Tipo: Spada con Pietra Grigia
+Danno: 8.938122
+
+Vita Giocatore: 194.3144
+Vita Nemico: 80.0
+
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Assalto
+
+Vita Giocatore: 194.3144
+Vita Nemico: 71.061874
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Assalto
+
+Vita Giocatore: 194.3144
+Vita Nemico: 62.123753
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Difesa
+
+Vita Giocatore: 191.45998
+Vita Nemico: 62.123753
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Assalto
+
+Vita Giocatore: 191.45998
+Vita Nemico: 53.18563
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Attacco
+
+Vita Giocatore: 191.45998
+Vita Nemico: 53.18563
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Attacco
+
+Vita Giocatore: 191.45998
+Vita Nemico: 53.18563
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Assalto
+
+Vita Giocatore: 191.45998
+Vita Nemico: 44.24751
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Assalto
+
+Vita Giocatore: 191.45998
+Vita Nemico: 35.309387
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Assalto
+
+Vita Giocatore: 191.45998
+Vita Nemico: 26.371265
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Assalto
+
+Vita Giocatore: 191.45998
+Vita Nemico: 17.433144
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Assalto
+
+Vita Giocatore: 191.45998
+Vita Nemico: 8.495022
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Difesa
+
+Vita Giocatore: 187.71483
+Vita Nemico: 8.495022
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Attacco
+
+Vita Giocatore: 187.71483
+Vita Nemico: 8.495022
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Attacco
+
+Vita Giocatore: 187.71483
+Vita Nemico: 8.495022
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Difesa
+
+Vita Giocatore: 174.36739
+Vita Nemico: 8.495022
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Assalto
+
+Vita Giocatore: 174.36739
+Vita Nemico: 0.0
+
+
+Nuova arma trovata: 
+
+Tipo: Mannaia con Pietra Grigia
+Danno: 24.764725
+
+Vecchia arma:
+
+Tipo: Spada con Pietra Grigia
+Danno: 8.938122
+
+Differenza danno: 15.826603
+
+Vuoi cambiare arma: y/[N]? 
+
+Livello: 4
+Nemico: Strega
+
+Tipo: Spada con Pietra Grigia
+Danno: 8.938122
+
+Vita Giocatore: 174.36739
+Vita Nemico: 450.0
+
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Difesa
+
+Vita Giocatore: 147.5433
+Vita Nemico: 450.0
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Attacco
+
+Vita Giocatore: 147.5433
+Vita Nemico: 450.0
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Difesa
+
+Vita Giocatore: 119.44545
+Vita Nemico: 450.0
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Assalto
+
+Vita Giocatore: 119.44545
+Vita Nemico: 441.0619
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Difesa
+
+Vita Giocatore: 86.407104
+Vita Nemico: 441.0619
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Attacco
+
+Vita Giocatore: 86.407104
+Vita Nemico: 441.0619
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Attacco
+
+Vita Giocatore: 86.407104
+Vita Nemico: 441.0619
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Difesa
+
+Vita Giocatore: 44.049725
+Vita Nemico: 441.0619
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Difesa
+
+Vita Giocatore: 8.717346
+Vita Nemico: 441.0619
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Assalto
+
+Vita Giocatore: 8.717346
+Vita Nemico: 432.12378
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Assalto
+
+Vita Giocatore: 8.717346
+Vita Nemico: 423.18567
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Assalto
+
+Vita Giocatore: 8.717346
+Vita Nemico: 414.24756
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Difesa
+
+Vita Giocatore: 0.0
+Vita Nemico: 414.24756
+
+
+----------------------------------------------------------
+[31mGAME OVER[0m
+----------------------------------------------------------
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Cosa vuoi fare?
+1 - Regole
+2 - Gioca livello Bosco
+3 - Gioca livello Deserto
+q - Esci dal gioco
+
+
+Grazie per aver giocato!
+Design by Luigi Seminara
+
+TestApp.testApp(): OK

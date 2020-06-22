@@ -258,6 +258,7 @@ public class AppTest {
     public void testApp() {
         printHeader(TestApp.class.getName());
         assertTrue(TestApp.testMain("src/test/java/com/seminara/text_dungeon/GameAction.txt"));
+        System.out.println("TestApp.logs generato in /src/test/java/com/seminara/text_dungeon/");
         printFooter();
     }
 

@@ -8,7 +8,7 @@ public class GeneraPietra {
 <span class="fc bfc" id="L8" title="All 4 branches covered.">                                                             x -&gt; (x &gt;= 0.75f &amp;&amp; x &lt;= 0.89f)?new PietraBianca():null, </span>
 <span class="fc bfc" id="L9" title="All 2 branches covered.">                                                             x -&gt; (x &gt;= 0.90f)?new PietraNera():null);</span>
     private static float rand;
-    private static IPietra pietra;
+<span class="fc" id="L11">    private static IPietra pietra;</span>
 
     private GeneraPietra() {}
 
@@ -29,7 +29,7 @@ public class GeneraPietra {
 <span class="fc" id="L29">        return (float) Math.random();</span>
     }
 
-    protected static float getRand() { 
+    protected static float getRand() {
 <span class="fc" id="L33">        return rand;</span>
     }
 }
