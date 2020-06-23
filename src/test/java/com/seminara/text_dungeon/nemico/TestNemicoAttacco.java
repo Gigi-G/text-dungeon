@@ -1,6 +1,6 @@
 package com.seminara.text_dungeon.nemico;
 
-import com.seminara.text_dungeon.stato_personaggio.GeneraStato;
+import com.seminara.text_dungeon.stato_combattimento.GeneraStato;
 
 public class TestNemicoAttacco extends Nemico {
 

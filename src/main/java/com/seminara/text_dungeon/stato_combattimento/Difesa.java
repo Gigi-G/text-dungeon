@@ -1,6 +1,6 @@
-package com.seminara.text_dungeon.stato_personaggio;
+package com.seminara.text_dungeon.stato_combattimento;
 
-public class Difesa implements IStatoPersonaggio {
+public class Difesa implements IStatoCombattimento {
 
     @Override
     public String mostra() {

@@ -1,13 +1,13 @@
 package com.seminara.text_dungeon.giocatore;
 
 import com.seminara.text_dungeon.armeria.IArma;
-import com.seminara.text_dungeon.stato_personaggio.GeneraStato;
-import com.seminara.text_dungeon.stato_personaggio.IStatoPersonaggio;
+import com.seminara.text_dungeon.stato_combattimento.GeneraStato;
+import com.seminara.text_dungeon.stato_combattimento.IStatoCombattimento;
 
 public class Giocatore {
     private float vita;
     private IArma arma;
-    private IStatoPersonaggio stato;
+    private IStatoCombattimento stato;
     private static Giocatore instance;
 
     private Giocatore() {

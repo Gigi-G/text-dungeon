@@ -1,14 +1,14 @@
 package com.seminara.text_dungeon.nemico;
 
-import com.seminara.text_dungeon.stato_personaggio.GeneraStato;
-import com.seminara.text_dungeon.stato_personaggio.IStatoPersonaggio;
+import com.seminara.text_dungeon.stato_combattimento.GeneraStato;
+import com.seminara.text_dungeon.stato_combattimento.IStatoCombattimento;
 
 public abstract class Nemico implements INemico {
     protected String tipo;
     protected float vita;
     protected int min;
     protected int max;
-    protected IStatoPersonaggio stato = GeneraStato.generaStato("0");
+    protected IStatoCombattimento stato = GeneraStato.generaStato("0");
 
     @Override
     public String getNome() {

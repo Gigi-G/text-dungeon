@@ -58,7 +58,7 @@ Livello: 1
 Nemico: Goblin
 
 Tipo: Ascia con Pietra Grigia
-Danno: 41.110058
+Danno: 31.217304
 
 Vita Giocatore: 300.0
 Vita Nemico: 80.0
@@ -72,23 +72,10 @@ Scegli la posizione da combattimento:
 
 
 Posizione Giocatore: Attacco
-Posizione Goblin: Assalto
+Posizione Goblin: Difesa
 
-Vita Giocatore: 300.0
-Vita Nemico: 38.889942
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Goblin: Attacco
-
-Vita Giocatore: 300.0
-Vita Nemico: 38.889942
+Vita Giocatore: 292.7392
+Vita Nemico: 80.0
 
 
 Scegli la posizione da combattimento:
@@ -98,10 +85,10 @@ Scegli la posizione da combattimento:
 
 
 Posizione Giocatore: Attacco
-Posizione Goblin: Attacco
+Posizione Goblin: Difesa
 
-Vita Giocatore: 300.0
-Vita Nemico: 38.889942
+Vita Giocatore: 280.23877
+Vita Nemico: 80.0
 
 
 Scegli la posizione da combattimento:
@@ -113,21 +100,47 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Goblin: Assalto
 
-Vita Giocatore: 300.0
+Vita Giocatore: 280.23877
+Vita Nemico: 48.782696
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Assalto
+
+Vita Giocatore: 280.23877
+Vita Nemico: 17.565392
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Goblin: Assalto
+
+Vita Giocatore: 280.23877
 Vita Nemico: 0.0
 
 
 Nuova arma trovata: 
 
 Tipo: Ascia con Pietra Grigia
-Danno: 21.034615
+Danno: 49.512447
 
 Vecchia arma:
 
 Tipo: Ascia con Pietra Grigia
-Danno: 41.110058
+Danno: 31.217304
 
-Differenza danno: -20.075443
+Differenza danno: 18.295143
 
 Vuoi cambiare arma: y/[N]? 
 
@@ -135,9 +148,9 @@ Livello: 2
 Nemico: Chimera
 
 Tipo: Ascia con Pietra Grigia
-Danno: 41.110058
+Danno: 31.217304
 
-Vita Giocatore: 300.0
+Vita Giocatore: 280.23877
 Vita Nemico: 250.0
 
 
@@ -151,8 +164,8 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Chimera: Assalto
 
-Vita Giocatore: 300.0
-Vita Nemico: 208.88994
+Vita Giocatore: 280.23877
+Vita Nemico: 218.7827
 
 
 Scegli la posizione da combattimento:
@@ -164,8 +177,21 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Chimera: Assalto
 
-Vita Giocatore: 300.0
-Vita Nemico: 167.77988
+Vita Giocatore: 280.23877
+Vita Nemico: 187.5654
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Assalto
+
+Vita Giocatore: 280.23877
+Vita Nemico: 156.3481
 
 
 Scegli la posizione da combattimento:
@@ -177,8 +203,34 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Chimera: Attacco
 
-Vita Giocatore: 300.0
-Vita Nemico: 167.77988
+Vita Giocatore: 280.23877
+Vita Nemico: 156.3481
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Difesa
+
+Vita Giocatore: 257.97226
+Vita Nemico: 156.3481
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Difesa
+
+Vita Giocatore: 237.99814
+Vita Nemico: 156.3481
 
 
 Scegli la posizione da combattimento:
@@ -190,34 +242,8 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Chimera: Assalto
 
-Vita Giocatore: 300.0
-Vita Nemico: 126.669815
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Chimera: Assalto
-
-Vita Giocatore: 300.0
-Vita Nemico: 85.55975
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Chimera: Assalto
-
-Vita Giocatore: 300.0
-Vita Nemico: 44.449696
+Vita Giocatore: 237.99814
+Vita Nemico: 125.1308
 
 
 Scegli la posizione da combattimento:
@@ -229,21 +255,8 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Chimera: Attacco
 
-Vita Giocatore: 300.0
-Vita Nemico: 44.449696
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Chimera: Difesa
-
-Vita Giocatore: 265.55402
-Vita Nemico: 44.449696
+Vita Giocatore: 237.99814
+Vita Nemico: 125.1308
 
 
 Scegli la posizione da combattimento:
@@ -255,34 +268,8 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Chimera: Assalto
 
-Vita Giocatore: 265.55402
-Vita Nemico: 3.3396378
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Chimera: Difesa
-
-Vita Giocatore: 241.87123
-Vita Nemico: 3.3396378
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Chimera: Difesa
-
-Vita Giocatore: 194.3144
-Vita Nemico: 3.3396378
+Vita Giocatore: 237.99814
+Vita Nemico: 93.9135
 
 
 Scegli la posizione da combattimento:
@@ -294,32 +281,83 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Chimera: Assalto
 
-Vita Giocatore: 194.3144
+Vita Giocatore: 237.99814
+Vita Nemico: 62.696194
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Assalto
+
+Vita Giocatore: 237.99814
+Vita Nemico: 31.47889
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Assalto
+
+Vita Giocatore: 237.99814
+Vita Nemico: 0.26158524
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Difesa
+
+Vita Giocatore: 202.22765
+Vita Nemico: 0.26158524
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Chimera: Assalto
+
+Vita Giocatore: 202.22765
 Vita Nemico: 0.0
 
 
 Nuova arma trovata: 
 
-Tipo: Spada con Pietra Grigia
-Danno: 8.938122
+Tipo: Mannaia con Pietra Grigia
+Danno: 29.572393
 
 Vecchia arma:
 
 Tipo: Ascia con Pietra Grigia
-Danno: 41.110058
+Danno: 31.217304
 
-Differenza danno: -32.171936
+Differenza danno: -1.6449108
 
 Vuoi cambiare arma: y/[N]? 
-Hai cambiato arma!
 
 Livello: 3
 Nemico: Goblin
 
-Tipo: Spada con Pietra Grigia
-Danno: 8.938122
+Tipo: Ascia con Pietra Grigia
+Danno: 31.217304
 
-Vita Giocatore: 194.3144
+Vita Giocatore: 202.22765
 Vita Nemico: 80.0
 
 
@@ -333,21 +371,8 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Goblin: Assalto
 
-Vita Giocatore: 194.3144
-Vita Nemico: 71.061874
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Goblin: Assalto
-
-Vita Giocatore: 194.3144
-Vita Nemico: 62.123753
+Vita Giocatore: 202.22765
+Vita Nemico: 48.782696
 
 
 Scegli la posizione da combattimento:
@@ -359,8 +384,8 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Goblin: Difesa
 
-Vita Giocatore: 191.45998
-Vita Nemico: 62.123753
+Vita Giocatore: 195.87112
+Vita Nemico: 48.782696
 
 
 Scegli la posizione da combattimento:
@@ -372,34 +397,8 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Goblin: Assalto
 
-Vita Giocatore: 191.45998
-Vita Nemico: 53.18563
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Goblin: Attacco
-
-Vita Giocatore: 191.45998
-Vita Nemico: 53.18563
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Goblin: Attacco
-
-Vita Giocatore: 191.45998
-Vita Nemico: 53.18563
+Vita Giocatore: 195.87112
+Vita Nemico: 17.565392
 
 
 Scegli la posizione da combattimento:
@@ -411,148 +410,31 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Goblin: Assalto
 
-Vita Giocatore: 191.45998
-Vita Nemico: 44.24751
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Goblin: Assalto
-
-Vita Giocatore: 191.45998
-Vita Nemico: 35.309387
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Goblin: Assalto
-
-Vita Giocatore: 191.45998
-Vita Nemico: 26.371265
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Goblin: Assalto
-
-Vita Giocatore: 191.45998
-Vita Nemico: 17.433144
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Goblin: Assalto
-
-Vita Giocatore: 191.45998
-Vita Nemico: 8.495022
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Goblin: Difesa
-
-Vita Giocatore: 187.71483
-Vita Nemico: 8.495022
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Goblin: Attacco
-
-Vita Giocatore: 187.71483
-Vita Nemico: 8.495022
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Goblin: Attacco
-
-Vita Giocatore: 187.71483
-Vita Nemico: 8.495022
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Goblin: Difesa
-
-Vita Giocatore: 174.36739
-Vita Nemico: 8.495022
-
-
-Scegli la posizione da combattimento:
-0- Attacco
-1- Assalto
-2- Difesa
-
-
-Posizione Giocatore: Attacco
-Posizione Goblin: Assalto
-
-Vita Giocatore: 174.36739
+Vita Giocatore: 195.87112
 Vita Nemico: 0.0
 
 
 Nuova arma trovata: 
 
 Tipo: Mannaia con Pietra Grigia
-Danno: 24.764725
+Danno: 16.384464
 
 Vecchia arma:
 
-Tipo: Spada con Pietra Grigia
-Danno: 8.938122
+Tipo: Ascia con Pietra Grigia
+Danno: 31.217304
 
-Differenza danno: 15.826603
+Differenza danno: -14.83284
 
 Vuoi cambiare arma: y/[N]? 
 
 Livello: 4
 Nemico: Strega
 
-Tipo: Spada con Pietra Grigia
-Danno: 8.938122
+Tipo: Ascia con Pietra Grigia
+Danno: 31.217304
 
-Vita Giocatore: 174.36739
+Vita Giocatore: 195.87112
 Vita Nemico: 450.0
 
 
@@ -564,9 +446,9 @@ Scegli la posizione da combattimento:
 
 
 Posizione Giocatore: Attacco
-Posizione Strega: Difesa
+Posizione Strega: Attacco
 
-Vita Giocatore: 147.5433
+Vita Giocatore: 195.87112
 Vita Nemico: 450.0
 
 
@@ -579,7 +461,7 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Strega: Attacco
 
-Vita Giocatore: 147.5433
+Vita Giocatore: 195.87112
 Vita Nemico: 450.0
 
 
@@ -592,7 +474,7 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Strega: Difesa
 
-Vita Giocatore: 119.44545
+Vita Giocatore: 168.92715
 Vita Nemico: 450.0
 
 
@@ -605,8 +487,8 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Strega: Assalto
 
-Vita Giocatore: 119.44545
-Vita Nemico: 441.0619
+Vita Giocatore: 168.92715
+Vita Nemico: 418.78268
 
 
 Scegli la posizione da combattimento:
@@ -616,10 +498,23 @@ Scegli la posizione da combattimento:
 
 
 Posizione Giocatore: Attacco
-Posizione Strega: Difesa
+Posizione Strega: Assalto
 
-Vita Giocatore: 86.407104
-Vita Nemico: 441.0619
+Vita Giocatore: 168.92715
+Vita Nemico: 387.56537
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Assalto
+
+Vita Giocatore: 168.92715
+Vita Nemico: 356.34805
 
 
 Scegli la posizione da combattimento:
@@ -631,8 +526,47 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Strega: Attacco
 
-Vita Giocatore: 86.407104
-Vita Nemico: 441.0619
+Vita Giocatore: 168.92715
+Vita Nemico: 356.34805
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Assalto
+
+Vita Giocatore: 168.92715
+Vita Nemico: 325.13074
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Assalto
+
+Vita Giocatore: 168.92715
+Vita Nemico: 293.91342
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Assalto
+
+Vita Giocatore: 168.92715
+Vita Nemico: 262.6961
 
 
 Scegli la posizione da combattimento:
@@ -644,8 +578,60 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Strega: Attacco
 
-Vita Giocatore: 86.407104
-Vita Nemico: 441.0619
+Vita Giocatore: 168.92715
+Vita Nemico: 262.6961
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Attacco
+
+Vita Giocatore: 168.92715
+Vita Nemico: 262.6961
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Attacco
+
+Vita Giocatore: 168.92715
+Vita Nemico: 262.6961
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Attacco
+
+Vita Giocatore: 168.92715
+Vita Nemico: 262.6961
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Attacco
+
+Vita Giocatore: 168.92715
+Vita Nemico: 262.6961
 
 
 Scegli la posizione da combattimento:
@@ -657,8 +643,8 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Strega: Difesa
 
-Vita Giocatore: 44.049725
-Vita Nemico: 441.0619
+Vita Giocatore: 113.84927
+Vita Nemico: 262.6961
 
 
 Scegli la posizione da combattimento:
@@ -670,8 +656,34 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Strega: Difesa
 
-Vita Giocatore: 8.717346
-Vita Nemico: 441.0619
+Vita Giocatore: 85.75619
+Vita Nemico: 262.6961
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Difesa
+
+Vita Giocatore: 28.116161
+Vita Nemico: 262.6961
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Attacco
+
+Vita Giocatore: 28.116161
+Vita Nemico: 262.6961
 
 
 Scegli la posizione da combattimento:
@@ -683,8 +695,8 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Strega: Assalto
 
-Vita Giocatore: 8.717346
-Vita Nemico: 432.12378
+Vita Giocatore: 28.116161
+Vita Nemico: 231.4788
 
 
 Scegli la posizione da combattimento:
@@ -696,8 +708,8 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Strega: Assalto
 
-Vita Giocatore: 8.717346
-Vita Nemico: 423.18567
+Vita Giocatore: 28.116161
+Vita Nemico: 200.2615
 
 
 Scegli la posizione da combattimento:
@@ -709,8 +721,99 @@ Scegli la posizione da combattimento:
 Posizione Giocatore: Attacco
 Posizione Strega: Assalto
 
-Vita Giocatore: 8.717346
-Vita Nemico: 414.24756
+Vita Giocatore: 28.116161
+Vita Nemico: 169.0442
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Attacco
+
+Vita Giocatore: 28.116161
+Vita Nemico: 169.0442
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Assalto
+
+Vita Giocatore: 28.116161
+Vita Nemico: 137.8269
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Assalto
+
+Vita Giocatore: 28.116161
+Vita Nemico: 106.609604
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Attacco
+
+Vita Giocatore: 28.116161
+Vita Nemico: 106.609604
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Assalto
+
+Vita Giocatore: 28.116161
+Vita Nemico: 75.3923
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Difesa
+
+Vita Giocatore: 0.22177124
+Vita Nemico: 75.3923
+
+
+Scegli la posizione da combattimento:
+0- Attacco
+1- Assalto
+2- Difesa
+
+
+Posizione Giocatore: Attacco
+Posizione Strega: Attacco
+
+Vita Giocatore: 0.22177124
+Vita Nemico: 75.3923
 
 
 Scegli la posizione da combattimento:
@@ -723,68 +826,12 @@ Posizione Giocatore: Attacco
 Posizione Strega: Difesa
 
 Vita Giocatore: 0.0
-Vita Nemico: 414.24756
+Vita Nemico: 75.3923
 
 
 ----------------------------------------------------------
 [31mGAME OVER[0m
 ----------------------------------------------------------
-
-
-Cosa vuoi fare?
-1 - Regole
-2 - Gioca livello Bosco
-3 - Gioca livello Deserto
-q - Esci dal gioco
-
-
-Cosa vuoi fare?
-1 - Regole
-2 - Gioca livello Bosco
-3 - Gioca livello Deserto
-q - Esci dal gioco
-
-
-Cosa vuoi fare?
-1 - Regole
-2 - Gioca livello Bosco
-3 - Gioca livello Deserto
-q - Esci dal gioco
-
-
-Cosa vuoi fare?
-1 - Regole
-2 - Gioca livello Bosco
-3 - Gioca livello Deserto
-q - Esci dal gioco
-
-
-Cosa vuoi fare?
-1 - Regole
-2 - Gioca livello Bosco
-3 - Gioca livello Deserto
-q - Esci dal gioco
-
-
-Cosa vuoi fare?
-1 - Regole
-2 - Gioca livello Bosco
-3 - Gioca livello Deserto
-q - Esci dal gioco
-
-
-Cosa vuoi fare?
-1 - Regole
-2 - Gioca livello Bosco
-3 - Gioca livello Deserto
-q - Esci dal gioco
-
-
-Cosa vuoi fare?
-1 - Regole
-2 - Gioca livello Bosco
-3 - Gioca livello Deserto
-q - Esci dal gioco
 
 
 Cosa vuoi fare?
