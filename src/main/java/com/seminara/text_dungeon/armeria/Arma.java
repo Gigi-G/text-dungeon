@@ -2,7 +2,7 @@ package com.seminara.text_dungeon.armeria;
 
 import com.seminara.text_dungeon.pietra.IPietra;
 
-public abstract class Arma implements IArma {
+public class Arma implements IArma {
     protected IPietra pietra;
     protected float danno;
     protected String tipo;

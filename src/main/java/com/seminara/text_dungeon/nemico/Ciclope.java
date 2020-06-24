@@ -5,8 +5,8 @@ public class Ciclope extends Nemico {
     public Ciclope() {
         tipo = "Ciclope";
         vita = 500f;
-        min = 50;
-        max = 100;
+        minDanno = 50;
+        maxDanno = 100;
     }
     
 }

@@ -13,7 +13,7 @@ public class Partita {
     private Dungeon dungeon;
     private INemico nemico;
     private Battaglia lotta;
-    String risultato = "";
+    private String risultatoPartita = "";
 
     public Partita() {
         giocatore = Giocatore.getInstance();
@@ -24,14 +24,14 @@ public class Partita {
         dungeon = new Bosco();
         startAvventura();
         giocatore.resetVita();
-        return risultato;
+        return risultatoPartita;
     }
 
     public String startDungeonDeserto() {
         dungeon = new Deserto();
         startAvventura();
         giocatore.resetVita();
-        return risultato;
+        return risultatoPartita;
     }
 
     private void startAvventura() {
@@ -42,15 +42,15 @@ public class Partita {
     }
 
     private void avventura() {
-        while(lotta() && !giocatore.isSconfitto()) {
+        while(sfida() && !giocatore.isSconfitto()) {
             generaArma();
             printLevel();
         }
     }
 
-    private boolean lotta() {
+    private boolean sfida() {
         while(!nemico.isSconfitto() && !giocatore.isSconfitto()) {
-            risultato = lotta.battaglia(nemico);
+            risultatoPartita = lotta.scontro(nemico);
             printVita();
         }
         nextLevel();

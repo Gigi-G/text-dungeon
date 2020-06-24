@@ -3,11 +3,11 @@
 import com.seminara.text_dungeon.stato_combattimento.GeneraStato;
 import com.seminara.text_dungeon.stato_combattimento.IStatoCombattimento;
 
-<span class="fc" id="L6">public abstract class Nemico implements INemico {</span>
+<span class="fc" id="L6">public class Nemico implements INemico {</span>
     protected String tipo;
     protected float vita;
-    protected int min;
-    protected int max;
+    protected int minDanno;
+    protected int maxDanno;
 <span class="fc" id="L11">    protected IStatoCombattimento stato = GeneraStato.generaStato(&quot;0&quot;);</span>
 
     @Override
@@ -22,7 +22,7 @@ import com.seminara.text_dungeon.stato_combattimento.IStatoCombattimento;
 
     @Override
     public float infliggiDanno() {
-<span class="fc" id="L25">        return stato.infliggiDanno((float) Math.random()*(max-min+1) + min);</span>
+<span class="fc" id="L25">        return stato.infliggiDanno((float) Math.random()*(maxDanno-minDanno+1) + minDanno);</span>
     }
 
     @Override

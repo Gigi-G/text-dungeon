@@ -8,8 +8,8 @@ public class TestNemico extends Nemico {
         tipo = "Test";
         stato = GeneraStato.generaStato("2");
         vita = 200f;
-        min = 10;
-        max = 50;
+        minDanno = 10;
+        maxDanno = 50;
     }
 
     public static boolean testNemico() {

@@ -11,19 +11,19 @@ import com.seminara.text_dungeon.sfida.BattleSystem;
 public class Battaglia {
     private BattleSystem battleSystem;
     private Giocatore giocatore;
-<span class="fc" id="L14">    private final List &lt;Function&lt;INemico, String&gt;&gt; caseBattle = List.of( x -&gt; &quot;Pareggio&quot;, x -&gt; { x.applicaDanno(giocatore.infliggiDanno()); return &quot;Vittoria&quot;;}, x -&gt; {giocatore.applicaDanno(x.infliggiDanno()); return &quot;Sconfitta&quot;;} );</span>
+<span class="fc" id="L14">    private List &lt;Function&lt;INemico, String&gt;&gt; casiBattaglia = List.of( x -&gt; &quot;Pareggio&quot;, x -&gt; { x.applicaDanno(giocatore.infliggiDanno()); return &quot;Vittoria&quot;;}, x -&gt; {giocatore.applicaDanno(x.infliggiDanno()); return &quot;Sconfitta&quot;;} );</span>
 
 <span class="fc" id="L16">    public Battaglia() {</span>
 <span class="fc" id="L17">        battleSystem = new BattleSystem();</span>
 <span class="fc" id="L18">        giocatore = Giocatore.getInstance();</span>
 <span class="fc" id="L19">    }</span>
 
-    public String battaglia(INemico nemico) {
+    public String scontro(INemico nemico) {
 <span class="fc" id="L22">        scegliPosizioneCombattimento();</span>
 <span class="fc" id="L23">        nemico.setStatoCombattimento();</span>
 <span class="fc" id="L24">        printPosizioniAttuali(nemico);</span>
 <span class="fc" id="L25">        int risultatoSfida = battleSystem.vincitoreSfida(giocatore.getStatoCombattimento(), nemico.getStatoCombattimento());</span>
-<span class="fc" id="L26">        return caseBattle.get(risultatoSfida).apply(nemico);</span>
+<span class="fc" id="L26">        return casiBattaglia.get(risultatoSfida).apply(nemico);</span>
     }
 
     private void scegliPosizioneCombattimento() {

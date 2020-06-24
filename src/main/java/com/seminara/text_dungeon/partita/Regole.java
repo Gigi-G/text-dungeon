@@ -13,7 +13,7 @@ public class Regole implements IGameState {
         printTitle();
         printDungeonInfo();
         printBattagliaInfo();
-        printComVincereInfo();
+        printComeVincereInfo();
         System.out.println("Buona fortuna!");
     }
 
@@ -40,7 +40,7 @@ public class Regole implements IGameState {
         System.out.println();
     }
 
-    private void printComVincereInfo() {
+    private void printComeVincereInfo() {
         System.out.println();
         System.out.println("Dopo ogni attacco vengono visualizzati i punti vita.");
         System.out.println("In caso di sconfitta la partita si conclude, ma in caso di vittoria viene proposta una nuova arma e i punti vita vengono ripristinati.");

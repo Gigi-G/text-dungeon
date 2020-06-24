@@ -8,8 +8,8 @@ public class TestNemicoAttacco extends Nemico {
         tipo = "TestAttacco";
         stato = GeneraStato.generaStato("0");
         vita = 200f;
-        min = 10;
-        max = 50;
+        minDanno = 10;
+        maxDanno = 50;
     }
 
     @Override

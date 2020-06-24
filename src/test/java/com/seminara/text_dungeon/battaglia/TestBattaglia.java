@@ -23,7 +23,7 @@ public class TestBattaglia {
         Giocatore.getInstance().setArma(GeneraArma.getArma(0));
         Battaglia battaglia = new Battaglia();
         init("2");
-        if ( battaglia.battaglia(new TestNemicoAttacco()).equals("Vittoria")) {
+        if ( battaglia.scontro(new TestNemicoAttacco()).equals("Vittoria")) {
             System.out.println("TestBattaglia.testBattagliaVittoriaDifesa(): OK");
             return true;
         }
@@ -37,7 +37,7 @@ public class TestBattaglia {
         Giocatore.getInstance().setArma(GeneraArma.getArma(1));
         Battaglia battaglia = new Battaglia();
         init("2");
-        if ( battaglia.battaglia(new TestNemicoAssalto()).equals("Sconfitta")) {
+        if ( battaglia.scontro(new TestNemicoAssalto()).equals("Sconfitta")) {
             System.out.println("TestBattaglia.testBattagliaSconfittaDifesa(): OK");
             return true;
         }
@@ -51,7 +51,7 @@ public class TestBattaglia {
         Giocatore.getInstance().setArma(GeneraArma.getArma(2));
         Battaglia battaglia = new Battaglia();
         init("2");
-        if ( battaglia.battaglia(new TestNemicoDifesa()).equals("Pareggio")) {
+        if ( battaglia.scontro(new TestNemicoDifesa()).equals("Pareggio")) {
             System.out.println("TestBattaglia.testBattagliaPareggioDifesa(): OK");
             return true;
         }
@@ -65,7 +65,7 @@ public class TestBattaglia {
         Giocatore.getInstance().setArma(GeneraArma.getArma(0));
         Battaglia battaglia = new Battaglia();
         init("0");
-        if ( battaglia.battaglia(new TestNemicoAssalto()).equals("Vittoria")) {
+        if ( battaglia.scontro(new TestNemicoAssalto()).equals("Vittoria")) {
             System.out.println("TestBattaglia.testBattagliaVittoriaAttacco(): OK");
             return true;
         }
@@ -79,7 +79,7 @@ public class TestBattaglia {
         Giocatore.getInstance().setArma(GeneraArma.getArma(1));
         Battaglia battaglia = new Battaglia();
         init("0");
-        if ( battaglia.battaglia(new TestNemicoDifesa()).equals("Sconfitta")) {
+        if ( battaglia.scontro(new TestNemicoDifesa()).equals("Sconfitta")) {
             System.out.println("TestBattaglia.testBattagliaSconfittaAttacco(): OK");
             return true;
         }
@@ -93,7 +93,7 @@ public class TestBattaglia {
         Giocatore.getInstance().setArma(GeneraArma.getArma(2));
         Battaglia battaglia = new Battaglia();
         init("0");
-        if ( battaglia.battaglia(new TestNemicoAttacco()).equals("Pareggio")) {
+        if ( battaglia.scontro(new TestNemicoAttacco()).equals("Pareggio")) {
             System.out.println("TestBattaglia.testBattagliaPareggioAttacco(): OK");
             return true;
         }
@@ -107,7 +107,7 @@ public class TestBattaglia {
         Giocatore.getInstance().setArma(GeneraArma.getArma(0));
         Battaglia battaglia = new Battaglia();
         init("1");
-        if ( battaglia.battaglia(new TestNemicoDifesa()).equals("Vittoria")) {
+        if ( battaglia.scontro(new TestNemicoDifesa()).equals("Vittoria")) {
             System.out.println("TestBattaglia.testBattagliaVittoriaAssalto(): OK");
             return true;
         }
@@ -121,7 +121,7 @@ public class TestBattaglia {
         Giocatore.getInstance().setArma(GeneraArma.getArma(1));
         Battaglia battaglia = new Battaglia();
         init("1");
-        if ( battaglia.battaglia(new TestNemicoAttacco()).equals("Sconfitta")) {
+        if ( battaglia.scontro(new TestNemicoAttacco()).equals("Sconfitta")) {
             System.out.println("TestBattaglia.testBattagliaSconfittaAssalto(): OK");
             return true;
         }
@@ -135,7 +135,7 @@ public class TestBattaglia {
         Giocatore.getInstance().setArma(GeneraArma.getArma(2));
         Battaglia battaglia = new Battaglia();
         init("1");
-        if ( battaglia.battaglia(new TestNemicoAssalto()).equals("Pareggio")) {
+        if ( battaglia.scontro(new TestNemicoAssalto()).equals("Pareggio")) {
             System.out.println("TestBattaglia.testBattagliaPareggioAssalto(): OK");
             return true;
         }
@@ -148,7 +148,7 @@ public class TestBattaglia {
     public static boolean testBattagliaInputErratoVittoria() {
         Battaglia battaglia = new Battaglia();
         init("\n");
-        if ( battaglia.battaglia(new TestNemicoAssalto()).equals("Vittoria")) {
+        if ( battaglia.scontro(new TestNemicoAssalto()).equals("Vittoria")) {
             System.out.println("TestBattaglia.testBattagliaInputErratoVittoria(): OK");
             return true;
         }
@@ -161,7 +161,7 @@ public class TestBattaglia {
     public static boolean testBattagliaInputErratoPareggio() {
         Battaglia battaglia = new Battaglia();
         init("\n");
-        if ( battaglia.battaglia(new TestNemicoAttacco()).equals("Pareggio")) {
+        if ( battaglia.scontro(new TestNemicoAttacco()).equals("Pareggio")) {
             System.out.println("TestBattaglia.testBattagliaInputErratoPareggio(): OK");
             return true;
         }
@@ -174,7 +174,7 @@ public class TestBattaglia {
     public static boolean testBattagliaInputErratoSconfitta() {
         Battaglia battaglia = new Battaglia();
         init("\n");
-        if ( battaglia.battaglia(new TestNemicoDifesa()).equals("Sconfitta")) {
+        if ( battaglia.scontro(new TestNemicoDifesa()).equals("Sconfitta")) {
             System.out.println("TestBattaglia.testBattagliaInputErratoSconfitta(): OK");
             return true;
         }

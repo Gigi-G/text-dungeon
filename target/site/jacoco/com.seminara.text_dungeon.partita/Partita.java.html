@@ -13,7 +13,7 @@ public class Partita {
     private Dungeon dungeon;
     private INemico nemico;
     private Battaglia lotta;
-<span class="fc" id="L16">    String risultato = &quot;&quot;;</span>
+<span class="fc" id="L16">    private String risultatoPartita = &quot;&quot;;</span>
 
 <span class="fc" id="L18">    public Partita() {</span>
 <span class="fc" id="L19">        giocatore = Giocatore.getInstance();</span>
@@ -24,14 +24,14 @@ public class Partita {
 <span class="fc" id="L24">        dungeon = new Bosco();</span>
 <span class="fc" id="L25">        startAvventura();</span>
 <span class="fc" id="L26">        giocatore.resetVita();</span>
-<span class="fc" id="L27">        return risultato;</span>
+<span class="fc" id="L27">        return risultatoPartita;</span>
     }
 
     public String startDungeonDeserto() {
 <span class="fc" id="L31">        dungeon = new Deserto();</span>
 <span class="fc" id="L32">        startAvventura();</span>
 <span class="fc" id="L33">        giocatore.resetVita();</span>
-<span class="fc" id="L34">        return risultato;</span>
+<span class="fc" id="L34">        return risultatoPartita;</span>
     }
 
     private void startAvventura() {
@@ -42,15 +42,15 @@ public class Partita {
 <span class="fc" id="L42">    }</span>
 
     private void avventura() {
-<span class="fc bfc" id="L45" title="All 4 branches covered.">        while(lotta() &amp;&amp; !giocatore.isSconfitto()) {</span>
+<span class="fc bfc" id="L45" title="All 4 branches covered.">        while(sfida() &amp;&amp; !giocatore.isSconfitto()) {</span>
 <span class="fc" id="L46">            generaArma();</span>
 <span class="fc" id="L47">            printLevel();</span>
         }
 <span class="fc" id="L49">    }</span>
 
-    private boolean lotta() {
+    private boolean sfida() {
 <span class="fc bfc" id="L52" title="All 4 branches covered.">        while(!nemico.isSconfitto() &amp;&amp; !giocatore.isSconfitto()) {</span>
-<span class="fc" id="L53">            risultato = lotta.battaglia(nemico);</span>
+<span class="fc" id="L53">            risultatoPartita = lotta.scontro(nemico);</span>
 <span class="fc" id="L54">            printVita();</span>
         }
 <span class="fc" id="L56">        nextLevel();</span>

@@ -11,19 +11,19 @@ import com.seminara.text_dungeon.sfida.BattleSystem;
 public class Battaglia {
     private BattleSystem battleSystem;
     private Giocatore giocatore;
-    private final List <Function<INemico, String>> caseBattle = List.of( x -> "Pareggio", x -> { x.applicaDanno(giocatore.infliggiDanno()); return "Vittoria";}, x -> {giocatore.applicaDanno(x.infliggiDanno()); return "Sconfitta";} );
+    private List <Function<INemico, String>> casiBattaglia = List.of( x -> "Pareggio", x -> { x.applicaDanno(giocatore.infliggiDanno()); return "Vittoria";}, x -> {giocatore.applicaDanno(x.infliggiDanno()); return "Sconfitta";} );
 
     public Battaglia() {
         battleSystem = new BattleSystem();
         giocatore = Giocatore.getInstance();
     }
 
-    public String battaglia(INemico nemico) {
+    public String scontro(INemico nemico) {
         scegliPosizioneCombattimento();
         nemico.setStatoCombattimento();
         printPosizioniAttuali(nemico);
         int risultatoSfida = battleSystem.vincitoreSfida(giocatore.getStatoCombattimento(), nemico.getStatoCombattimento());
-        return caseBattle.get(risultatoSfida).apply(nemico);
+        return casiBattaglia.get(risultatoSfida).apply(nemico);
     }
 
     private void scegliPosizioneCombattimento() {

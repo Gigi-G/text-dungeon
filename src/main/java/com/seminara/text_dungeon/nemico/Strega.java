@@ -5,8 +5,8 @@ public class Strega extends Nemico {
     public Strega() {
         tipo = "Strega";
         vita = 450f;
-        min = 40;
-        max = 90;
+        minDanno = 40;
+        maxDanno = 90;
     }
 
 }
