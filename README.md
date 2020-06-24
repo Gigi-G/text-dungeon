@@ -1,6 +1,14 @@
 # Text-Dungeon
 
-[TOC]
+------
+
+## *Sommario*
+
+- **[Test](#Test)**
+- **[Requisiti](#Requisiti)**
+- **[Diagramma UML delle classi](#UML)**
+
+------
 
 ## Test
 ![build](https://github.com/Gigi-G/text-dungeon/workflows/Java%20CI%20with%20Maven/badge.svg)
@@ -26,4 +34,4 @@ In caso di sconfitta la partita si conclude, ma in caso di vittoria viene propos
 casualmente) che può essere sostituita a quella già in possesso e il gioco va avanti.
 
 ## Diagramma UML delle classi
-<img src="uml/Text_Dungeon.jpeg">
+![alt text](https://github.com/Gigi-G/text-dungeon/blob/master/uml/Text_Dungeon.jpg)
