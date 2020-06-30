@@ -7,6 +7,7 @@
 - **[Test](#Test)**
 - **[Requisiti](#Requisiti)**
 - **[Diagramma UML delle classi](#diagramma-uml-delle-classi)**
+- **[Come giocare](#come-giocare)**
 
 ------
 
