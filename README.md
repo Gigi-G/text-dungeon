@@ -35,3 +35,10 @@ casualmente) che può essere sostituita a quella già in possesso e il gioco va 
 
 ## Diagramma UML delle classi
 ![alt text](https://github.com/Gigi-G/text-dungeon/blob/master/uml/Text_Dungeon.jpg)
+
+## Come giocare
+
+```java
+java -cp target/text_dungeon-1.0-SNAPSHOT.jar com.seminara.text_dungeon.App
+```
+
